@@ -66,6 +66,7 @@
     <Compile Include="Contract\Connection.cs" />
     <Compile Include="Contract\GenericEntity.cs" />
     <Compile Include="Contract\IEntity.cs" />
+    <Compile Include="Controller.cs" />
     <Compile Include="EntityControl.xaml.cs">
       <DependentUpon>EntityControl.xaml</DependentUpon>
     </Compile>
