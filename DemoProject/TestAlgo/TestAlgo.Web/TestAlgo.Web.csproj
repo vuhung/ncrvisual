@@ -54,6 +54,7 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClientBin\output.txt" />
     <Content Include="ClientBin\TestAlgo.xap" />
     <Content Include="Default.aspx" />
     <Content Include="Silverlight.js" />
@@ -89,7 +90,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>49283</DevelopmentServerPort>
+          <DevelopmentServerPort>56524</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
