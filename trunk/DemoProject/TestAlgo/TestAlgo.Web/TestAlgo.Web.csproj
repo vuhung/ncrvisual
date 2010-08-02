@@ -60,9 +60,13 @@
     <Content Include="Silverlight.js" />
     <Content Include="TestAlgoTestPage.aspx" />
     <Content Include="TestAlgoTestPage.html" />
+    <Content Include="TestInputdata\2010-June.txt" />
+    <Content Include="TestInputdata\test.txt" />
     <Content Include="Web.config" />
+    <Content Include="Uploader.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\Controller.cs" />
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
@@ -70,7 +74,17 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Items\Email.cs" />
+    <Compile Include="Items\Point.cs" />
+    <Compile Include="Items\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uploader.aspx.cs">
+      <DependentUpon>Uploader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Uploader.aspx.designer.cs">
+      <DependentUpon>Uploader.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
