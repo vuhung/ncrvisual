@@ -1,0 +1,3315 @@
+From trungtpbk at gmail.com  Tue Jun  1 01:10:30 2010
+From: trungtpbk at gmail.com (=?UTF-8?B?bmd1eeG7hW4gdmnhur90IHRow6BuaCB0cnVuZyA=?=)
+Date: Tue, 1 Jun 2010 01:10:30 +0700
+Subject: [HanoiLUG] mic trong ubuntu 10.04 64 bit
+Message-ID: <AANLkTimvZE6AL323CfvWSHGftIHX0ld2y0UwrbC2fkoa@mail.gmail.com>
+
+em c? m?t v?n ?? mong m?i ng??i gi?p ?? kh?c ph?c: em c?i ubuntu 10.04 tr?n
+lap NGN-NS240E, khi headphone v?n ho?t ??ng b?nh th??ng nh?ng khi n?i v?o
+mic th? ko nghe th?y j. em th? d?ng recorder ?? ghi ?m th? th?y v?n ghi
+???c, khi ph?t l?i v?n nghe ???c nh?ng c?i ?? thu ?m. em ?? c?i b?n 9.04
+c?ng tr?n m?y n?y th? ho?t ??ng t?t.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100601/f32fc907/attachment.htm>
+
+From vu.do.quynh at auf.org  Tue Jun  1 10:22:49 2010
+From: vu.do.quynh at auf.org (Vu Do Quynh)
+Date: Tue, 01 Jun 2010 10:22:49 +0700
+Subject: [HanoiLUG] mic trong ubuntu 10.04 64 bit
+In-Reply-To: <AANLkTimvZE6AL323CfvWSHGftIHX0ld2y0UwrbC2fkoa@mail.gmail.com>
+References: <AANLkTimvZE6AL323CfvWSHGftIHX0ld2y0UwrbC2fkoa@mail.gmail.com>
+Message-ID: <4C047D09.8030502@auf.org>
+
+Le 01/06/2010 01:10, nguy?n vi?t th?nh trung a ?crit :
+> em c? m?t v?n ?? mong m?i ng??i gi?p ?? kh?c ph?c: em c?i ubuntu 10.04 tr?n
+> lap NGN-NS240E, khi headphone v?n ho?t ??ng b?nh th??ng nh?ng khi n?i v?o
+> mic th? ko nghe th?y j. em th? d?ng recorder ?? ghi ?m th? th?y v?n ghi
+> ???c, khi ph?t l?i v?n nghe ???c nh?ng c?i ?? thu ?m. em ?? c?i b?n 9.04
+> c?ng tr?n m?y n?y th? ho?t ??ng t?t.
+
+C? l? anh ph?i ki?m tra c?c settings c?a ?m thanh:
+
+1) nh?n ph?i v?o bi?u t??ng ?m thanh tr?n thanh ?i?u khi?n ph?a tr?n 
+(b?n ph?i)
+
+2) ch?n m? tr?nh ?i?u khi?n ?m l??ng.
+
+N?u kh?ng c? bi?u t??ng ?m thanh tr?n thanh ?i?u khi?n, v?o tr?nh ??n H? 
+Th?ng (System) > T?y th?ch > ?m thanh.
+
+Sau ?? t?m ch?nh l?i c?c tr?nh ?i?u khi?n thi?t b? h?p l? nh? Front 
+Front Mic, Surround (c?c l?a ch?n t?y theo ph?n c?ng)
+
+-- 
+M. VU DO Quynh
+AUF (T? ch?c h?p t?c ?H Ph?p ng?)
+Campus num?rique francophone (CNF) de Hanoi
+Nh? D, ng? 42 T? Quang B?u
+T?l.: (84-4) 38.68.48.85 ; Fax: (84-4) 38.69.45.09
+http://www.vn.refer.org/vietnam/
+
+
+From pham.bich.lien at auf.org  Tue Jun  1 10:36:54 2010
+From: pham.bich.lien at auf.org (Pham Bich Lien)
+Date: Tue, 01 Jun 2010 10:36:54 +0700
+Subject: [HanoiLUG] Thu bay tu do 5/6/2010
+Message-ID: <4C048056.4010903@auf.org>
+
+Ch?o c?c b?n,
+
+Th? b?y 05 th?ng 06/2010, Trung t?m CNF s? gi?i thi?u h? ?i?u h?nh 
+Sugar, d?ng tr?n c?c m?y t?nh n?i ti?ng XO c?a d? ?n OLPC (One Laptop 
+Per Child).
+
+Giao di?n ?? h?a Sugar ???c thi?t k? d?nh ri?ng cho c?c tr? em ?? tu?i 
+m?u gi?o v? ti?u h?c.
+
+1) Bu?i s?ng, t? 10g-12g c?c b?n c? th? t?m hi?u c?ch c?i ??t, ch?y 
+Sugar tr?n m?t ? USB.
+
+2) Bu?i chi?u, m?t s? chuy?n gia s? tr?nh b?y v? d? ?n OLPC-Vi?t Nam v? 
+t?nh h?nh tri?n khai m?t d? ?n nh? t?i l?ng ng? d?n V?ng Vi?ng (V?nh h? 
+Long).
+
+C? th? t?i ch??ng tr?nh b?ng ti?ng Vi?t t? trang:
+
+http://www.vn.refer.org/vietnam/article.php3?id_article=445
+
+R?t mong nh?n ???c s? tham gia ??ng g?p c?a c?c b?n.
+
+-- 
+Pham Thi Bich Lien
+Agence universitaire de la Francophonie, Bureau Asie Pacifique
+Campus num?rique francophone (CNF) de Hanoi
+IFI - Rez de chauss?e
+Ngo 42, Ta Quang Buu
+Q. Hai Ba Trung, Hanoi
+T?l: +84-4-3 868.48.85 ; T?l?copie: +84-4-3 869.45.09
+Sites de toile: http://www.vn.refer.org/
+
+-------------- section suivante --------------
+Une pi?ce jointe autre que texte a ?t? nettoy?e...
+Nom: ThuBay_TuDo_04-Sugar-Trisquel.pdf
+Type: application/pdf
+Taille: 130971 octets
+Desc: non disponible
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100601/92f4423a/attachment-0001.pdf>
+
+From huantnh at gmail.com  Tue Jun  1 12:53:47 2010
+From: huantnh at gmail.com (Huan Komrade Truong)
+Date: Tue, 1 Jun 2010 00:53:47 -0500
+Subject: [HanoiLUG] mic trong ubuntu 10.04 64 bit
+In-Reply-To: <AANLkTimvZE6AL323CfvWSHGftIHX0ld2y0UwrbC2fkoa@mail.gmail.com>
+References: <AANLkTimvZE6AL323CfvWSHGftIHX0ld2y0UwrbC2fkoa@mail.gmail.com>
+Message-ID: <AANLkTinl83V0VB0_05R-J-rU5fFOiluTThx0Pcj1PPyS@mail.gmail.com>
+
+V?n ?? m? b?n ?? c?p t?i l? vi?c kh?ng th? "listen" ???c nh?ng g? m?
+m?nh n?i v?o microphone, v? vi?c implement c?i tu? ch?n ph?n c?ng c?
+ph?t l?i nh?ng g? m? microphone thu ???c r?t ??ng bu?n l? ph? thu?c
+ho?n to?n v?o nh? s?n xu?t -- c? nh?ng nh? s?n xu?t ph?n c?ng c? h?
+tr? ch?c n?ng n?y v? c? nh?ng ng??i kh?c kh?ng. C? th? d?ng ph?n m?m
+?? kh?c ph?c ?i?u n?y nh?ng c?ng r?t ??ng ti?c l? Ubuntu/linux theo
+nh? m?nh ???c bi?t kh?ng c? tu? ch?n n?y (Windows 7, cho v? d?, c? h?
+tr? ch?c n?ng n?y) -- nh?ng vi?c implement b?ng ph?n m?m th? g?p m?t
+tr? ng?i l? s? b? m?t kho?ng delay theo kinh nghi?m c?a m?nh th?
+kho?ng 0.3s (v? ph?i x? l? qua ph?n m?m) cho n?n r?t kh? ch?u.
+
+T?m l?i n?u b?n mu?n nghe nh?ng g? m?nh n?i v?o microphone th? t?t h?n
+l? n?n mua m?t b? amplifier v? n?i microphone c?a m?nh v?o c?i
+amplifier ??, n?i loa l?n v?o amplifier ?? v? n?i ???ng "line out" c?a
+amplifier v?o "line in" c?a laptop ?? thu l?i. Vi?c n?y ch?c ch?n s?
+gi?m t?i ?a nh?ng r?c r?i m? b?n s? g?p ph?i.
+
+PS: ??ng vi?t g? -> j. Vi?c n?y l?m cho nhi?u ng??i kh? ch?u v? c? th?
+s? kh?ng th?ch c?ch h?i c?a b?n. T?i sao l?i ph?i m?t c?ng g? tr? l?i
+t? t? nghi?m t?c khi m? ngay c? ng??i h?i c?ng kh?ng mu?n h?i m?t c?ch
+nghi?m t?c.
+
+-- 
+Sent from my Ubuntu
+
+From vuhung at vinicorp.com.vn  Wed Jun  2 09:12:07 2010
+From: vuhung at vinicorp.com.vn (Nguyen Vu Hung)
+Date: Wed, 02 Jun 2010 09:12:07 +0700
+Subject: [HanoiLUG] Fwd: Announcing Fedora 13
+In-Reply-To: <7296586.721275443026348.JavaMail.root@z.iwayvietnam.com>
+References: <7296586.721275443026348.JavaMail.root@z.iwayvietnam.com>
+Message-ID: <4C05BDF7.50307@vinicorp.com.vn>
+
+(2010/06/02 8:43), Truong Anh. Tuan wrote:
+> ----- "Truong Anh. Tuan"<tuanta at iwayvietnam.com>  wrote:
+>
+>    
+>> Currently, mirroring is in progress. However, you can start
+>> downloading Live Media at:
+>> http://virror.hanoilug.org/fedora/releases/13/Live/ (or just simple,
+>> wait for the LiveCD in Release party this evening :)
+>>      
+> Fedora 13 has been mirrored completely to Virror. Enjoy it!
+>
+> Btw, as Fedora 11 has been end of life soon, its mirror has been removed.
+> You are encouraged to upgrade to Fedora 13 for much better Linux experience.
+>    
+C?m ?n b?c, h?n b?c th? 7 ? AUF
+
+-- 
+**********************************************************************
+
+Viet Nhat General Joint Stock Company (Vinicorp)
+
+Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+
+Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+
+Nguyen Vu Hung
+
+Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+
+***********************************************************************
+
+
+
+From vuhung at vinicorp.com.vn  Wed Jun  2 11:15:52 2010
+From: vuhung at vinicorp.com.vn (Nguyen Vu Hung)
+Date: Wed, 02 Jun 2010 11:15:52 +0700
+Subject: [HanoiLUG] =?utf-8?b?W09UXSBUaOG6vyBuw6BvIGzDoCBt4buZdCBr4bu5IHM=?=
+ =?utf-8?b?xrAgdGluIGjhu41j?=
+Message-ID: <4C05DAF8.6010309@vinicorp.com.vn>
+
+Em nh? c?c b?c t? v?n m?t ch?t, c? nhi?n l? off-topic.
+
+Th? n?o l? m?t k? s? tin h?c?
+M?t k? s? tin h?c c?n nh?ng k? n?ng g??
+(M? tr??ng ??i h?c/cao ??ng kh?ng v?i tay t?i ???c)
+
+-- 
+
+**********************************************************************
+
+Viet Nhat General Joint Stock Company (Vinicorp)
+
+Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+
+Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+
+Nguyen Vu Hung
+
+Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+
+***********************************************************************
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100602/fcaad022/attachment.htm>
+
+From huantnh at gmail.com  Wed Jun  2 13:30:38 2010
+From: huantnh at gmail.com (Huan Komrade Truong)
+Date: Wed, 2 Jun 2010 01:30:38 -0500
+Subject: [HanoiLUG] I didn't know GRUB2 could do this.
+Message-ID: <AANLkTilH5JDWfsk6ICvGPz0_gnqTcW8RkxY4p4XhiZ15@mail.gmail.com>
+
+Add this line to /etc/default/grub:
+
+GRUB_INIT_TUNE="480 420 1 400 1 420 1 400 1 420 1 315 1 370 1 335 1
+282 3 180 1 215 1 282 1 315 3 213 1 262 1 315 1 335 3 213 1 420 1 400
+1 420 1 400 1 420 1 315 1 370 1 335 1 282 3 180 1 215 1 282 1 315 3
+213 1 330 1 315 1 282 3"
+
+then
+
+sudo update-grub
+
+then restart your computer.
+
+
+
+-- 
+Sent from my Ubuntu
+
+From vuhung at vinicorp.com.vn  Wed Jun  2 13:38:13 2010
+From: vuhung at vinicorp.com.vn (Nguyen Vu Hung)
+Date: Wed, 02 Jun 2010 13:38:13 +0700
+Subject: [HanoiLUG] I didn't know GRUB2 could do this.
+In-Reply-To: <AANLkTilH5JDWfsk6ICvGPz0_gnqTcW8RkxY4p4XhiZ15@mail.gmail.com>
+References: <AANLkTilH5JDWfsk6ICvGPz0_gnqTcW8RkxY4p4XhiZ15@mail.gmail.com>
+Message-ID: <4C05FC55.6070206@vinicorp.com.vn>
+
+(2010/06/02 13:30), Huan Komrade Truong wrote:
+> Add this line to /etc/default/grub:
+>
+> GRUB_INIT_TUNE="480 420 1 400 1 420 1 400 1 420 1 315 1 370 1 335 1
+> 282 3 180 1 215 1 282 1 315 3 213 1 262 1 315 1 335 3 213 1 420 1 400
+> 1 420 1 400 1 420 1 315 1 370 1 335 1 282 3 180 1 215 1 282 1 315 3
+> 213 1 330 1 315 1 282 3"
+>    
+No, Tchaikovsky please???
+
+-- 
+**********************************************************************
+
+Viet Nhat General Joint Stock Company (Vinicorp)
+
+Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+
+Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+
+Nguyen Vu Hung
+
+Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+
+***********************************************************************
+
+
+
+From hoang281283 at gmail.com  Wed Jun  2 14:03:13 2010
+From: hoang281283 at gmail.com (MinhHoang To)
+Date: Wed, 2 Jun 2010 14:03:13 +0700
+Subject: [HanoiLUG]
+	=?utf-8?b?W09UXSBUaOG6vyBuw6BvIGzDoCBt4buZdCBr4bu5IHM=?=
+	=?utf-8?b?xrAgdGluIGjhu41j?=
+In-Reply-To: <4C05DAF8.6010309@vinicorp.com.vn>
+References: <4C05DAF8.6010309@vinicorp.com.vn>
+Message-ID: <AANLkTimEJVYLoiW5Chqbwtu9sBMeH18FShuhj4MgYEvq@mail.gmail.com>
+
+ I. Ki su tin hoc: Tu ki su o day co le no dung cho nhung nguoi lam viec
+trong IT industry, cu the co the coi nhung nguoi lam ki thuat trong bat ki
+cong ty IT nao la ki su tin hoc
+
+ O cac research lab, research team thi cung se co nhung nguoi dam nhan cong
+viec bien cac y tuong research thanh cac prototype. Theo minh biet thi trong
+tieng Phap ho goi nhung nguoi nay la ingenieur d'etude, tieng Anh co le la
+research engineer, con o VN chac chua co nhieu nguoi lam cong viec nay nen
+chua co thuat ngu tuong ung.
+
+II. Mot ki su tin hoc can nhung ki nang gi?
+
+Y kien cua rieng minh thi de tro thanh 1 ki su gioi can co cac to chat sau:
+
+1. Kha nang phan tich va hieu sau van de tot
+
+2. Nam chac cac linh vuc lien quan truc tiep cong viec cua minh, biet nhieu
+cung tot nhung biet sau mot vai linh vuc thi hon la biet nhieu nhung biet 1
+cach hoi hot
+
+3. Kha nang sang tao trong cach giai quyet van de.
+
+4. Lam viec cham chi, say me voi cong viec. 'Dao hoc khong co duong tat'
+
+
+III. Ma truong dai hoc/cao dang ko voi tay toi duoc
+
+  Ko hieu y hoi cua bac o day, co nhung nguoi ko hoc dai hoc nhung van la ki
+su gioi. Va nguoc lai co nhieu nguoi hoc dai hoc gioi nhung lam thuc te lai
+ko gioi. Tuy nhien theo y kien ca nhan toi, neu xem xet 1 cach thong ke tren
+khoang 1000 sinh vien gioi voi 1000 nguoi ko hoc hanh gi (chu y lua chon
+randomly) thi kha nang kiem duoc ki su gioi trong so
+1000 sinh vien gioi chac chan phai cao hon
+
+Bi bo gop vui ti chut,
+
+
+2010/6/2 Nguyen Vu Hung <vuhung at vinicorp.com.vn>
+
+>  Em nh? c?c b?c t? v?n m?t ch?t, c? nhi?n l? off-topic.
+>
+> Th? n?o l? m?t k? s? tin h?c?
+> M?t k? s? tin h?c c?n nh?ng k? n?ng g??
+> (M? tr??ng ??i h?c/cao ??ng kh?ng v?i tay t?i ???c)
+>
+> --
+>
+> **********************************************************************
+>
+> Viet Nhat General Joint Stock Company (Vinicorp)
+>
+> Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+>
+> Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+>
+> Nguyen Vu Hung
+>
+> Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+>
+> ***********************************************************************
+>
+>
+>
+> _______________________________________________
+> POST RULES : http://wiki.hanoilug.org/hanoilug:mailing_list_guidelines
+> _______________________________________________
+> HanoiLUG mailing lists: http://lists.hanoilug.org/
+> HanoiLUG wiki: http://wiki.hanoilug.org/
+> HanoiLUG blog: http://blog.hanoilug.org/
+>
+
+
+
+-- 
+Minh Hoang TO
+eXoPlatform SAS, tang 8, building 18, Thai Ha, Ha Noi
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100602/50976335/attachment.htm>
+
+From vu.do.quynh at auf.org  Thu Jun  3 00:16:03 2010
+From: vu.do.quynh at auf.org (=?utf-8?b?VsWpIA==?= =?utf-8?b?xJDhu5cg?= =?utf-8?b?UXXhu7NuaA==?=)
+Date: Thu, 03 Jun 2010 00:16:03 +0700
+Subject: [HanoiLUG] I want to attend OLPC Vietnam Developers Meeting
+In-Reply-To: <AANLkTikvh44c7HJ9fip6Q0tF6j0q8_JtOa6wqkSLCveY@mail.gmail.com>
+References: <AANLkTikvh44c7HJ9fip6Q0tF6j0q8_JtOa6wqkSLCveY@mail.gmail.com>
+Message-ID: <20100603001603.10185w8d9x000z4g@www.vn.auf.org>
+
+Hi,
+
+"Hai Minh Nguyen" <lightsea90 at gmail.com> a ?crit?:
+
+> My friend Yang Nguyen told me about this meeting. My knowledge about XO
+> machine, Squeak/EToys is limited and I'm interested in them. So I will be
+> very glad if I can come to this meeting.
+> Thank  you.
+
+No problems. It's an open meeting, everybody truely interested,  
+especially if willing to do something, is welcomed.
+
+Address is :
+
+Ng? 42 T? Quang B?u (C?ng Nh? thi ??u v? luy?n t?p ?H B?ch Khoa), b?n  
+trong ng?, qua c?ng Vi?n Tin h?c Ph?p Ng? (IFI), r? ph?i ?i ??n g?n  
+v??n xanh l? n?i ??t trung t?m CNF c?a AUF (?T: 04-38.68.48.85)
+
+
+-- 
+
+Agence universitaire de la Francophonie - Bureau Asie-Pacifique
+
+
+From admin at damtienlong.com  Thu Jun  3 22:09:55 2010
+From: admin at damtienlong.com (Dam Tien Long)
+Date: Thu, 03 Jun 2010 22:09:55 +0700
+Subject: [HanoiLUG]
+ =?utf-8?q?May_HP_dv_6928us_xai_Ubuntu_9=2E10_khong_the?=
+ =?utf-8?q?_nghe_nhac_du=E1=BB=8Dc?=
+In-Reply-To: <269729.24438.qm@web76003.mail.sg1.yahoo.com>
+References: <mailman.0.1275541201.11183.hanoilug@lists.hanoilug.org>
+	<269729.24438.qm@web76003.mail.sg1.yahoo.com>
+Message-ID: <4C07C5C3.6010706@damtienlong.com>
+
+C?i n?y l? do b?n ch?a config file alsa_base.conf
+gksudo gedit /etc/modprobe.d/alsa-base.conf
+
+th?m v?o d?ng
+
+options snd-hda-intel model=hp-dv5 enable_msi=1
+
+c?i model th? c? c? 1 file ?? tra c?u c?, nh?ng m?nh ko nh? l?m, b?n 
+?i?n th? nh? tr?n xem ???c ko. V? m?y m?nh d?ng hp-dv3 m? v?n ?? model = 
+hp-dv5dv5
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100603/3d0141db/attachment.htm>
+
+From vu.do.quynh at auf.org  Fri Jun  4 10:21:58 2010
+From: vu.do.quynh at auf.org (Vu Do Quynh)
+Date: Fri, 04 Jun 2010 10:21:58 +0700
+Subject: [HanoiLUG] Reminder : Sugar and OLPC first developers meeting in
+ Hanoi, Saturday 5th June
+Message-ID: <4C087156.8020907@auf.org>
+
+Ch?o cac anh ch?,
+
+Ai quan t?m ??n d? ?n OLPC v? ?ng d?ng th? m?i tr??ng ?? h?a Sugar cho 
+tr? em ? Vi?t Nam, c? th? ??n chi?u mai, 5 th?ng 06/2010, t? 2g ??n 6g, 
+t?i trung t?m CNF.
+
+http://blog.hanoilug.org/?p=118 (co th?m b?n ?? ch? n?i c?a CNF)
+
+C?c anh ch? mu?n sao ch?p t?p iso Trisquel T?at (~ 400 MB) ho?c Sugar on 
+a Stick (SoaS ~ 477 MB), c? th? mang theo m?t ? USB. N?u mu?n t?o ra 
+live USB, ch? c?n mang ??n 1 ? USB 1 GB tr? l?n v? m?t kh?ang 10 ph?t.
+
+Ch?c m?nh kh?e
+
+Hi,
+
+For those who are interested in the OLPC project, the possibilities to 
+develop one sub-project in North Vietnam and in Hanoi... You may pass 
+to-morrow afternoon at CNF, from 2pm til 6 pm:
+
+http://blog.hanoilug.org/?p=118 (updated with a map showing the location 
+of CNF)
+
+If you want to copy the iso files for Trisquel Toast (Sugar on Ubuntu, ~ 
+400 MB) or Sugar on a Stick (~ 477 MB) you may bring a USB drive/key. If 
+you wish to have them installed as a live USB for testing at home (with 
+kids), you'll need a dedicated USB key of at least 1 GB (the process of 
+creation will lasts about 10 minutes). If you are only interested in 
+this, you may only come in the morning as well.
+
+Best regards
+-- 
+M. VU DO Quynh
+AUF (T? ch?c h?p t?c ?H Ph?p ng?)
+Campus num?rique francophone (CNF) de Hanoi
+Nh? D, ng? 42 T? Quang B?u
+T?l.: (84-4) 38.68.48.85 ; Fax: (84-4) 38.69.45.09
+http://www.vn.refer.org/vietnam/
+
+
+From huantnh at gmail.com  Fri Jun  4 12:37:29 2010
+From: huantnh at gmail.com (Huan Komrade Truong)
+Date: Fri, 4 Jun 2010 00:37:29 -0500
+Subject: [HanoiLUG] Android Development in Vietnam?
+Message-ID: <AANLkTilNKECxdLr-CrpisdEw_hDiNWuNbe9HNwk-Y3ko@mail.gmail.com>
+
+I am surprised to see that there is an identity developing Android
+printing solutions in Vietnam.
+
+http://www.youtube.com/watch?v=CDOyOlpVbrc&feature=player_embedded
+(seek to 0:12)
+
+Looks like we can print via CUPS, which is sweet. I wonder if anyone
+here knows the company working on it?
+
+
+By the way, I wonder if we have a decent Vietnamese keyboard driver
+for Android?
+
+
+-- 
+Sent from my Ubuntu. Not cool enough to be a Mac person.
+
+From vuhung at vinicorp.com.vn  Fri Jun  4 13:01:24 2010
+From: vuhung at vinicorp.com.vn (Nguyen Vu Hung)
+Date: Fri, 04 Jun 2010 13:01:24 +0700
+Subject: [HanoiLUG] Android Development in Vietnam?
+In-Reply-To: <AANLkTilNKECxdLr-CrpisdEw_hDiNWuNbe9HNwk-Y3ko@mail.gmail.com>
+References: <AANLkTilNKECxdLr-CrpisdEw_hDiNWuNbe9HNwk-Y3ko@mail.gmail.com>
+Message-ID: <4C0896B4.8060108@vinicorp.com.vn>
+
+  (2010/06/04 12:37), Huan Komrade Truong wrote:
+> I am surprised to see that there is an identity developing Android
+> printing solutions in Vietnam.
+>
+"By  Vietnamese programmers"
+> Looks like we can print via CUPS, which is sweet. I wonder if anyone
+> here knows the company working on it?
+?? l? www.isb-vietnam.com.vn, l?m gia c?ng cho ISB Nh?t
+www.isb.co.jp
+
+V?n l? gia c?ng b?c ?, k? s? v?n l? c?a Nh?t. Ch?n nh? con gi?n.
+
+-- 
+**********************************************************************
+
+Viet Nhat General Joint Stock Company (Vinicorp)
+
+Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+
+Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+
+Nguyen Vu Hung
+
+Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+
+***********************************************************************
+
+
+
+From jean-christophe.andre at auf.org  Fri Jun  4 14:50:55 2010
+From: jean-christophe.andre at auf.org (=?UTF-8?B?SmVhbiBDaHJpc3RvcGhlIEFuZHLDqQ==?=)
+Date: Fri, 04 Jun 2010 14:50:55 +0700
+Subject: [HanoiLUG] [OT] [JOB] Tim chuyen gia truyen thong noi bo va thiet
+	ke web
+Message-ID: <4C08B05F.2040305@auf.org>
+
+FYI...
+
+-- 
+Jean Christophe "????" ANDR?   ? ? ?   Responsable technique r?gional
+Bureau Asie?Pacifique (BAP)    ? ? ?   http://www.asie-pacifique.auf.org/
+Agence universitaire de la Francophonie (AuF)  ? ? ?  http://www.auf.org/
+Adresse postale : AUF, 21 L? Th?nh T?ng, T.T. Ho?n Ki?m, H? N?i, Vi?t Nam
+T?l. : +84 4 9331108  ?  Fax : +84 4 8247383  ?  Cellul. : +84 91 3248747
+? Note personnelle: merci d'?viter de m'envoyer des fichiers PowerPoint ?
+? ou Word, cf http://www.gnu.org/philosophy/no-word-attachments.fr.html ?
+-------------- section suivante --------------
+Un message encapsul? a ?t? nettoy?...
+De: "Le Thi Anh Thi" <Le.Thi.Anh.Thi at espace-ccfhanoi.org>
+Objet: Fw: Tim chuyen gia truyen thong noi bo va thiet ke web
+Date: Fri, 4 Jun 2010 14:48:40 +0700
+Taille: 35129
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100604/9cd173e1/attachment-0001.eml>
+
+From lightsea90 at gmail.com  Wed Jun  2 22:11:47 2010
+From: lightsea90 at gmail.com (Hai Minh Nguyen)
+Date: Wed, 2 Jun 2010 22:11:47 +0700
+Subject: [HanoiLUG] I want to attend OLPC Vietnam Developers Meeting
+Message-ID: <AANLkTikvh44c7HJ9fip6Q0tF6j0q8_JtOa6wqkSLCveY@mail.gmail.com>
+
+My friend Yang Nguyen told me about this meeting. My knowledge about XO
+machine, Squeak/EToys is limited and I'm interested in them. So I will be
+very glad if I can come to this meeting.
+Thank  you.
+
+-- 
+Ki?m ma ??c c? c?u b?i - ?i, m?t ??i oanh li?t, ch? mong ???c chi?n b?i m?t
+l?n, nh?ng ch?a ai qua n?i qu? tam chi?u!!!
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100602/221f7ebb/attachment.htm>
+
+From anhnguyet.ql at gmail.com  Fri Jun  4 16:20:25 2010
+From: anhnguyet.ql at gmail.com (=?UTF-8?B?Tmd1eeG7hW4gVGjhu4sgw4FuaCBOZ3V54buHdA==?=)
+Date: Fri, 4 Jun 2010 17:20:25 +0800
+Subject: [HanoiLUG] OLPC Vietnam Developers Meeting in Ha Noi
+In-Reply-To: <AANLkTinexYRXL4v29QgCE-vXlZ67MC1mgXYhsNaPVom-@mail.gmail.com>
+References: <AANLkTilDwBGDnnU8WtqJIWMg-HoHv1EoGRUu3sEkep_j@mail.gmail.com>
+	<6744933.3321275058836299.JavaMail.root@z.iwayvietnam.com>
+	<AANLkTilIZ-AqRppoqOQZEuSsvY92yPapT5dXmy3r83OB@mail.gmail.com>
+	<AANLkTikt_LPJ51JUlJZmDPjnWJk4XtmKbWwCNNXl9zcz@mail.gmail.com>
+	<AANLkTilni1IufWVlAZ4MEsRdnEoDtWkec0N4RCDLkj5p@mail.gmail.com>
+	<4C03D698.30704@gmail.com>
+	<AANLkTinexYRXL4v29QgCE-vXlZ67MC1mgXYhsNaPVom-@mail.gmail.com>
+Message-ID: <AANLkTin66kTnGLOxiYjKT__z_xySySxmZVCWee9cWj9x@mail.gmail.com>
+
+I will go there at 2pm with 2 XOs ^^
+See you :)
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100604/2804e938/attachment.htm>
+
+From serge.stinckwich at gmail.com  Fri Jun  4 16:24:36 2010
+From: serge.stinckwich at gmail.com (Serge Stinckwich)
+Date: Fri, 4 Jun 2010 16:24:36 +0700
+Subject: [HanoiLUG] OLPC Vietnam Developers Meeting in Ha Noi
+In-Reply-To: <AANLkTin66kTnGLOxiYjKT__z_xySySxmZVCWee9cWj9x@mail.gmail.com>
+References: <AANLkTilDwBGDnnU8WtqJIWMg-HoHv1EoGRUu3sEkep_j@mail.gmail.com> 
+	<6744933.3321275058836299.JavaMail.root@z.iwayvietnam.com> 
+	<AANLkTilIZ-AqRppoqOQZEuSsvY92yPapT5dXmy3r83OB@mail.gmail.com> 
+	<AANLkTikt_LPJ51JUlJZmDPjnWJk4XtmKbWwCNNXl9zcz@mail.gmail.com> 
+	<AANLkTilni1IufWVlAZ4MEsRdnEoDtWkec0N4RCDLkj5p@mail.gmail.com> 
+	<4C03D698.30704@gmail.com>
+	<AANLkTinexYRXL4v29QgCE-vXlZ67MC1mgXYhsNaPVom-@mail.gmail.com> 
+	<AANLkTin66kTnGLOxiYjKT__z_xySySxmZVCWee9cWj9x@mail.gmail.com>
+Message-ID: <AANLkTimYMX4RszOYcT9gllXghkJIrRFQlH-4XFUZ1M7j@mail.gmail.com>
+
+ok thank you.
+
+2010/6/4 Nguy?n Th? ?nh Nguy?t <anhnguyet.ql at gmail.com>:
+> I will go there at 2pm with 2 XOs ^^
+> See you :)
+> _______________________________________________
+> POST RULES : http://wiki.hanoilug.org/hanoilug:mailing_list_guidelines
+> _______________________________________________
+> HanoiLUG mailing lists: http://lists.hanoilug.org/
+> HanoiLUG wiki: http://wiki.hanoilug.org/
+> HanoiLUG blog: http://blog.hanoilug.org/
+>
+
+
+
+-- 
+Serge Stinckwich
+UMI UMMISCO 209 (IRD/UPMC), Hanoi, Vietnam
+Every DSL ends up being Smalltalk
+http://doesnotunderstand.org/
+
+From cmpitg at gmail.com  Fri Jun  4 22:46:20 2010
+From: cmpitg at gmail.com (Yang Ha Nguyen)
+Date: Fri, 04 Jun 2010 22:46:20 +0700
+Subject: [HanoiLUG]
+ =?utf-8?q?May_HP_dv_6928us_xai_Ubuntu_9=2E10_khong_the?=
+ =?utf-8?q?_nghe_nhac_du=E1=BB=8Dc?=
+In-Reply-To: <269729.24438.qm@web76003.mail.sg1.yahoo.com>
+References: <mailman.0.1275541201.11183.hanoilug@lists.hanoilug.org>
+	<269729.24438.qm@web76003.mail.sg1.yahoo.com>
+Message-ID: <4C091FCC.4020204@gmail.com>
+
+On 06/03/2010 09:55 PM, ngoan do wrote:
+> C?c b?c, c?c ch? v? c?c anh trong HanoiLug c? th? gi?p ch?u gi?i quy?t 
+> v?n ?? v?i c?i laptop HP dv 6928us. M?y n?y c?i Ubuntu 9.10 nh?ng 
+> kh?ng th? nghe nh?c ???c (d? ?? c?i ??y ?? c?c g?i h? tr? ch?i nh?c 
+> nh?ng m? no ch? ch?y chuong tr?nh c?n kh?ng c? ?m thanh), ai c? c?ch 
+> gi?i quy?t th? n?o xin gi?p ch?u v?i. Ch?u xin c?m ?n!!!
+>
+>
+> _______________________________________________
+> POST RULES :http://wiki.hanoilug.org/hanoilug:mailing_list_guidelines
+> _______________________________________________
+> HanoiLUG mailing lists:http://lists.hanoilug.org/
+> HanoiLUG wiki:http://wiki.hanoilug.org/
+> HanoiLUG blog:http://blog.hanoilug.org/
+H?i tr??c em c?ng b? l?i n?y, em Google v? l?m theo [1] th? kh?c ph?c 
+???c, b?c th? xem c? ???c kh?ng nh?. T?m t?t:
+
+    * Kill t?t c? c?c process c?a slmodemd:
+
+sudo pkill slmodemd
+
+    * Lo?i b? package sl-modem-daemon:
+
+sudo apt-get remove sl-modem-daemon
+
+    * Restart l?i Ubuntu.
+    * V?o *System >> Administrator >> Software Sources*, t?i th?
+      *Updates*, ch?n ?*Unsupported Updates (karmic-backports)*?.
+    * V?o Terminal v? c?i package:
+
+sudo apt-get install linux-backports-modules-alsa-karmic-generic
+
+    * Th?n PPA c?a Ubuntu Audio Development Team v? update:
+
+sudo add apt-repository ppa:ubuntu-audio-dev
+
+sudo apt-get update
+
+sudo apt-get dist-update
+
+Ch?c b?c th?nh c?ng.
+
+
+[1] 
+http://www.unixmen.com/linux-tutorials/525-resolve-nosound-problem-on-ubuntu910-karmic-koala 
+
+
+-- 
+Yang Nguyen
+Web log:http://proginno.wordpress.com/
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100604/3589aa46/attachment.htm>
+
+From serge.stinckwich at gmail.com  Tue Jun  8 10:33:17 2010
+From: serge.stinckwich at gmail.com (Serge Stinckwich)
+Date: Tue, 8 Jun 2010 10:33:17 +0700
+Subject: [HanoiLUG] PhD position available
+Message-ID: <AANLkTimI78VN1N3VUMwDQsUcK18vTpHhycl6vRq1044w@mail.gmail.com>
+
+Hi all,
+i'm looking for a candidate for a PhD position in computer science
+between France and Vietnam related to disaster management (a very
+important topic for Vietnam). The description of the subject is below.
+If you are interested by this position, send me a message ASAP.
+
+More information about this program are available here:
+http://www.ambafrance-vn.org/spip.php?article2500
+
+Best regards,
+-- 
+Serge Stinckwich
+UMI UMMISCO 209 (IRD/UPMC), Hanoi, Vietnam
+Every DSL ends up being Smalltalk
+http://doesnotunderstand.org/
+----------------------------------------------------------------------------------------------------
+
+IRIT laboratory of Universit?  of Toulouse and UMMISCO research team
+invite applicants for a PhD. position related to disaster management
+and computer science.
+
+PhD Thesis title: Models/Forms of coordination for crisis resolution:
+analysis, discovery and efficiency
+
+Supervisors' names: Pr. Chihab Hanachi (Universit? de Toulouse), Dr.
+Ho Tuong and Dr. Serge Stinckwich (UMMISCO, Vietnam)
+
+Scientific domain : crisis management, computer science.
+
+Subject
+In a crisis context (natural or industrial disasters, violence
+explosion, ...), different actors (e.g. the police, firefighters, NGO)
+are called to reduce the crisis and stabilize its impact on the real
+world. Their interventions take the form of operational processes by
+each actor according to its responsibilities, tasks and resources,
+each of them exploiting its own information system. The coordination
+of these actors and their interventions is crucial in order to ease an
+efficient control and resolution of the crisis. Usually, this
+coordination may take two different forms:
+
+- An explicit coordination provided by a central crisis command
+center, steering the crisis, which in the French context, for example,
+may be composed of a prefet (state's representative in a departement)
+and representatives of institutions involved in resolving the crisis.
+In this case, coordination is supported by a collaborative process
+(supported by a set of official plans) to orchestrate the different
+partners operations, while respecting the autonomy of their actions,
+according to their expertises and responsibilities. This process is
+most often adapted to cope with a dynamic, unstable and unpredictable
+environment, due to the impact and evolution of the crisis, but also
+to the heterogeneity and multiplicity of stakeholders and their
+possible geographical dispersion.
+
+- Sometimes, especially during major natural disasters, coordination
+may be implicit (no preset plans, ineffective authorities, ...).
+Interactions can emerge between several institutions and voluntary
+organizations, involved in resolving the crisis. In this case,
+coordination is partly governed by the different actors strategies or
+personal interests . There is no more a centralized schema.
+
+These two forms of coordination may also co-exist and the question of
+their interaction and coherence is raised. How to take into account
+emerging social events in predefined formal procedures which did not
+plan these phenomena ? How to deal with the entrance and departure of
+uncontrolled actors during the crisis management ? In this thesis
+proposal, we are interested (research project) by distributed
+information gathering (testimonies of people, pictures taken by phone,
+data from sensors, ...) which can be seen as a form of distributed
+problem solving where coordinated sources of information have to
+cooperate to form a whole picture of the crisis at given time. The
+scientific aims of the thesis are the design and implementation of
+models and algorithms enabling :
+
+1) The analysis of relationships between information collected in the
+field: facilitation, interference, aggregation, independence (or
+interdependence), uncertainties, ... It is also necessary to take into
+account the temporal aspect of information.
+
+2) The identification of formal coordination models dedicated to the
+crisis resolution (coordination processes, organizational structures
+and networks of actors, interaction protocols). This step, based on an
+analysis of the nature of information flows between actors, should
+allow to identify generic structures that can be formalized into
+models.
+
+3) The analysis of coordination efficiency. By analyzing actors
+effectiveness in terms of ressources management and accuracy to
+represent the reality, we would like to compare the different
+coordination models. This analysis aims at suggesting process
+improvements and good practices in terms of coordination. This can be
+done through simulations using individual-centered approaches.
+
+References for the PhD thesis
+
+- Benaben, C. Hanachi, M. Lauras, P. Couget, V. Chapurlat, "A
+Metamodel and Its Ontology Guide to Crisis and Its Characterization
+Collaborative Management", Proceedings of the 5th International
+Conference ISCRAM, 2008.
+- Issam Bouslimi, Chihab Hanachi, Hassan Tout, Khaled Ghedira.
+Coordination Framework for Cooperative Information Gathering. In:
+International Journal of Advanced Intelligence Paradigms, Inderscience
+Publishers, V. 1 N. 1, p. 60-79, 2008.
+
+This PhD thesis will be conducted in the framework of a sandwich PhD
+Programme between France and Vietnam and under the supervision of Pr.
+Chihab Hanachi (Universit?  de Toulouse I-Capitole, IRIT, France) as
+well as Dr. Ho Tuong Vinh and Dr. Serge Stinckwich from UMMISCO (IRD,
+Vietnam).
+
+Requirements
+The candidates must have a strong background in Software Engineering
+and Computer Science, and hold an MSc or equivalent diploma. Some
+experience with research is a plus, especially for engineers. English
+writing fluency is a must. English speaking fluency is necessary,
+especially if the applicant does not speak French. Applicants should
+send ASAP their application, the curriculum vitae, statement of
+research interests as a PDF attachment, to Dr. Ho Tuong Vinh
+(tuong.vinh.ho at gmail.com). A recommendation letter from a professor is
+a plus.
+
+From vuhung16plus at gmail.com  Tue Jun  8 23:21:06 2010
+From: vuhung16plus at gmail.com (Nguyen Vu Hung)
+Date: Tue, 8 Jun 2010 23:21:06 +0700
+Subject: [HanoiLUG] Update Virror infor page
+In-Reply-To: <5961756.357.1276012219088.JavaMail.root@z.iwayvietnam.com>
+References: <30862280.355.1276012141213.JavaMail.root@z.iwayvietnam.com>
+	<5961756.357.1276012219088.JavaMail.root@z.iwayvietnam.com>
+Message-ID: <AANLkTinyRXuv2C2EGYNq7bCBTggqSZDj6WBa-qzlia7B@mail.gmail.com>
+
+On Tue, Jun 8, 2010 at 10:50 PM, Truong Anh. Tuan <tuanta at iwayvietnam.com>wrote:
+
+>
+> ----- Original Message -----
+> > From: "Truong Anh. Tuan" <tuanta at iwayvietnam.com>
+> >
+> > Please update this page: http://virror.hanoilug.org/#fedora
+>
+> And also this: http://virror.hanoilug.org/#centos
+>
+> D?o n?y b?c Jean ?t check email th? ph?i.
+H?m r?i g?p c?ng kh?ng n?i chuy?n ???c nhi?u.
+
+
+-- 
+Best Regards,
+Nguyen Hung Vu [aka: NVH] ( in Vietnamese: Nguy?n V? H?ng )
+vuhung16plus{remove}@gmail.dot.com
+<vuhung16plus%7Bremove%7D at gmail.dot.com>, YIM: vuhung16 , Skype:
+vuhung16plus
+A brief profile: http://www.hn.is.uec.ac.jp/~vuhung/Nguyen.Vu.Hung.html
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100608/4df8ded7/attachment.htm>
+
+From serge.stinckwich at gmail.com  Wed Jun  9 09:01:05 2010
+From: serge.stinckwich at gmail.com (Serge Stinckwich)
+Date: Wed, 9 Jun 2010 09:01:05 +0700
+Subject: [HanoiLUG] Fwd: [JOB] We are Looking for a Pharo Engineer
+In-Reply-To: <375c0ba6-4eb9-4dd8-bf58-c1acd22e6fcc@k39g2000yqb.googlegroups.com>
+References: <375c0ba6-4eb9-4dd8-bf58-c1acd22e6fcc@k39g2000yqb.googlegroups.com>
+Message-ID: <AANLkTinB5GKW_ZNk9CkEzpkFuGJ5XUIy0R2gV6gGXAz6@mail.gmail.com>
+
+---------- Forwarded message ----------
+From: Marcus Denker <marcus.denker at gmail.com>
+Date: Tue, Jun 8, 2010 at 9:09 PM
+Subject: [JOB] We are Looking for a Pharo Engineer
+To: Smalltalk-fr <smalltalk-fr at googlegroups.com>
+
+
+From: Marcus Denker <marcus.denker at inria.fr>
+Date: June 7, 2010 3:48:39 PM GMT+02:00
+To: "Pharo-project at lists.gforge.inria.fr Development" <Pharo-
+project at lists.gforge.inria.fr>
+Subject: [JOB] We are Looking for a Pharo Engineer
+
+Hello,
+
+INRIA RMOD is looking for a full-time engineer for helping with Pharo
+development. As researchers, we need a really great
+system to explore new ideas with. The job of the engineer is to help
+us by improving the infrastructure we use for our work.
+
+What this of course means is that it's kind of a cool job: work in a
+research lab, but no paper writing, no teaching,
+no administration. In addition:
+
+? ?- live in France (one hour from Paris, 1h20 from London, 35 min
+from Brussels)
+? ?- try a lot of good beers (our office is just 10km from the border
+to Belgium)
+? ?- french food
+? ?- code all the day in Smalltalk and a bit of C
+
+Apparently from what the DHR services told us, the salary will depend
+on years of expertise and diplomas.
+We can think that 2700 Euros (before final taxes) should be a good
+working number for a candidate of the experience
+we are looking for. In France the employer pays already social
+security and pension.
+So the salary already includes lots (and lots) of deductions compared
+to e.g. a german brutto salary.
+
+Lille is an active city but not expensive (lot of students...),
+centrally located with good connections
+by train to everywhere (including CDG and Brussels airports).
+
+The job will to continue making Pharo better
+? ? ?- better tools
+? ? ?- better network support
+? ? ?- better compiler infrastructure
+? ? ?- improve the VM
+? ? ?- help with day-to-day bug fixing and constant improvement
+
+Therefore we are looking for a candidate with some years of Smalltalk
+(possible Pharo/Squeak) background.
+
+Duration: 30 months
+Starting date: October 2010
+Location: Lille (no remote job possible)
+Fpr Official Job Description and Application see:
+http://rmod.lille.inria.fr/web/pier/blog/2010-06-07
+Deadline: 15 July 2010
+
+More about
+? ? ? ?INRIA Lille: http://www.inria.fr/lille/
+? ? ? ?INRIA in General: http://www.inria.fr
+? ? ? ?Engineers at INRIA:
+http://www.inria.fr/travailler/metiers/accompagnement/dev_applications.en.html
+? ? ? ?Lille: http://en.wikipedia.org/wiki/Lille
+? ? ? ? ? ? ? ? ? http://www.mairie-lille.fr/en
+? ? ? ? ? ? ? ? ? http://wikitravel.org/en/Lille
+
+Do not hesitate to contact us for more information.
+
+Stef/Marcus
+
+--
+Marcus Denker ?-- http://www.marcusdenker.de
+INRIA Lille -- Nord Europe. Team RMoD.
+
+
+
+-- 
+Serge Stinckwich
+UMI UMMISCO 209 (IRD/UPMC), Hanoi, Vietnam
+Every DSL ends up being Smalltalk
+http://doesnotunderstand.org/
+
+From vuhung at vinicorp.com.vn  Wed Jun  9 09:08:59 2010
+From: vuhung at vinicorp.com.vn (Nguyen Vu Hung)
+Date: Wed, 09 Jun 2010 09:08:59 +0700
+Subject: [HanoiLUG] Fwd: [JOB] We are Looking for a Pharo Engineer
+In-Reply-To: <AANLkTinB5GKW_ZNk9CkEzpkFuGJ5XUIy0R2gV6gGXAz6@mail.gmail.com>
+References: <375c0ba6-4eb9-4dd8-bf58-c1acd22e6fcc@k39g2000yqb.googlegroups.com>
+	<AANLkTinB5GKW_ZNk9CkEzpkFuGJ5XUIy0R2gV6gGXAz6@mail.gmail.com>
+Message-ID: <4C0EF7BB.4080901@vinicorp.com.vn>
+
+  (2010/06/09 9:01), Serge Stinckwich wrote:
+> INRIA RMOD is looking for a full-time engineer for helping with Pharo
+> development.
+Hi,
+
+Thanks for the info. Looks like a fantastic position.
+
+You are most welcome to post open source related job to the list
+as long as you put a word "[JOB]" in the subject.
+
+Regards,
+
+-- 
+**********************************************************************
+
+Viet Nhat General Joint Stock Company (Vinicorp)
+
+Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+
+Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+
+Nguyen Vu Hung
+
+Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+
+***********************************************************************
+
+
+
+From serge.stinckwich at gmail.com  Wed Jun  9 09:09:43 2010
+From: serge.stinckwich at gmail.com (Serge Stinckwich)
+Date: Wed, 9 Jun 2010 09:09:43 +0700
+Subject: [HanoiLUG] Fwd: [JOB] We are Looking for a Pharo Engineer
+In-Reply-To: <4C0EF7BB.4080901@vinicorp.com.vn>
+References: <375c0ba6-4eb9-4dd8-bf58-c1acd22e6fcc@k39g2000yqb.googlegroups.com>
+	<AANLkTinB5GKW_ZNk9CkEzpkFuGJ5XUIy0R2gV6gGXAz6@mail.gmail.com> 
+	<4C0EF7BB.4080901@vinicorp.com.vn>
+Message-ID: <AANLkTik8v1Y4Hm7uBAIusC4aZXQndn1bndWug8qE619n@mail.gmail.com>
+
+On Wed, Jun 9, 2010 at 9:08 AM, Nguyen Vu Hung <vuhung at vinicorp.com.vn> wrote:
+> ?(2010/06/09 9:01), Serge Stinckwich wrote:
+>>
+>> INRIA RMOD is looking for a full-time engineer for helping with Pharo
+>> development.
+>
+> Hi,
+>
+> Thanks for the info. Looks like a fantastic position.
+
+Pharo is an open-source Smalltalk.
+
+> You are most welcome to post open source related job to the list
+> as long as you put a word "[JOB]" in the subject.
+
+ok, i will do.
+
+Regards
+-- 
+Serge Stinckwich
+UMI UMMISCO 209 (IRD/UPMC), Hanoi, Vietnam
+Every DSL ends up being Smalltalk
+http://doesnotunderstand.org/
+
+From serge.stinckwich at gmail.com  Wed Jun  9 12:09:26 2010
+From: serge.stinckwich at gmail.com (Serge Stinckwich)
+Date: Wed, 9 Jun 2010 12:09:26 +0700
+Subject: [HanoiLUG] 1st OLPC Vietnam developers meeting
+Message-ID: <AANLkTin0iiBoP8_m1xUPOt46G2tBhAQJ5Gy7l5brntYy@mail.gmail.com>
+
+Hi all,
+we were around 15 people for the 1st meeting of OLPC Vietnam developers.
+I put some pictures of the event here:
+http://www.facebook.com/album.php?aid=221797&id=538054947&l=7d2be59155
+
+I made a short presentation of the OLPC project and a report of my
+visit to the Vung Vieng village.
+My slides (report of the VV village visit) are available here:
+http://www.slideshare.net/SergeStinckwich/visit-to-vung-vieng-village-olpc-vietnam
+
+The conclusions of my visit are as following:
+- every XOs are working and are used everyday by kids. They really enjoyed it.
+- XOs are not part of a curriculum. This is more a leisure actitivity
+at the moment.
+- there is a problem with the local teachers: they only stay one year
+in the village. We need to train them every year. Teachers need to be
+more involved in the use of XOs in the classroom.
+- Only a limited set of activities seems to be used by the children.
+There is not enough vietnamese activities
+- XOs need to be update to newer versions of Sugar (0.82.1 => 0.88).
+We need to select specific activities (with good vn translation) and
+write some pedagogical documentation.
+
+We also made some demos of the Sugar environment (on Linux & XOs).
+Some students present at the meeting are particularly interested in
+developing Sugar applications.
+
+One of the conclusion of this meeting is that we need to grow the
+user&developer Sugar community in order to have more vietnamese
+contents. This will be one our top priorities of the next months.
+
+Regards
+-- 
+Serge Stinckwich
+UMI UMMISCO 209 (IRD/UPMC), Hanoi, Vietnam
+Every DSL ends up being Smalltalk
+http://doesnotunderstand.org/
+
+From vu.do.quynh at auf.org  Wed Jun  9 15:18:02 2010
+From: vu.do.quynh at auf.org (Vu Do Quynh)
+Date: Wed, 09 Jun 2010 15:18:02 +0700
+Subject: [HanoiLUG] 1st OLPC Vietnam developers meeting
+In-Reply-To: <AANLkTin0iiBoP8_m1xUPOt46G2tBhAQJ5Gy7l5brntYy@mail.gmail.com>
+References: <AANLkTin0iiBoP8_m1xUPOt46G2tBhAQJ5Gy7l5brntYy@mail.gmail.com>
+Message-ID: <4C0F4E3A.5060901@auf.org>
+
+Le 09/06/2010 12:09, Serge Stinckwich a ?crit :
+
+> The conclusions of my visit are as following:
+> - every XOs are working and are used everyday by kids. They really enjoyed it.
+
+Great to know that.
+
+> - XOs are not part of a curriculum. This is more a leisure actitivity
+> at the moment.
+
+As there are not enough XOs and that children cannot bring them home, 
+using the XOs for leisure activities (in rotation?) seems OK here.
+
+> - there is a problem with the local teachers: they only stay one year
+> in the village. We need to train them every year. Teachers need to be
+> more involved in the use of XOs in the classroom.
+
+This calls for developing short manuals about the XOs and about Sugar at 
+the minimum. These manuals already exist on Flossmanuals and can be 
+translated there:
+
+http://en.flossmanuals.net/
+
+It's also easy to copy paste the web pages to produce editable ODT 
+documents that can be easily modified and translated. The bulk of the 
+Sugar document is made of screenshots.
+
+> - Only a limited set of activities seems to be used by the children.
+> There is not enough vietnamese activities
+
+About primary activities that could use vietnamese language, reading 
+vietnamese children books (e.g. PDF format) could be developed.
+
+Many starting activities do not really need writing yet, for young 
+children especially.
+
+> - XOs need to be update to newer versions of Sugar (0.82.1 => 0.88).
+> We need to select specific activities (with good vn translation) and
+> write some pedagogical documentation.
+> 
+> We also made some demos of the Sugar environment (on Linux & XOs).
+> Some students present at the meeting are particularly interested in
+> developing Sugar applications.
+> 
+> One of the conclusion of this meeting is that we need to grow the
+> user&developer Sugar community in order to have more vietnamese
+> contents. This will be one our top priorities of the next months.
+
+If there are young parents among Hanoilug, or if you know of young 
+parents, it would be useful that you test and promote the use of Sugar 
+with young children (Sugar has been designed for children from 6 to 12 
+years old : that's quite a range. But you can always give to younger 
+children to use as some activities could already be used, under 
+guidance, for 4 years old children).
+
+You do not need to have an XOs to use Sugar : you can either use Sugar 
+on a Stick (live USB but with no persistent file) or Trisquel with Sugar 
+on Toast (live USB with persistent file), or have a dual installation of 
+Trisquel 3.5 Arwen (based on Ubuntu 9.10), then install the package 
+trisquel-sugar to have a functional Sugar session environment (do not 
+test yet on Lucid Lynx => some issues with the mouse click).
+
+You can contact me to have "Sugar on a Stick Mirabelle", Trisquel-Toast 
+or Trisquel 3.5 Arwen installed as a live USB (1 GB).
+
+Links:
+
+http://wiki.sugarlabs.org/go/Trisquel_On_A_Sugar_Toast
+http://trisquel.info/
+
+
+
+-- 
+M. VU DO Quynh
+AUF (T? ch?c h?p t?c ?H Ph?p ng?)
+Campus num?rique francophone (CNF) de Hanoi
+Nh? D, ng? 42 T? Quang B?u
+T?l.: (84-4) 38.68.48.85 ; Fax: (84-4) 38.69.45.09
+http://www.vn.refer.org/vietnam/
+
+
+From thaitq at asianux.org.vn  Fri Jun 11 13:47:12 2010
+From: thaitq at asianux.org.vn (Thai Ta)
+Date: Fri, 11 Jun 2010 13:47:12 +0700
+Subject: [HanoiLUG] Co anh/chi nao giai thich gium em khong a
+Message-ID: <AANLkTinPJR8PYC67l_NRbxyvNWZDeQUrEhjy0F18Jc_w@mail.gmail.com>
+
+Dear c?c anh/ch?,
+
+M?y h?m nay c? vi?c ?i l??n qua m?t s? c?ng th?ng tin ?i?n t? khi ??n L?o
+Cai th? th?y th? n?y (file ?nh k?m theo):
+
+http://portal.laocai.gov.vn:2009/home/vn/news/pages/viewnews.aspx?nId=25727&cid=658&g=29;586;594;53;31;597
+;
+
+Em m?i s?c nh? ra r?ng c?i c?ng n?y ?? c? m?t th?i khai tr??ng r?m r? v?
+???c ??u t? h?ng ch?c t? ??ng m? b?y gi? l?i nh? v?y sao.
+
+C? anh/ch? n?o bi?t vi?c n?y gi?i th?ch gi?m em v?i ?.
+
+e.Th?i
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100611/2e6dd4d8/attachment-0001.htm>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: Screenshot.png
+Type: image/png
+Size: 116537 bytes
+Desc: not available
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100611/2e6dd4d8/attachment-0001.png>
+
+From fanzung at gmail.com  Sat Jun 12 12:52:23 2010
+From: fanzung at gmail.com (Phan Anh Dung)
+Date: Sat, 12 Jun 2010 12:52:23 +0700
+Subject: [HanoiLUG] Co anh/chi nao giai thich gium em khong a
+In-Reply-To: <AANLkTinPJR8PYC67l_NRbxyvNWZDeQUrEhjy0F18Jc_w@mail.gmail.com>
+References: <AANLkTinPJR8PYC67l_NRbxyvNWZDeQUrEhjy0F18Jc_w@mail.gmail.com>
+Message-ID: <AANLkTil46DPSPpgVEs0FP31b58W0Ji3dONtUBqqIch_f@mail.gmail.com>
+
+2010/6/11 Thai Ta <thaitq at asianux.org.vn>
+
+> Dear c?c anh/ch?,
+>
+> M?y h?m nay c? vi?c ?i l??n qua m?t s? c?ng th?ng tin ?i?n t? khi ??n L?o
+> Cai th? th?y th? n?y (file ?nh k?m theo):
+>
+>
+> http://portal.laocai.gov.vn:2009/home/vn/news/pages/viewnews.aspx?nId=25727&cid=658&g=29;586;594;53;31;597
+> ;
+>
+> Em m?i s?c nh? ra r?ng c?i c?ng n?y ?? c? m?t th?i khai tr??ng r?m r? v?
+> ???c ??u t? h?ng ch?c t? ??ng m? b?y gi? l?i nh? v?y sao.
+>
+> C? anh/ch? n?o bi?t vi?c n?y gi?i th?ch gi?m em v?i ?.
+>
+> Thay c?ng s? :2009 ? tr?n th?nh :8080 th? v?o ???c.
+C? l? h? x?i t?m s? c?ng 2009 khi th? portal, b?c thaitq l?c ???c c?i link
+?? trong cache c?a google  ? ?
+T?i c?ng ch?ng th?ch th? g? c?i portal ??, v?y b?c c? th? gi?i thi?u cho m?t
+c?i portal FOSS n?o hay h?n ?
+
+-- 
+Phan Anh D?ng
+R&D Department, Huesoft
+(Trung t?m C?ng ngh? Th?ng tin Th?a Thi?n Hu?)
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100612/42de4832/attachment.htm>
+
+From hoang281283 at gmail.com  Sat Jun 12 16:19:12 2010
+From: hoang281283 at gmail.com (MinhHoang To)
+Date: Sat, 12 Jun 2010 16:19:12 +0700
+Subject: [HanoiLUG] Co anh/chi nao giai thich gium em khong a
+In-Reply-To: <AANLkTil46DPSPpgVEs0FP31b58W0Ji3dONtUBqqIch_f@mail.gmail.com>
+References: <AANLkTinPJR8PYC67l_NRbxyvNWZDeQUrEhjy0F18Jc_w@mail.gmail.com>
+	<AANLkTil46DPSPpgVEs0FP31b58W0Ji3dONtUBqqIch_f@mail.gmail.com>
+Message-ID: <AANLkTimjVE5pq5eyaKZOcrSvqRBmpyLyriqtNYABwOBQ@mail.gmail.com>
+
+ Cai nay co the goi la 1 website binh thuong thi dung hon. Tren giao dien no
+ko phan thanh
+cac module doc lap voi nhau theo nhu dung dinh nghia cua 1 portal. Thu so
+sanh voi giao dien cua cai trang BBC ( phan chia giao dien thanh cac module
+doc lap theo dung nhu concept cua portal)
+
+http://www.bbc.co.uk/
+
+
+-- 
+Minh Hoang TO
+eXoPlatform SAS, tang 8, building 18, Thai Ha, Ha Noi
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100612/bd5c8669/attachment.htm>
+
+From al9123email at gmail.com  Sun Jun 13 16:37:24 2010
+From: al9123email at gmail.com (Hoa Dang)
+Date: Sun, 13 Jun 2010 16:37:24 +0700
+Subject: [HanoiLUG] Co anh/chi nao giai thich gium em khong a
+In-Reply-To: <AANLkTimjVE5pq5eyaKZOcrSvqRBmpyLyriqtNYABwOBQ@mail.gmail.com>
+References: <AANLkTinPJR8PYC67l_NRbxyvNWZDeQUrEhjy0F18Jc_w@mail.gmail.com>
+	<AANLkTil46DPSPpgVEs0FP31b58W0Ji3dONtUBqqIch_f@mail.gmail.com>
+	<AANLkTimjVE5pq5eyaKZOcrSvqRBmpyLyriqtNYABwOBQ@mail.gmail.com>
+Message-ID: <AANLkTimi90LuXi3e3tj_V-kcxeEQQedUbq_GLhoqLx7b@mail.gmail.com>
+
+N?u truy c?p b?ng ??a ch? http://portal.laocai.gov.vn th? s? d?n ??n trang
+b? l?i. Truy c?p b?ng ??a ch? n?y: http://laocai.gov.vn th? kh?ng c? v?n ??
+g?.
+
+Vi?c ph?n th?nh c?c module ??c l?p g? ?? nh? b?n MinhHoang To n?i th? t?i
+ngh? c?ng ch? l? h?nh th?c. ?? l? v?n ?? k? thu?t. Vi?c ??nh gi? n?n ??t ?
+hi?u qu? s? d?ng v? c?c d?ch v? m? n? cung c?p. C?ng TT?T L?o Cai cung c?p
+nhi?u d?ch v? c?ng tr?c tuy?n h?u ?ch. C?c b?c xem ? ??y:
+http://portal.laocai.gov.vn:8080/service/vn/online/pages/default.aspx
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100613/a15c2dbe/attachment.htm>
+
+From jean-christophe.andre at auf.org  Mon Jun 14 11:24:01 2010
+From: jean-christophe.andre at auf.org (Jean Christophe =?utf-8?b?QW5kcsOp?=)
+Date: Mon, 14 Jun 2010 11:24:01 +0700
+Subject: [HanoiLUG] Update Virror infor page
+In-Reply-To: <AANLkTinyRXuv2C2EGYNq7bCBTggqSZDj6WBa-qzlia7B@mail.gmail.com>
+References: <30862280.355.1276012141213.JavaMail.root@z.iwayvietnam.com>
+	<5961756.357.1276012219088.JavaMail.root@z.iwayvietnam.com>
+	<AANLkTinyRXuv2C2EGYNq7bCBTggqSZDj6WBa-qzlia7B@mail.gmail.com>
+Message-ID: <20100614112401.88332ev24s2g3myo@www.vn.auf.org>
+
+"Nguyen Vu Hung" <vuhung16plus at gmail.com> a ?crit?:
+> H?m r?i g?p c?ng kh?ng n?i chuy?n ???c nhi?u.
+
+Hi?n nay anh ?ang c? h?n 6000 th? anh ch?a ??c...
+???ng nhi?n kh?ng ph?i tr? l?i t?t c? m? anh v?n
+ph?i ki?m tra h?t c?c th? ??...
+
+Anh ?ang ??c ng??c t? m?i nh?t ??n c? nh?t.
+Th? ho?c ch? kho?ng m?t tu?n n?a ho?c g?i l?i cho anh
+c?i n?o c? vi?c c?n l?m s?m h?n (n?u c? kh?n c?p n?o).
+
+Mong c?c b?n nh?n l?i hi?u... J.C.
+-- 
+Jean Christophe Andr? - Responsable technique r?gional
+Agence universitaire de la Francophonie - Bureau Asie-Pacifique
+
+
+From vuhung at vinicorp.com.vn  Mon Jun 14 12:06:43 2010
+From: vuhung at vinicorp.com.vn (Nguyen Vu Hung)
+Date: Mon, 14 Jun 2010 12:06:43 +0700
+Subject: [HanoiLUG] Update Virror infor page
+In-Reply-To: <20100614112401.88332ev24s2g3myo@www.vn.auf.org>
+References: <30862280.355.1276012141213.JavaMail.root@z.iwayvietnam.com>	<5961756.357.1276012219088.JavaMail.root@z.iwayvietnam.com>	<AANLkTinyRXuv2C2EGYNq7bCBTggqSZDj6WBa-qzlia7B@mail.gmail.com>
+	<20100614112401.88332ev24s2g3myo@www.vn.auf.org>
+Message-ID: <4C15B8E3.9020305@vinicorp.com.vn>
+
+  (2010/06/14 11:24), Jean Christophe Andr? wrote:
+> "Nguyen Vu Hung" <vuhung16plus at gmail.com> a ?crit :
+>> H?m r?i g?p c?ng kh?ng n?i chuy?n ???c nhi?u.
+>
+> Hi?n nay anh ?ang c? h?n 6000 th? anh ch?a ??c...
+> ???ng nhi?n kh?ng ph?i tr? l?i t?t c? m? anh v?n
+> ph?i ki?m tra h?t c?c th? ??...
+>
+C?c th?ng tin em c?n:
+
+1. Reset l?i username/password c?a em v?o Hanoilug ML.
+2. C?p nh?t th?ng tin:
+http://virror.hanoilug.org/#centos
+http://virror.hanoilug.org/#fedora
+-> Anh Tu?n ?ang care ph?n n?y -> anh care lu?n ??, ??ng ?? Jean overload.
+
+> Anh ?ang ??c ng??c t? m?i nh?t ??n c? nh?t.
+> Th? ho?c ch? kho?ng m?t tu?n n?a ho?c g?i l?i cho anh
+> c?i n?o c? vi?c c?n l?m s?m h?n (n?u c? kh?n c?p n?o).
+>
+Kh?ng c? email n?o g?p ??u ?. Ch? v? th?y anh ?t email th?i.
+
+BR, V? H?ng
+
+-- 
+**********************************************************************
+
+Viet Nhat General Joint Stock Company (Vinicorp)
+
+Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+
+Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+
+Nguyen Vu Hung
+
+Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+
+***********************************************************************
+
+
+
+From jean-christophe.andre at auf.org  Mon Jun 14 15:43:26 2010
+From: jean-christophe.andre at auf.org (Jean Christophe =?utf-8?b?QW5kcsOp?=)
+Date: Mon, 14 Jun 2010 15:43:26 +0700
+Subject: [HanoiLUG] Update Virror infor page
+In-Reply-To: <4C15D5EC.4000103@vinicorp.com.vn>
+References: <30862280.355.1276012141213.JavaMail.root@z.iwayvietnam.com>
+	<5961756.357.1276012219088.JavaMail.root@z.iwayvietnam.com>
+	<AANLkTinyRXuv2C2EGYNq7bCBTggqSZDj6WBa-qzlia7B@mail.gmail.com>
+	<20100614112401.88332ev24s2g3myo@www.vn.auf.org>
+	<4C15B8E3.9020305@vinicorp.com.vn>
+	<20100614140627.205269kkyuklp0qo@www.vn.auf.org>
+	<4C15D5EC.4000103@vinicorp.com.vn>
+Message-ID: <20100614154326.19668w7ydygt17zk@www.vn.auf.org>
+
+"Nguyen Vu Hung" <vuhung at vinicorp.com.vn> a ?crit?:
+>>> 2. C?p nh?t th?ng tin:
+>>> http://virror.hanoilug.org/#centos
+>>> http://virror.hanoilug.org/#fedora
+>>> -> Anh Tu?n ?ang care ph?n n?y -> anh care lu?n ??, ??ng ?? Jean overload.
+>>
+>> Tu?n kh?ng c? quy?n s?a trang ch?nh (b?i v? n?m ? v?ng ?o ri?ng).
+> Anh b?n qu? th? "??" b?t vi?c cho ng??i kh?c th? d? h?n.
+
+Anh ?? chia trang ch?nh ?? cho Tu?n s?a ???c ph?n CentOS v? Fedora.
+(s?a trong 2 t?p centos/index.html v? fedora/index.html)
+(5 ph?t m?t l?n, h? th?ng s? ki?m tra 2 t?p ?? l?n trang ch?nh)
+-- 
+Jean Christophe Andr? - Responsable technique r?gional
+Agence universitaire de la Francophonie - Bureau Asie-Pacifique
+
+
+From jean-christophe.andre at auf.org  Tue Jun 15 08:04:31 2010
+From: jean-christophe.andre at auf.org (Jean Christophe =?utf-8?b?QW5kcsOp?=)
+Date: Tue, 15 Jun 2010 08:04:31 +0700
+Subject: [HanoiLUG] =?utf-8?b?SOG7j2kgduG7gSBjw6FjaCAJZm9yd2FyZCBtYWls?=
+In-Reply-To: <SNT131-w80DD5DB6306C6A0AECEC9D0DC0@phx.gbl>
+References: <30862280.355.1276012141213.JavaMail.root@z.iwayvietnam.com>,
+	<5961756.357.1276012219088.JavaMail.root@z.iwayvietnam.com>,
+	<AANLkTinyRXuv2C2EGYNq7bCBTggqSZDj6WBa-qzlia7B@mail.gmail.com>,
+	<20100614112401.88332ev24s2g3myo@www.vn.auf.org>,
+	<4C15B8E3.9020305@vinicorp.com.vn>,
+	<20100614140627.205269kkyuklp0qo@www.vn.auf.org>,
+	<4C15D5EC.4000103@vinicorp.com.vn>,
+	<20100614154326.19668w7ydygt17zk@www.vn.auf.org>
+	<SNT131-w80DD5DB6306C6A0AECEC9D0DC0@phx.gbl>
+Message-ID: <20100615080431.50141jrpkxmsl21s@www.vn.auf.org>
+
+     Ch?o em,
+
+"trung gik" <trunggik at hotmail.com> a ?crit?:
+> Anh ?i em mu?n h?i ch?t v? SquirrelMail.
+
+Anh kh?ng bi?t nhi?u v? SquirelMail nh?...
+
+> L?n tr??c em c? h?i anh v? mailserver, hi?n nay em ?ang c?i
+> SquirrelMail 1.4.15 + dovecode + spam... tr?n Debian.
+
+dovecot + postfix + postgrey + amavisd-new + spamassassin + clamav
+
+> Hi?n nay em ?ang g?p r?c d?i 1 ch?t v?i n?. Em mu?n forward email t?  
+> h?m th? em t?o ra t?i 1 h?m th? th? 2 (v? d?: trunggik at hotmail.com).  
+> Vi?c n?y th? SquirrelMail c? h? tr? xong n? c? m?t nh??c ?i?m l?  
+> email khi g?i t?i h?m th? 1 th? ngay l?p t?c chuy?n qua h?m th? s? 2  
+> m? ko l?u l?i tr?n h?m th? 1. Em mu?n ngo?i vi?c forward email ?i  
+> th? n? s? l?u 1 b?n l?i tr?n inbox c?a h?m th? 1.
+> Em ch?a c? ? t??ng g? cho c?i n?y, anh c? th? cho em ? t??ng g? kh?ng?
+
+SquirelMail l? m?t ph?n m?m ?? _??c_ v? _vi?t_ th? t? xa qua web.
+SquirelMail kh?ng n?n h? tr? g? v? chuy?n th? !
+
+Ph?n forward l? m?t vi?c c?a MTA, v? d? postfix ??y.
+M?t c?ch l?m forward l? t?o m?t t?p .forward trong homedir.
+M?t c?ch kh?c l? d?ng virtual c?a postfix.
+
+N?u mu?n gi? m?t b?n th? ch? c?n th?m t?n c?a h?m th? th? 1
+trong forward, v? d? :
+   giangtrung: giangtrung, trunggik at hotmail.com
+
+Postfix, ho?c MTA g? ??, s? th?y b?n ph?i c? c?ng h?m th? c?a b?n
+tr?i v? s? c?n th?n kh?ng ?? quy.
+
+Th?n ?i, J.C.
+-- 
+Jean Christophe Andr? - Responsable technique r?gional
+Agence universitaire de la Francophonie - Bureau Asie-Pacifique
+
+
+From pham.bich.lien at auf.org  Tue Jun 15 11:46:12 2010
+From: pham.bich.lien at auf.org (Pham Bich Lien)
+Date: Tue, 15 Jun 2010 11:46:12 +0700
+Subject: [HanoiLUG] =?utf-8?b?Q3Xhu5ljIGfhurdwIGfhu6EgUGjhuqduIG3hu4FtIHQ=?=
+ =?utf-8?b?4buxIGRvIDE5LzY=?=
+Message-ID: <4C170594.3070408@auf.org>
+
+Ch?o c?c b?n,
+
+Cu?c G?p g? Ph?n m?m t? do ngu?n m? (PMTDNM) l?n ??u ti?n s? ???c t? 
+ch?c t?i Trung t?m v?n h?a Ph?p H? N?i ng?y 19 th?ng 06/2010  v?o l?c 
+14g30. ??y s? l? c? h?i ?? kh?m ph? ti?m n?ng c?a PMTDNM trong l?nh v?c 
+?a truy?n th?ng :
+
+Ng??i tham gia
+
+    *  s? ???c nghe m?t b?o c?o ( ?? ??ng k? ?? thuy?t tr?nh t?i cu?c
+      G?p g? PMTDNM th? gi?i, t? ch?c t?i Bordeaux v?o th?ng 7/2010 t?i)
+      do ?ng Francis Dufeil (Hanoilug) tr?nh b?y.
+
+    *  s? c? c? h?i xem v? sao ch?p phim ho?t h?nh Big Buck Bunny, ???c
+      s?n xu?t b?ng nh?ng PMTDNM.
+
+    *  s? c? kh? n?ng t? t?o ra m?t r?p chi?u ?nh v? phim t?i nh? v?i 1
+      live CD Element ? 1.2
+
+Ngo?i ra,  trong d?p n?y,  Trung t?m CNF s? t? ch?c r?t th?m tr?ng 
+th??ng 3 ? USB 2 GB ?? c?i s?n Element OS 1.2, cho ph?p kh?i ??ng m?y 
+t?nh (kh?ng c?n c?i ??t, kh?ng ?nh h??ng ??n ? c?ng) ?? bi?n n? th?nh 
+m?t Home Theater PC k?t n?i v?i internet
+
+?? bi?t th?m th?ng tin chi ti?t, c?c b?n c? th? t?i trang: 
+http://hanoi.centre-linux.org/article.php3?id_article=120
+
+v? t?i t? gi?i thi?u Cu?c g?p g? ?a ph??ng ti?n m? t?i H? N?i trong file 
+??nh k?m.
+
+R?t mong nh?n ???c s? quan t?m c?a c?c b?n.
+
+-- 
+Pham Thi Bich Lien
+Agence universitaire de la Francophonie, Bureau Asie Pacifique
+Campus num?rique francophone (CNF) de Hanoi
+IFI - Rez de chauss?e
+Ngo 42, Ta Quang Buu
+Q. Hai Ba Trung, Hanoi
+T?l: +84-4-3 868.48.85 ; T?l?copie: +84-4-3 869.45.09
+Sites de toile: http://www.vn.refer.org/
+
+-------------- section suivante --------------
+Une pi?ce jointe HTML a ?t? nettoy?e...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100615/f833d263/attachment-0001.htm>
+-------------- section suivante --------------
+Une pi?ce jointe autre que texte a ?t? nettoy?e...
+Nom: CuocGapGoMultimediaLibre.pdf
+Type: application/pdf
+Taille: 229270 octets
+Desc: non disponible
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100615/f833d263/attachment-0001.pdf>
+
+From jean-christophe.andre at auf.org  Tue Jun 15 16:16:41 2010
+From: jean-christophe.andre at auf.org (Jean Christophe =?utf-8?b?QW5kcsOp?=)
+Date: Tue, 15 Jun 2010 16:16:41 +0700
+Subject: [HanoiLUG]
+	=?utf-8?b?SOG7j2kgduG7gSBIQVZQICsgQ2xhbUFWICsgU3F1aWQg?=
+	=?utf-8?q?tr=C3=AAn_Debian?=
+In-Reply-To: <AANLkTilxLzrI8BVqTwlSxLeFpJhZDx7wiaYwPKt7-PF9@mail.gmail.com>
+References: <AANLkTilxLzrI8BVqTwlSxLeFpJhZDx7wiaYwPKt7-PF9@mail.gmail.com>
+Message-ID: <20100615161641.81486d7sn2gimku8@www.vn.auf.org>
+
+"B?i ??ng Chung" <buidangchung at gmail.com> a ?crit?:
+> Ph?i ch?ng do xung ??t gi? th? vi?n LibClamAV c?a HAVP (libclamav5)
+> v? th? vi?n LibClamAV c?a ClamAV (libclamav6)?
+> Mong m?i ng??i gi?p em fix l?i n?y. Em xin c?m ?n
+
+Em ph?i l?m theo c?c th?ng tin trong bugreport em ?? cho bi?t :
+   http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=578036#20
+
+Ngh?a l? em ph?i d?ng ngu?n g?i c?a d? ?n Debian volatile :
+   deb http://volatile.debian.org/debian-volatile lenny/volatile main
+
+Sau khi em ?? th?m ngu?n ?? trong /etc/apt/sources.list v? ch?y
+aptitude update th? em s? m?i ???c c? ??ng phi?n b?n c?a HAVP.
+-- 
+Jean Christophe Andr? - Responsable technique r?gional
+Agence universitaire de la Francophonie - Bureau Asie-Pacifique
+
+
+From trunggik at hotmail.com  Tue Jun 15 18:38:59 2010
+From: trunggik at hotmail.com (trung gik)
+Date: Tue, 15 Jun 2010 18:38:59 +0700
+Subject: [HanoiLUG] =?utf-8?b?SOG7j2kgduG7gSBjw6FjaAlmb3J3YXJkIG1haWw=?=
+In-Reply-To: <20100615080431.50141jrpkxmsl21s@www.vn.auf.org>
+References: <30862280.355.1276012141213.JavaMail.root@z.iwayvietnam.com>,
+	<5961756.357.1276012219088.JavaMail.root@z.iwayvietnam.com>,
+	<AANLkTinyRXuv2C2EGYNq7bCBTggqSZDj6WBa-qzlia7B@mail.gmail.com>,
+	<20100614112401.88332ev24s2g3myo@www.vn.auf.org>,
+	<4C15B8E3.9020305@vinicorp.com.vn>,
+	<20100614140627.205269kkyuklp0qo@www.vn.auf.org>,
+	<4C15D5EC.4000103@vinicorp.com.vn>,
+	<20100614154326.19668w7ydygt17zk@www.vn.auf.org>,
+	<SNT131-w80DD5DB6306C6A0AECEC9D0DC0@phx.gbl>,
+	<20100615080431.50141jrpkxmsl21s@www.vn.auf.org>
+Message-ID: <SNT131-w34F7FA51DFDB1FE3BEA70DD0DD0@phx.gbl>
+
+
+C?m ?n anh JC nhi?u, :D.
+
+Giang Trung.
+
+
+> Date: Tue, 15 Jun 2010 08:04:31 +0700
+> From: jean-christophe.andre at auf.org
+> To: trunggik at hotmail.com
+> CC: hanoilug at lists.hanoilug.org
+> Subject: Re: H?i v? c?ch	forward mail
+> 
+>      Ch?o em,
+> 
+> "trung gik" <trunggik at hotmail.com> a ?crit :
+> > Anh ?i em mu?n h?i ch?t v? SquirrelMail.
+> 
+> Anh kh?ng bi?t nhi?u v? SquirelMail nh?...
+> 
+> > L?n tr??c em c? h?i anh v? mailserver, hi?n nay em ?ang c?i
+> > SquirrelMail 1.4.15 + dovecode + spam... tr?n Debian.
+> 
+> dovecot + postfix + postgrey + amavisd-new + spamassassin + clamav
+> 
+> > Hi?n nay em ?ang g?p r?c d?i 1 ch?t v?i n?. Em mu?n forward email t?  
+> > h?m th? em t?o ra t?i 1 h?m th? th? 2 (v? d?: trunggik at hotmail.com).  
+> > Vi?c n?y th? SquirrelMail c? h? tr? xong n? c? m?t nh??c ?i?m l?  
+> > email khi g?i t?i h?m th? 1 th? ngay l?p t?c chuy?n qua h?m th? s? 2  
+> > m? ko l?u l?i tr?n h?m th? 1. Em mu?n ngo?i vi?c forward email ?i  
+> > th? n? s? l?u 1 b?n l?i tr?n inbox c?a h?m th? 1.
+> > Em ch?a c? ? t??ng g? cho c?i n?y, anh c? th? cho em ? t??ng g? kh?ng?
+> 
+> SquirelMail l? m?t ph?n m?m ?? _??c_ v? _vi?t_ th? t? xa qua web.
+> SquirelMail kh?ng n?n h? tr? g? v? chuy?n th? !
+> 
+> Ph?n forward l? m?t vi?c c?a MTA, v? d? postfix ??y.
+> M?t c?ch l?m forward l? t?o m?t t?p .forward trong homedir.
+> M?t c?ch kh?c l? d?ng virtual c?a postfix.
+> 
+> N?u mu?n gi? m?t b?n th? ch? c?n th?m t?n c?a h?m th? th? 1
+> trong forward, v? d? :
+>    giangtrung: giangtrung, trunggik at hotmail.com
+> 
+> Postfix, ho?c MTA g? ??, s? th?y b?n ph?i c? c?ng h?m th? c?a b?n
+> tr?i v? s? c?n th?n kh?ng ?? quy.
+> 
+> Th?n ?i, J.C.
+> -- 
+> Jean Christophe Andr? - Responsable technique r?gional
+> Agence universitaire de la Francophonie - Bureau Asie-Pacifique
+> 
+ 		 	   		  
+_________________________________________________________________
+Hotmail: Powerful Free email with security by Microsoft.
+https://signup.live.com/signup.aspx?id=60969
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100615/bc494c0d/attachment.htm>
+
+From jean-christophe.andre at auf.org  Wed Jun 16 09:12:16 2010
+From: jean-christophe.andre at auf.org (Jean Christophe =?utf-8?b?QW5kcsOp?=)
+Date: Wed, 16 Jun 2010 09:12:16 +0700
+Subject: [HanoiLUG]
+	=?utf-8?b?SOG7j2kgduG7gSBIQVZQICsgQ2xhbUFWICsgU3F1aWQg?=
+	=?utf-8?q?tr=C3=AAn_Debian?=
+In-Reply-To: <AANLkTilnxc6zCxWWHIZLFeZPUTgBDV_VLIzc5vI4YDFd@mail.gmail.com>
+References: <AANLkTilxLzrI8BVqTwlSxLeFpJhZDx7wiaYwPKt7-PF9@mail.gmail.com>
+	<20100615161641.81486d7sn2gimku8@www.vn.auf.org>
+	<AANLkTilnxc6zCxWWHIZLFeZPUTgBDV_VLIzc5vI4YDFd@mail.gmail.com>
+Message-ID: <20100616091216.40515xlb5wco9w5c@www.vn.auf.org>
+
+"B?i ??ng Chung" <buidangchung at gmail.com> a ?crit?:
+> Ch?o anh JC, em ?? th?m
+> deb http://volatile.debian.org/debian-volatile lenny/volatile main
+> v?o file /etc/apt/sources.list v? c?i ??t l?i HAVP nh?ng phi?n b?n
+> hi?n t?i c?a em v?n l? 0.89.
+
+Ah, ??ng... Anh ?? ki?m tra kho c?a volatile v? th?y g?i "havp" ch?a
+v?o ph?n th??ng ???c... b?y gi? v?n n?m ? lenny-proposed-updates !
+
+Th? th? m?i em th? l?i v?i ngu?n d??i n?y nh? !
+   deb http://volatile.debian.org/debian-volatile  
+lenny-proposed-updates/volatile main
+
+-- 
+Jean Christophe Andr? - Responsable technique r?gional
+Agence universitaire de la Francophonie - Bureau Asie-Pacifique
+
+
+From vu.do.quynh at auf.org  Fri Jun 18 10:01:42 2010
+From: vu.do.quynh at auf.org (Vu Do Quynh)
+Date: Fri, 18 Jun 2010 10:01:42 +0700
+Subject: [HanoiLUG] =?utf-8?b?W09UXSBSZTogIGLDoWMgUXXhu7NuaCB0csO0bmcgcGhv?=
+ =?utf-8?b?bmcgxJHhu5kgcXXDoSAh?=
+In-Reply-To: <AANLkTinlMuHYJO_PB5YHteNbj7xyfs8yUzM__ziN9SA8@mail.gmail.com>
+References: <AANLkTinlMuHYJO_PB5YHteNbj7xyfs8yUzM__ziN9SA8@mail.gmail.com>
+Message-ID: <4C1AE196.8050402@auf.org>
+
+Le 17/06/2010 22:14, Ngo Manh Hung a ?crit :
+> H?m r?i em ?i tr?n ???ng Nguy?n ??nh Chi?u ,g?p m?t b?c ?i xe ??p th??
+> v??ng ???ng qu? ! Nh?n l?i ho? ra b?c Qu?nh nh? m?nh! E m?i nh?n b?c
+
+? th? h?? ?i xe ??p m? v??ng ???ng h? ? C? l? l? t?i ph?i gi?m b?o th?m! ;-)
+
+> tr?ng b?c tuy gi? m? m?nh m? th? ! ??p xe d??i tr?i n?ng 40 ?? !
+> hanoilug nh? m?nh nhi?u ng??i phong ?? q?a !
+
+C? ng??i tr? ti?n r?t cao ?? v?o ph?ng Sauna c?c kh?ch s?n ??t ti?n ?? 
+gi?m b?o ch?m s?c kh?e. T?i th? ch?n ?i xe ??p d??i tr?i n?ng ;-)
+
+???ng nhi?n ph?i coi ch?ng UV => ung th? gia nh? ! cho n?n ph?i ??i m? !
+-- 
+M. VU DO Quynh
+AUF (T? ch?c h?p t?c ?H Ph?p ng?)
+Campus num?rique francophone (CNF) de Hanoi
+Nh? D, ng? 42 T? Quang B?u
+T?l.: (84-4) 38.68.48.85 ; Fax: (84-4) 38.69.45.09
+http://www.vn.refer.org/vietnam/
+
+
+From vuhung at vinicorp.com.vn  Fri Jun 18 10:11:43 2010
+From: vuhung at vinicorp.com.vn (Nguyen Vu Hung)
+Date: Fri, 18 Jun 2010 10:11:43 +0700
+Subject: [HanoiLUG]
+ =?utf-8?b?W09UXSBSZTogYsOhYyBRdeG7s25oIHRyw7RuZyBwaG9u?=
+ =?utf-8?b?ZyDEkeG7mSBxdcOhICE=?=
+In-Reply-To: <4C1AE196.8050402@auf.org>
+References: <AANLkTinlMuHYJO_PB5YHteNbj7xyfs8yUzM__ziN9SA8@mail.gmail.com>
+	<4C1AE196.8050402@auf.org>
+Message-ID: <4C1AE3EF.1030304@vinicorp.com.vn>
+
+  (2010/06/18 10:01), Vu Do Quynh wrote:
+> Le 17/06/2010 22:14, Ngo Manh Hung a ?crit :
+>> H?m r?i em ?i tr?n ???ng Nguy?n ??nh Chi?u ,g?p m?t b?c ?i xe ??p th??
+>> v??ng ???ng qu? ! Nh?n l?i ho? ra b?c Qu?nh nh? m?nh! E m?i nh?n b?c
+>
+> ? th? h?? ?i xe ??p m? v??ng ???ng h? ? C? l? l? t?i ph?i gi?m b?o 
+> th?m! ;-)
+
+H?i n?m nh?t ??i h?c em ??p xem 20km t? nh? t?i tr??ng.
+
+Th?nh t?ch: Th? tr?ng lu?n lu?n ?n ??nh ? m?c d??i 60kg.
+
+Li?n t?c trong 1 th?ng li?n, ng??i ?m d?, sau ?? ?i thu? nh? ? Ng? L? L?n.
+
+BR, V? H?ng
+
+-- 
+**********************************************************************
+
+Viet Nhat General Joint Stock Company (Vinicorp)
+
+Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+
+Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+
+Nguyen Vu Hung
+
+Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+
+***********************************************************************
+
+
+
+From viethanguyen at gmail.com  Fri Jun 18 10:27:32 2010
+From: viethanguyen at gmail.com (Nguyen Viet Ha)
+Date: Fri, 18 Jun 2010 10:27:32 +0700
+Subject: [HanoiLUG]
+	=?utf-8?b?W09UXSBSZTogYsOhYyBRdeG7s25oIHRyw7RuZyBwaG9u?=
+	=?utf-8?b?ZyDEkeG7mSBxdcOhICE=?=
+In-Reply-To: <4C1AE196.8050402@auf.org>
+References: <AANLkTinlMuHYJO_PB5YHteNbj7xyfs8yUzM__ziN9SA8@mail.gmail.com> 
+	<4C1AE196.8050402@auf.org>
+Message-ID: <AANLkTinPOiNbM-FKXK7sorh4tVmmbfOMZpMNCdz7UPKx@mail.gmail.com>
+
+He he ba?c Quy?nh ?i.. Ung th? da thi? pha?i m??c th?m a?o ch??ng n??ng :D
+?eo ki?nh r?m :D Ma? ba?c ?ang sai lu??t an toa?n giao th?ng nhe? :D pha?i
+???i mu? ba?o hi??m ch?? :D
+
+2010/6/18 Vu Do Quynh <vu.do.quynh at auf.org>
+
+> Le 17/06/2010 22:14, Ngo Manh Hung a ?crit :
+>
+> H?m r?i em ?i tr?n ???ng Nguy?n ??nh Chi?u ,g?p m?t b?c ?i xe ??p th??
+>> v??ng ???ng qu? ! Nh?n l?i ho? ra b?c Qu?nh nh? m?nh! E m?i nh?n b?c
+>>
+>
+> ? th? h?? ?i xe ??p m? v??ng ???ng h? ? C? l? l? t?i ph?i gi?m b?o th?m!
+> ;-)
+>
+>
+> tr?ng b?c tuy gi? m? m?nh m? th? ! ??p xe d??i tr?i n?ng 40 ?? !
+>> hanoilug nh? m?nh nhi?u ng??i phong ?? q?a !
+>>
+>
+> C? ng??i tr? ti?n r?t cao ?? v?o ph?ng Sauna c?c kh?ch s?n ??t ti?n ?? gi?m
+> b?o ch?m s?c kh?e. T?i th? ch?n ?i xe ??p d??i tr?i n?ng ;-)
+>
+> ???ng nhi?n ph?i coi ch?ng UV => ung th? gia nh? ! cho n?n ph?i ??i m? !
+> --
+> M. VU DO Quynh
+> AUF (T? ch?c h?p t?c ?H Ph?p ng?)
+> Campus num?rique francophone (CNF) de Hanoi
+> Nh? D, ng? 42 T? Quang B?u
+> T?l.: (84-4) 38.68.48.85 ; Fax: (84-4) 38.69.45.09
+> http://www.vn.refer.org/vietnam/
+>
+>
+> _______________________________________________
+> POST RULES : http://wiki.hanoilug.org/hanoilug:mailing_list_guidelines
+> _______________________________________________
+> HanoiLUG mailing lists: http://lists.hanoilug.org/
+> HanoiLUG wiki: http://wiki.hanoilug.org/
+> HanoiLUG blog: http://blog.hanoilug.org/
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100618/bc2ada9a/attachment.htm>
+
+From vu.do.quynh at auf.org  Fri Jun 18 10:36:37 2010
+From: vu.do.quynh at auf.org (Vu Do Quynh)
+Date: Fri, 18 Jun 2010 10:36:37 +0700
+Subject: [HanoiLUG]
+ =?utf-8?b?W09UXSBSZTogYsOhYyBRdeG7s25oIHRyw7RuZyBwaG9u?=
+ =?utf-8?b?ZyDEkeG7mSBxdcOhICE=?=
+In-Reply-To: <4C1AE3EF.1030304@vinicorp.com.vn>
+References: <AANLkTinlMuHYJO_PB5YHteNbj7xyfs8yUzM__ziN9SA8@mail.gmail.com>	<4C1AE196.8050402@auf.org>
+	<4C1AE3EF.1030304@vinicorp.com.vn>
+Message-ID: <4C1AE9C5.5010305@auf.org>
+
+Le 18/06/2010 10:11, Nguyen Vu Hung a ?crit :
+>  (2010/06/18 10:01), Vu Do Quynh wrote:
+>> ? th? h?? ?i xe ??p m? v??ng ???ng h? ? C? l? l? t?i ph?i gi?m b?o 
+>> th?m! ;-)
+> 
+> H?i n?m nh?t ??i h?c em ??p xem 20km t? nh? t?i tr??ng.
+> 
+> Th?nh t?ch: Th? tr?ng lu?n lu?n ?n ??nh ? m?c d??i 60kg.
+> 
+
+H?i b? t?i ?i h?c ??n tr??ng THCS+THPT b?ng xe b?yt. ??i khi ?? ti?t 
+ki?m ti?n (mua k?o) t?i l?i ?i b? (?? kho?ng 2 km = 3-4 tr?m).
+
+L?c ?i ??i h?c, t?i ???c ?i b?ng xe ??p do m?t b?n th?n (ng??i Gabon) 
+kh?ng ?i xe ??p n?a l?i cho t?i chi?c xe ??p ??). V?y t?i ?? ?i xe ??p 
+t? ?? ??n gi?. Tuy nhi?n c? l?c ph?i ?i b?ng xe m?t? v? xe ?t? (? Ph?p).
+
+Khi v? VN v?n ?i xe ??p (C?a H? lan, r?i c?a Peugeot-Ph?p, nay ?ang ?i 
+xe ??p, nh?p ngo?i t? 1986, c?a b? x?). C?ng c? l?c c?n ch? con, l?i ?i 
+xe m?y.
+
+???ng nhi?n qua 40 tu?i c? t?ng tr?ng l??ng. Ch?m d?t u?ng coca (u?ng ?? 
+ng?t) = gi?m ?i g?n 10 kg!
+
+> Li?n t?c trong 1 th?ng li?n, ng??i ?m d?, sau ?? ?i thu? nh? ? Ng? L? L?n.
+
+V?ng, ch? ?? ?i xe ??p m? kh?ng ?? b?i d??ng l? s? ?m ??y ! thay m? ph?i 
+cho x?ng v?o m?y, th? ph?i c? ch? ?? ?n u?ng h?p l? !
+
+Ch?c m?nh kh?e.
+-- 
+M. VU DO Quynh
+AUF (T? ch?c h?p t?c ?H Ph?p ng?)
+Campus num?rique francophone (CNF) de Hanoi
+Nh? D, ng? 42 T? Quang B?u
+T?l.: (84-4) 38.68.48.85 ; Fax: (84-4) 38.69.45.09
+http://www.vn.refer.org/vietnam/
+
+
+From vu.do.quynh at auf.org  Fri Jun 18 10:47:02 2010
+From: vu.do.quynh at auf.org (Vu Do Quynh)
+Date: Fri, 18 Jun 2010 10:47:02 +0700
+Subject: [HanoiLUG]
+ =?utf-8?b?W09UXSBSZTogYsOhYyBRdeG7s25oIHRyw7RuZyBwaG9u?=
+ =?utf-8?b?ZyDEkeG7mSBxdcOhICE=?=
+In-Reply-To: <AANLkTinPOiNbM-FKXK7sorh4tVmmbfOMZpMNCdz7UPKx@mail.gmail.com>
+References: <AANLkTinlMuHYJO_PB5YHteNbj7xyfs8yUzM__ziN9SA8@mail.gmail.com>
+	<4C1AE196.8050402@auf.org>
+	<AANLkTinPOiNbM-FKXK7sorh4tVmmbfOMZpMNCdz7UPKx@mail.gmail.com>
+Message-ID: <4C1AEC36.8000506@auf.org>
+
+Le 18/06/2010 10:27, Nguyen Viet Ha a ?crit :
+> He he ba?c Quy?nh ?i.. Ung th? da thi? pha?i m??c th?m a?o ch??ng n??ng :D
+> ?eo ki?nh r?m :D Ma? ba?c ?ang sai lu??t an toa?n giao th?ng nhe? :D pha?i
+> ???i mu? ba?o hi??m ch?? :D
+
+Lu?t giao th?ng v?i ng??i ?i xe ??p (c?m ?n TA Tu?n ?? s?a l?i c?a t?i 
+nh?) h?nh nh? kh?ng b?t bu?c ph?i ??i m? b?o v? (d?nh cho ng??i ?i xe 
+??p). ???ng nhi?n ??i m? b?o v? ng??i ?i xe ??p v?n l? m?t l?i khuy?n.
+
+Quan tr?ng h?n l? nh?ng ng??i ?i ph??ng ti?n giao th?ng nhanh v? m?nh m? 
+c? th? g?y tai n?n nghi?m tr?ng (cho ng??i kh?c v? cho ch?nh m?nh), nh? 
+xe ?to + xe m?y, th? n?n c? phong ?? v?n minh h?n : kh?ng n?i chuy?n 
+?i?n tho?i khi ?ang l?i xe, kh?ng v??t ??n ??, gi?m t?c ?? khi ??n ng? 
+t?, ?? ng??i ?i b? v??t qua ???ng ? c?c n?i ?? quy ??nh, v.v.
+
+Ch?c m?i ng??i ?i l?i an to?n !
+-- 
+M. VU DO Quynh
+AUF (T? ch?c h?p t?c ?H Ph?p ng?)
+Campus num?rique francophone (CNF) de Hanoi
+Nh? D, ng? 42 T? Quang B?u
+T?l.: (84-4) 38.68.48.85 ; Fax: (84-4) 38.69.45.09
+http://www.vn.refer.org/vietnam/
+
+
+From huantnh at gmail.com  Sat Jun 19 04:38:15 2010
+From: huantnh at gmail.com (Huan Truong)
+Date: Fri, 18 Jun 2010 16:38:15 -0500
+Subject: [HanoiLUG] GRUB loading, please wait.... Error 17
+In-Reply-To: <595675.36993.qm@web45014.mail.sp1.yahoo.com>
+References: <595675.36993.qm@web45014.mail.sp1.yahoo.com>
+Message-ID: <AANLkTinY-34i_XvXIwlU3Id0XzGtDHL-jLMaUKC06F79@mail.gmail.com>
+
+M?nh ?o?n l? b?n c? thay ??i c?u h?nh c?a ph?n c?ng m?y, c? th? l? c?
+c?m th?m/r?t ra m?t c?i ? c?ng trong hay ? USB ngo?i n?o ?? l?m cho
+GRUB kh?i ??ng ???c nh?ng kh?ng th? l?m c?ch n?o c? th? ??c ???c nh?ng
+file c?n l?i m? n? c?n v? th? t? c?c ? m? GRUB c?n ?? b? ??o l?n. Nh?
+v?y b?n n?n v?o BIOS settings xem thi?t l?p ? c?ng c?a m?nh c? ??ng
+kh?ng.
+
+N?u m? ??y kh?ng ph?i l? vi?c m? b?n ?? l?m th? b?n c? th? th? kh?i
+??ng t? m?t ??a Super Grub Boot Disk (Shameless plug: c? k?m theo v?i
+Flash Magic 10.04 "Wanking Walrus" --
+http://github.com/htruong/flashmagic/zipball/master ) -- Download
+Walrus v? m?y v? ch?y script c? t?n create-usb either t? m?t m?y
+Windows hay Linux ??u ???c. Kh?i ??ng t? ??a USB n?y. Ch?n t? menu
+Advanced Toolkit -> Super GRUB boot disk 1. Ch?n ti?p GNU/Linux ->
+boot GNU/Linux automatically. B?n s? boot l?i ???c b?n linux tr?n HDD
+c?a m?nh. Khi login v?o r?i th? r?t ??a USB ra, m? terminal v? ch?y
+
+$ sudo update-grub
+$ sudo install-grub (ho?c grub-install, kh?ng nh? r?) /dev/sda
+
+l? xong.
+
+
+
+2010/6/18 Tri Nguyen Dinh <tri_nguyendinh at yahoo.com>
+>
+> Help me please !
+>
+> C?c cao th? ?i s?ng nay m?nh b?t con Ubuntu desktop c?a m?nh l?n nh?ng n? xu?t hi?n d?ng "GRUB loading, please wait.... Error 17" v? d?ng l?i , m?nh kh?ng bi?t l?m g? ?? n? ch?y ???c . c?c cao th? c? v? g? ch? gi?m m?nh c?i nh? .
+>
+> Thanks
+> Tri
+>
+>
+> _______________________________________________
+> POST RULES : http://wiki.hanoilug.org/hanoilug:mailing_list_guidelines
+> _______________________________________________
+> HanoiLUG mailing lists: http://lists.hanoilug.org/
+> HanoiLUG wiki: http://wiki.hanoilug.org/
+> HanoiLUG blog: http://blog.hanoilug.org/
+
+
+
+--
+Not cool enough to be a Mac person. Sent from my Ubuntu.
+http://youtu.be/kkOXwXHvFa4
+
+From lars.adermalm at gmail.com  Sat Jun 19 05:28:31 2010
+From: lars.adermalm at gmail.com (Lars Adermalm)
+Date: Sat, 19 Jun 2010 00:28:31 +0200
+Subject: [HanoiLUG] GRUB loading, please wait.... Error 17
+In-Reply-To: <AANLkTinY-34i_XvXIwlU3Id0XzGtDHL-jLMaUKC06F79@mail.gmail.com>
+References: <595675.36993.qm@web45014.mail.sp1.yahoo.com>
+	<AANLkTinY-34i_XvXIwlU3Id0XzGtDHL-jLMaUKC06F79@mail.gmail.com>
+Message-ID: <4C1BF30F.8080805@gmail.com>
+
+Help me please !
+
+C?c cao th? ?i s?ng nay m?nh b?t con Ubuntu desktop c?a m?nh l?n nh?ng n? xu?t hi?n d?ng "GRUB loading, please wait.... Error 17" v? d?ng l?i , m?nh kh?ng bi?t l?m g? ?? n? ch?y ???c . c?c cao th? c? v? g? ch? gi?m m?nh c?i nh? .
+
+Thanks
+Tri
+
+On 18/06/10 23:38, Huan Truong wrote:
+> M?nh ?o?n l? b?n c? thay ??i c?u h?nh c?a ph?n c?ng m?y, c? th? l? c?
+> c?m th?m/r?t ra m?t c?i ? c?ng trong hay ? USB ngo?i n?o ?? l?m cho
+> GRUB kh?i ??ng ???c nh?ng kh?ng th? l?m c?ch n?o c? th? ??c ???c nh?ng
+> file c?n l?i m? n? c?n v? th? t? c?c ? m? GRUB c?n ?? b? ??o l?n. Nh?
+> v?y b?n n?n v?o BIOS settings xem thi?t l?p ? c?ng c?a m?nh c? ??ng
+> kh?ng.
+>
+> N?u m? ??y kh?ng ph?i l? vi?c m? b?n ?? l?m th? b?n c? th? th? kh?i
+> ??ng t? m?t ??a Super Grub Boot Disk (Shameless plug: c? k?m theo v?i
+> Flash Magic 10.04 "Wanking Walrus" --
+> http://github.com/htruong/flashmagic/zipball/master ) -- Download
+> Walrus v? m?y v? ch?y script c? t?n create-usb either t? m?t m?y
+> Windows hay Linux ??u ???c. Kh?i ??ng t? ??a USB n?y. Ch?n t? menu
+> Advanced Toolkit ->  Super GRUB boot disk 1. Ch?n ti?p GNU/Linux ->
+> boot GNU/Linux automatically. B?n s? boot l?i ???c b?n linux tr?n HDD
+> c?a m?nh. Khi login v?o r?i th? r?t ??a USB ra, m? terminal v? ch?y
+>
+> $ sudo update-grub
+> $ sudo install-grub (ho?c grub-install, kh?ng nh? r?) /dev/sda
+>
+> l? xong.
+>
+>
+>
+> 2010/6/18 Tri Nguyen Dinh<tri_nguyendinh at yahoo.com>
+>    
+>>      
+Minh quen khong rut ra o cung USB luc khoi dong lai may thi bi y si nhu the.
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100619/b0b71e65/attachment.htm>
+
+From vu.do.quynh at auf.org  Sat Jun 19 10:22:58 2010
+From: vu.do.quynh at auf.org (Vu Do Quynh)
+Date: Sat, 19 Jun 2010 10:22:58 +0700
+Subject: [HanoiLUG] GRUB loading, please wait.... Error 17
+In-Reply-To: <4C1BF30F.8080805@gmail.com>
+References: <595675.36993.qm@web45014.mail.sp1.yahoo.com>	<AANLkTinY-34i_XvXIwlU3Id0XzGtDHL-jLMaUKC06F79@mail.gmail.com>
+	<4C1BF30F.8080805@gmail.com>
+Message-ID: <4C1C3812.6040902@auf.org>
+
+Le 19/06/2010 05:28, Lars Adermalm a ?crit :
+> Help me please !
+> 
+> C?c cao th? ?i s?ng nay m?nh b?t con Ubuntu desktop c?a m?nh l?n nh?ng 
+> n? xu?t hi?n d?ng "GRUB loading, please wait.... Error 17" v? d?ng l?i , 
+> m?nh kh?ng bi?t l?m g? ?? n? ch?y ???c . c?c cao th? c? v? g? ch? gi?m 
+> m?nh c?i nh? .
+
+C? ph?n h??ng d?n v? gi?i quy?t v?n ?? Grub Error 17 ? trang n?y:
+
+http://ubuntuforums.org/showthread.php?t=1033877&page=2
+
+Ph?n quan tr?ng l? ch?y c?i script do "caljohnsmith" ?? xu?t ?? bi?t r? 
+h?n v? t?nh tr?ng Grub tr?n m?y c?a b?n.
+
+N?u kh?ng gi?i quy?t ???c, th? post l?i k?t qu? ch?y script ?? tr?n ML 
+n?y ?? xem c? ai c? ki?n ngh? g? kh?ng ?
+
+Ch?c th?nh c?ng
+-- 
+M. VU DO Quynh
+AUF (T? ch?c h?p t?c ?H Ph?p ng?)
+Campus num?rique francophone (CNF) de Hanoi
+Nh? D, ng? 42 T? Quang B?u
+T?l.: (84-4) 38.68.48.85 ; Fax: (84-4) 38.69.45.09
+http://www.vn.refer.org/vietnam/
+
+
+From raphael.apard at gmail.com  Sat Jun 19 23:20:18 2010
+From: raphael.apard at gmail.com (Raphael Apard)
+Date: Sat, 19 Jun 2010 16:20:18 +0000
+Subject: [HanoiLUG] Job offer
+Message-ID: <AANLkTilLRUEqJgGLBlyr2Y9b_STGFW4LLNmFx3QgjdAO@mail.gmail.com>
+
+Dear,
+
+I was working for CFVG Hanoi for 2 years as web developer, i left this
+function in november 2009, now CFVG is looking for a new person. I
+developed a information system in PHP/Mysql hosted on a SME Server
+located in CFVG Hanoi.
+
+Here the job offer :
+
+------------------------------------
+Web developer and administrator of CFVG information system
+
+CFVG is a leading school of management in Vietnam. It is dedicated to
+provide young and experienced managers with high-quality management
+education through its internationally accredited MBA, specialized
+masters and executive education.
+
+CFVG looks for an experienced developer of PHP/MySQL to work part-time.
+
+The ideal candidate must be able to:
+
+Administrate the information system of a portal dedicated to students
+in PHP/MySQL language
+Manage PHP and MySQL languages, APIs Google (Google Calendar,
+Provisionning API,etc.)
+Have a good knowledge of HTML/CSS Standards/ W3C Accessibility.
+Administration of Linux (Apache/Samba) is a plus
+Maintain and develop the portal according to its internal system
+Work and speak in English fluently
+
+Description of the portal?s content and its related programs: agenda;
+resources; administration of the users, the intakes and the notes;
+registration system; directory of alumni; forum (punBB integration);
+statistics.
+
+Additional conditions:
+
+Part-time job
+Job based either in Ha Noi
+At least 1 year of experience in web development of PHP/MySQL
+English required; French as a plus
+
+When you join CFVG you launch a career. We work with you to develop
+your skills and talents to their fullest potential, exposing you to a
+broad range of assignments, mentoring, and educational assistance. We
+support you with offering medical, dental, and vision care; disability
+insurance.
+
+------------------------------------
+
+If you are interested, contact me. Please include your resume.
+
+Best regards
+-- 
+Rapha?l Apard
+
+From vuhung at vinicorp.com.vn  Mon Jun 21 14:22:03 2010
+From: vuhung at vinicorp.com.vn (Nguyen Vu Hung (VNC))
+Date: Mon, 21 Jun 2010 14:22:03 +0700
+Subject: [HanoiLUG] turn off pam ldap?
+Message-ID: <4C1F131B.50506@vinicorp.com.vn>
+
+  Ch?o c?c b?c,
+
+Sau m?t h?i th? nghi?m ldap theo h??ng d?n ? ??y:
+
+http://www.linuxtopia.org/online_books/centos_linux_guides/centos_linux_reference_guide/s1-ldap-quickstart.html
+
+Em b? l?i: Kh?ng th? ssh ???c v?o CentOS 5.4 n?a
+
+B?y gi? l?m sao ?? turn off ldap ?? c? th? ssh hay physically login ???c?
+
+tail -f /var/log/secure:
+
+Jun 21 14:11:56 vinicorp sshd[3873]: PAM unable to 
+dlopen(/lib/security/pam_ldap.so)
+Jun 21 14:11:56 vinicorp sshd[3873]: PAM [error: 
+/lib/security/pam_ldap.so: cannot open shared object file: No such file 
+or directory]
+Jun 21 14:11:56 vinicorp sshd[3873]: PAM adding faulty module: 
+/lib/security/pam_ldap.so
+Jun 21 14:11:58 vinicorp sshd[3873]: Failed password for vuhung from 
+127.0.0.1 port 45565 ssh2
+Jun 21 07:11:58 vinicorp sshd[3874]: fatal: Access denied for user 
+vuhung by PAM account configuration
+
+[root at vinicorp pam.d]# ssh -v vuhung at localhost
+OpenSSH_4.3p2, OpenSSL 0.9.8e-fips-rhel5 01 Jul 2008
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Applying options for *
+debug1: Connecting to localhost [127.0.0.1] port 22.
+debug1: Connection established.
+debug1: permanently_set_uid: 0/0
+debug1: identity file /root/.ssh/identity type -1
+debug1: identity file /root/.ssh/id_rsa type -1
+debug1: identity file /root/.ssh/id_dsa type -1
+debug1: loaded 3 keys
+debug1: Remote protocol version 2.0, remote software version OpenSSH_4.3
+debug1: match: OpenSSH_4.3 pat OpenSSH*
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_4.3
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: server->client aes128-cbc hmac-md5 none
+debug1: kex: client->server aes128-cbc hmac-md5 none
+debug1: SSH2_MSG_KEX_DH_GEX_REQUEST(1024<1024<8192) sent
+debug1: expecting SSH2_MSG_KEX_DH_GEX_GROUP
+debug1: SSH2_MSG_KEX_DH_GEX_INIT sent
+debug1: expecting SSH2_MSG_KEX_DH_GEX_REPLY
+The authenticity of host 'localhost (127.0.0.1)' can't be established.
+RSA key fingerprint is 5f:93:1b:04:0d:95:8f:98:46:b6:c6:7d:da:52:57:2f.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'localhost' (RSA) to the list of known hosts.
+debug1: ssh_rsa_verify: signature correct
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: SSH2_MSG_SERVICE_REQUEST sent
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: 
+publickey,gssapi-with-mic,password
+debug1: Next authentication method: gssapi-with-mic
+debug1: Unspecified GSS failure.  Minor code may provide more information
+No credentials cache found
+
+debug1: Unspecified GSS failure.  Minor code may provide more information
+No credentials cache found
+
+debug1: Unspecified GSS failure.  Minor code may provide more information
+No credentials cache found
+
+debug1: Next authentication method: publickey
+debug1: Trying private key: /root/.ssh/identity
+debug1: Trying private key: /root/.ssh/id_rsa
+debug1: Trying private key: /root/.ssh/id_dsa
+debug1: Next authentication method: password
+vuhung at localhost's password:
+Connection closed by 127.0.0.1
+
+Em kh?ng r? /etc/pam.d/login c? li?n quan kh?ng?
+
+[root at vinicorp pam.d]# cat /etc/pam.d/login
+#%PAM-1.0
+auth [user_unknown=ignore success=ok ignore=ignore default=bad] 
+pam_securetty.so
+auth       include      system-auth
+account    required     pam_nologin.so
+account    include      system-auth
+password   include      system-auth
+# pam_selinux.so close should be the first session rule
+session    required     pam_selinux.so close
+session    include      system-auth
+session    required     pam_loginuid.so
+session    optional     pam_console.so
+# pam_selinux.so open should only be followed by sessions to be executed 
+in the user context
+session    required     pam_selinux.so open
+session    optional     pam_keyinit.so force revoke
+
+
+
+
+-- 
+**********************************************************************
+
+Viet Nhat General Joint Stock Company (Vinicorp)
+
+Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+
+Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+
+Nguyen Vu Hung
+
+Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+
+***********************************************************************
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100621/2e341ae5/attachment.htm>
+
+From huantnh at gmail.com  Tue Jun 22 03:36:54 2010
+From: huantnh at gmail.com (Huan Truong)
+Date: Mon, 21 Jun 2010 15:36:54 -0500
+Subject: [HanoiLUG] turn off pam ldap?
+In-Reply-To: <4C1F131B.50506@vinicorp.com.vn>
+References: <4C1F131B.50506@vinicorp.com.vn>
+Message-ID: <AANLkTinrpWAf4dIv4FPF8VDSTivuB-A-E3YVrZIUuNiV@mail.gmail.com>
+
+C? v? nh? b?c ?? th?o ? c?ng ra m?t m?y kh?c ?? l?p v?o.
+
+Try:
+
+$ grep -H -r "pam_ldap.so" /media/ext_root_drive/etc/pam.d
+
+(Chac chan cai lenh load module pam_ldap.so do no se o pam.d)
+
+/etc/pam.d/sshd maybe?
+
+
+
+
+On Mon, Jun 21, 2010 at 2:22 AM, Nguyen Vu Hung (VNC)
+<vuhung at vinicorp.com.vn> wrote:
+> Ch?o c?c b?c,
+>
+> Sau m?t h?i th? nghi?m ldap theo h??ng d?n ? ??y:
+>
+> http://www.linuxtopia.org/online_books/centos_linux_guides/centos_linux_reference_guide/s1-ldap-quickstart.html
+>
+> Em b? l?i: Kh?ng th? ssh ???c v?o CentOS 5.4 n?a
+>
+> B?y gi? l?m sao ?? turn off ldap ?? c? th? ssh hay physically login ???c?
+>
+> tail -f /var/log/secure:
+>
+> Jun 21 14:11:56 vinicorp sshd[3873]: PAM unable to
+> dlopen(/lib/security/pam_ldap.so)
+> Jun 21 14:11:56 vinicorp sshd[3873]: PAM [error: /lib/security/pam_ldap.so:
+> cannot open shared object file: No such file or directory]
+> Jun 21 14:11:56 vinicorp sshd[3873]: PAM adding faulty module:
+> /lib/security/pam_ldap.so
+> Jun 21 14:11:58 vinicorp sshd[3873]: Failed password for vuhung from
+> 127.0.0.1 port 45565 ssh2
+> Jun 21 07:11:58 vinicorp sshd[3874]: fatal: Access denied for user vuhung by
+> PAM account configuration
+>
+> [root at vinicorp pam.d]# ssh -v vuhung at localhost
+> OpenSSH_4.3p2, OpenSSL 0.9.8e-fips-rhel5 01 Jul 2008
+> debug1: Reading configuration data /etc/ssh/ssh_config
+> debug1: Applying options for *
+> debug1: Connecting to localhost [127.0.0.1] port 22.
+> debug1: Connection established.
+> debug1: permanently_set_uid: 0/0
+> debug1: identity file /root/.ssh/identity type -1
+> debug1: identity file /root/.ssh/id_rsa type -1
+> debug1: identity file /root/.ssh/id_dsa type -1
+> debug1: loaded 3 keys
+> debug1: Remote protocol version 2.0, remote software version OpenSSH_4.3
+> debug1: match: OpenSSH_4.3 pat OpenSSH*
+> debug1: Enabling compatibility mode for protocol 2.0
+> debug1: Local version string SSH-2.0-OpenSSH_4.3
+> debug1: SSH2_MSG_KEXINIT sent
+> debug1: SSH2_MSG_KEXINIT received
+> debug1: kex: server->client aes128-cbc hmac-md5 none
+> debug1: kex: client->server aes128-cbc hmac-md5 none
+> debug1: SSH2_MSG_KEX_DH_GEX_REQUEST(1024<1024<8192) sent
+> debug1: expecting SSH2_MSG_KEX_DH_GEX_GROUP
+> debug1: SSH2_MSG_KEX_DH_GEX_INIT sent
+> debug1: expecting SSH2_MSG_KEX_DH_GEX_REPLY
+> The authenticity of host 'localhost (127.0.0.1)' can't be established.
+> RSA key fingerprint is 5f:93:1b:04:0d:95:8f:98:46:b6:c6:7d:da:52:57:2f.
+> Are you sure you want to continue connecting (yes/no)? yes
+> Warning: Permanently added 'localhost' (RSA) to the list of known hosts.
+> debug1: ssh_rsa_verify: signature correct
+> debug1: SSH2_MSG_NEWKEYS sent
+> debug1: expecting SSH2_MSG_NEWKEYS
+> debug1: SSH2_MSG_NEWKEYS received
+> debug1: SSH2_MSG_SERVICE_REQUEST sent
+> debug1: SSH2_MSG_SERVICE_ACCEPT received
+> debug1: Authentications that can continue:
+> publickey,gssapi-with-mic,password
+> debug1: Next authentication method: gssapi-with-mic
+> debug1: Unspecified GSS failure.? Minor code may provide more information
+> No credentials cache found
+>
+> debug1: Unspecified GSS failure.? Minor code may provide more information
+> No credentials cache found
+>
+> debug1: Unspecified GSS failure.? Minor code may provide more information
+> No credentials cache found
+>
+> debug1: Next authentication method: publickey
+> debug1: Trying private key: /root/.ssh/identity
+> debug1: Trying private key: /root/.ssh/id_rsa
+> debug1: Trying private key: /root/.ssh/id_dsa
+> debug1: Next authentication method: password
+> vuhung at localhost's password:
+> Connection closed by 127.0.0.1
+>
+> Em kh?ng r? /etc/pam.d/login c? li?n quan kh?ng?
+>
+> [root at vinicorp pam.d]# cat /etc/pam.d/login
+> #%PAM-1.0
+> auth [user_unknown=ignore success=ok ignore=ignore default=bad]
+> pam_securetty.so
+> auth?????? include????? system-auth
+> account??? required???? pam_nologin.so
+> account??? include????? system-auth
+> password?? include????? system-auth
+> # pam_selinux.so close should be the first session rule
+> session??? required???? pam_selinux.so close
+> session??? include????? system-auth
+> session??? required???? pam_loginuid.so
+> session??? optional???? pam_console.so
+> # pam_selinux.so open should only be followed by sessions to be executed in
+> the user context
+> session??? required???? pam_selinux.so open
+> session??? optional???? pam_keyinit.so force revoke
+>
+>
+>
+>
+> --
+> **********************************************************************
+>
+> Viet Nhat General Joint Stock Company (Vinicorp)
+>
+> Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+>
+> Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+>
+> Nguyen Vu Hung
+>
+> Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+>
+> ***********************************************************************
+>
+>
+> _______________________________________________
+> POST RULES : http://wiki.hanoilug.org/hanoilug:mailing_list_guidelines
+> _______________________________________________
+> HanoiLUG mailing lists: http://lists.hanoilug.org/
+> HanoiLUG wiki: http://wiki.hanoilug.org/
+> HanoiLUG blog: http://blog.hanoilug.org/
+>
+
+
+
+-- 
+Not cool enough to be a Mac person. Sent from my Ubuntu.
+http://youtu.be/kkOXwXHvFa4
+
+From vuhung at vinicorp.com.vn  Tue Jun 22 08:24:02 2010
+From: vuhung at vinicorp.com.vn (Nguyen Vu Hung (VNC))
+Date: Tue, 22 Jun 2010 08:24:02 +0700
+Subject: [HanoiLUG] turn off pam ldap?
+In-Reply-To: <AANLkTinrpWAf4dIv4FPF8VDSTivuB-A-E3YVrZIUuNiV@mail.gmail.com>
+References: <4C1F131B.50506@vinicorp.com.vn>
+	<AANLkTinrpWAf4dIv4FPF8VDSTivuB-A-E3YVrZIUuNiV@mail.gmail.com>
+Message-ID: <4C2010B2.9000806@vinicorp.com.vn>
+
+  HDD v?n l? c?a m?y ??.
+L?m ti?p th? n?o h? b?c?
+
+Em r?t s? t? lock ch?nh m?nh n?n ph?i ?i h?i cho ch?c
+
+? m?y b? l?i:
+[root at vinicorp ~]# grep -H -r "pam_ldap.so" /etc/pam.d/*
+/etc/pam.d/system-auth:auth        sufficient    pam_ldap.so use_first_pass
+/etc/pam.d/system-auth:account     [default=bad success=ok 
+user_unknown=ignore] pam_ldap.so
+/etc/pam.d/system-auth:password    sufficient    pam_ldap.so use_authtok
+/etc/pam.d/system-auth:session     optional      pam_ldap.so
+/etc/pam.d/system-auth-ac:auth        sufficient    pam_ldap.so 
+use_first_pass
+/etc/pam.d/system-auth-ac:account     [default=bad success=ok 
+user_unknown=ignore] pam_ldap.so
+/etc/pam.d/system-auth-ac:password    sufficient    pam_ldap.so use_authtok
+/etc/pam.d/system-auth-ac:session     optional      pam_ldap.so
+
+[root at vinicorp ~]# cat /etc/pam.d/system-auth
+#%PAM-1.0
+# This file is auto-generated.
+# User changes will be destroyed the next time authconfig is run.
+auth        required      pam_env.so
+auth        sufficient    pam_unix.so nullok try_first_pass
+auth        requisite     pam_succeed_if.so uid >= 500 quiet
+auth        sufficient    pam_ldap.so use_first_pass
+auth        required      pam_deny.so
+
+account     required      pam_unix.so broken_shadow
+account     sufficient    pam_succeed_if.so uid < 500 quiet
+account     [default=bad success=ok user_unknown=ignore] pam_ldap.so
+account     required      pam_permit.so
+
+password    requisite     pam_cracklib.so try_first_pass retry=3
+password    sufficient    pam_unix.so md5 shadow nullok try_first_pass 
+use_authtok
+password    sufficient    pam_ldap.so use_authtok
+password    required      pam_deny.so
+
+session     optional      pam_keyinit.so revoke
+session     required      pam_limits.so
+session     [success=1 default=ignore] pam_succeed_if.so service in 
+crond quiet use_uid
+session     required      pam_unix.so
+session     optional      pam_ldap.so
+[root at vinicorp ~]# cat /etc/pam.d/system-auth-ac
+#%PAM-1.0
+# This file is auto-generated.
+# User changes will be destroyed the next time authconfig is run.
+auth        required      pam_env.so
+auth        sufficient    pam_unix.so nullok try_first_pass
+auth        requisite     pam_succeed_if.so uid >= 500 quiet
+auth        sufficient    pam_ldap.so use_first_pass
+auth        required      pam_deny.so
+
+account     required      pam_unix.so broken_shadow
+account     sufficient    pam_succeed_if.so uid < 500 quiet
+account     [default=bad success=ok user_unknown=ignore] pam_ldap.so
+account     required      pam_permit.so
+
+password    requisite     pam_cracklib.so try_first_pass retry=3
+password    sufficient    pam_unix.so md5 shadow nullok try_first_pass 
+use_authtok
+password    sufficient    pam_ldap.so use_authtok
+password    required      pam_deny.so
+
+session     optional      pam_keyinit.so revoke
+session     required      pam_limits.so
+session     [success=1 default=ignore] pam_succeed_if.so service in 
+crond quiet use_uid
+session     required      pam_unix.so
+session     optional      pam_ldap.so
+
+? m?t m?y kh?ng b? v?n ?? n?y:
+
+[root at www2 ~]# cd /etc/pam.d
+[root at www2 pam.d]# grep -H -r "pam_ldap.so" /etc/pam.d/*
+[root at www2 pam.d]# cat /etc/pam.d/system-auth
+#%PAM-1.0
+# This file is auto-generated.
+# User changes will be destroyed the next time authconfig is run.
+auth        required      pam_env.so
+auth        sufficient    pam_unix.so nullok try_first_pass
+auth        requisite     pam_succeed_if.so uid >= 500 quiet
+auth        required      pam_deny.so
+
+account     required      pam_unix.so
+account     sufficient    pam_succeed_if.so uid < 500 quiet
+account     required      pam_permit.so
+
+password    requisite     pam_cracklib.so try_first_pass retry=3
+password    sufficient    pam_unix.so md5 shadow nullok try_first_pass 
+use_authtok
+password    required      pam_deny.so
+
+session     optional      pam_keyinit.so revoke
+session     required      pam_limits.so
+session     [success=1 default=ignore] pam_succeed_if.so service in 
+crond quiet use_uid
+session     required      pam_unix.so
+[root at www2 pam.d]# cat /etc/pam.d/system-auth-ac
+#%PAM-1.0
+# This file is auto-generated.
+# User changes will be destroyed the next time authconfig is run.
+auth        required      pam_env.so
+auth        sufficient    pam_unix.so nullok try_first_pass
+auth        requisite     pam_succeed_if.so uid >= 500 quiet
+auth        required      pam_deny.so
+
+account     required      pam_unix.so
+account     sufficient    pam_succeed_if.so uid < 500 quiet
+account     required      pam_permit.so
+
+password    requisite     pam_cracklib.so try_first_pass retry=3
+password    sufficient    pam_unix.so md5 shadow nullok try_first_pass 
+use_authtok
+password    required      pam_deny.so
+
+session     optional      pam_keyinit.so revoke
+session     required      pam_limits.so
+session     [success=1 default=ignore] pam_succeed_if.so service in 
+crond quiet use_uid
+session     required      pam_unix.so
+[root at www2 pam.d]#
+
+(2010/06/22 3:36), Huan Truong wrote:
+> C? v? nh? b?c ?? th?o ? c?ng ra m?t m?y kh?c ?? l?p v?o.
+>
+> Try:
+>
+> $ grep -H -r "pam_ldap.so" /media/ext_root_drive/etc/pam.d
+>
+> (Chac chan cai lenh load module pam_ldap.so do no se o pam.d)
+>
+> /etc/pam.d/sshd maybe?
+>
+>
+>
+>
+> On Mon, Jun 21, 2010 at 2:22 AM, Nguyen Vu Hung (VNC)
+> <vuhung at vinicorp.com.vn>  wrote:
+>> Ch?o c?c b?c,
+>>
+>> Sau m?t h?i th? nghi?m ldap theo h??ng d?n ? ??y:
+>>
+>> http://www.linuxtopia.org/online_books/centos_linux_guides/centos_linux_reference_guide/s1-ldap-quickstart.html
+>>
+>> Em b? l?i: Kh?ng th? ssh ???c v?o CentOS 5.4 n?a
+>>
+>> B?y gi? l?m sao ?? turn off ldap ?? c? th? ssh hay physically login ???c?
+>>
+>> tail -f /var/log/secure:
+>>
+>> Jun 21 14:11:56 vinicorp sshd[3873]: PAM unable to
+>> dlopen(/lib/security/pam_ldap.so)
+>> Jun 21 14:11:56 vinicorp sshd[3873]: PAM [error: /lib/security/pam_ldap.so:
+>> cannot open shared object file: No such file or directory]
+>> Jun 21 14:11:56 vinicorp sshd[3873]: PAM adding faulty module:
+>> /lib/security/pam_ldap.so
+>> Jun 21 14:11:58 vinicorp sshd[3873]: Failed password for vuhung from
+>> 127.0.0.1 port 45565 ssh2
+>> Jun 21 07:11:58 vinicorp sshd[3874]: fatal: Access denied for user vuhung by
+>> PAM account configuration
+>>
+>> [root at vinicorp pam.d]# ssh -v vuhung at localhost
+>> OpenSSH_4.3p2, OpenSSL 0.9.8e-fips-rhel5 01 Jul 2008
+>> debug1: Reading configuration data /etc/ssh/ssh_config
+>> debug1: Applying options for *
+>> debug1: Connecting to localhost [127.0.0.1] port 22.
+>> debug1: Connection established.
+>> debug1: permanently_set_uid: 0/0
+>> debug1: identity file /root/.ssh/identity type -1
+>> debug1: identity file /root/.ssh/id_rsa type -1
+>> debug1: identity file /root/.ssh/id_dsa type -1
+>> debug1: loaded 3 keys
+>> debug1: Remote protocol version 2.0, remote software version OpenSSH_4.3
+>> debug1: match: OpenSSH_4.3 pat OpenSSH*
+>> debug1: Enabling compatibility mode for protocol 2.0
+>> debug1: Local version string SSH-2.0-OpenSSH_4.3
+>> debug1: SSH2_MSG_KEXINIT sent
+>> debug1: SSH2_MSG_KEXINIT received
+>> debug1: kex: server->client aes128-cbc hmac-md5 none
+>> debug1: kex: client->server aes128-cbc hmac-md5 none
+>> debug1: SSH2_MSG_KEX_DH_GEX_REQUEST(1024<1024<8192) sent
+>> debug1: expecting SSH2_MSG_KEX_DH_GEX_GROUP
+>> debug1: SSH2_MSG_KEX_DH_GEX_INIT sent
+>> debug1: expecting SSH2_MSG_KEX_DH_GEX_REPLY
+>> The authenticity of host 'localhost (127.0.0.1)' can't be established.
+>> RSA key fingerprint is 5f:93:1b:04:0d:95:8f:98:46:b6:c6:7d:da:52:57:2f.
+>> Are you sure you want to continue connecting (yes/no)? yes
+>> Warning: Permanently added 'localhost' (RSA) to the list of known hosts.
+>> debug1: ssh_rsa_verify: signature correct
+>> debug1: SSH2_MSG_NEWKEYS sent
+>> debug1: expecting SSH2_MSG_NEWKEYS
+>> debug1: SSH2_MSG_NEWKEYS received
+>> debug1: SSH2_MSG_SERVICE_REQUEST sent
+>> debug1: SSH2_MSG_SERVICE_ACCEPT received
+>> debug1: Authentications that can continue:
+>> publickey,gssapi-with-mic,password
+>> debug1: Next authentication method: gssapi-with-mic
+>> debug1: Unspecified GSS failure.  Minor code may provide more information
+>> No credentials cache found
+>>
+>> debug1: Unspecified GSS failure.  Minor code may provide more information
+>> No credentials cache found
+>>
+>> debug1: Unspecified GSS failure.  Minor code may provide more information
+>> No credentials cache found
+>>
+>> debug1: Next authentication method: publickey
+>> debug1: Trying private key: /root/.ssh/identity
+>> debug1: Trying private key: /root/.ssh/id_rsa
+>> debug1: Trying private key: /root/.ssh/id_dsa
+>> debug1: Next authentication method: password
+>> vuhung at localhost's password:
+>> Connection closed by 127.0.0.1
+>>
+>> Em kh?ng r? /etc/pam.d/login c? li?n quan kh?ng?
+>>
+>> [root at vinicorp pam.d]# cat /etc/pam.d/login
+>> #%PAM-1.0
+>> auth [user_unknown=ignore success=ok ignore=ignore default=bad]
+>> pam_securetty.so
+>> auth       include      system-auth
+>> account    required     pam_nologin.so
+>> account    include      system-auth
+>> password   include      system-auth
+>> # pam_selinux.so close should be the first session rule
+>> session    required     pam_selinux.so close
+>> session    include      system-auth
+>> session    required     pam_loginuid.so
+>> session    optional     pam_console.so
+>> # pam_selinux.so open should only be followed by sessions to be executed in
+>> the user context
+>> session    required     pam_selinux.so open
+>> session    optional     pam_keyinit.so force revoke
+>>
+>>
+>>
+>>
+>> --
+>> **********************************************************************
+>>
+>> Viet Nhat General Joint Stock Company (Vinicorp)
+>>
+>> Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+>>
+>> Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+>>
+>> Nguyen Vu Hung
+>>
+>> Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+>>
+>> ***********************************************************************
+>>
+>>
+>> _______________________________________________
+>> POST RULES : http://wiki.hanoilug.org/hanoilug:mailing_list_guidelines
+>> _______________________________________________
+>> HanoiLUG mailing lists: http://lists.hanoilug.org/
+>> HanoiLUG wiki: http://wiki.hanoilug.org/
+>> HanoiLUG blog: http://blog.hanoilug.org/
+>>
+>
+>
+
+
+-- 
+**********************************************************************
+
+Viet Nhat General Joint Stock Company (Vinicorp)
+
+Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+
+Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+
+Nguyen Vu Hung
+
+Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+
+***********************************************************************
+
+
+
+From jean-christophe.andre at auf.org  Tue Jun 22 09:44:34 2010
+From: jean-christophe.andre at auf.org (Jean Christophe =?utf-8?b?QW5kcsOp?=)
+Date: Tue, 22 Jun 2010 09:44:34 +0700
+Subject: [HanoiLUG] turn off pam ldap?
+In-Reply-To: <4C1F131B.50506@vinicorp.com.vn>
+References: <4C1F131B.50506@vinicorp.com.vn>
+Message-ID: <20100622094434.29905bejtc10k0hs@www.vn.auf.org>
+
+"Nguyen Vu Hung (VNC)" <vuhung at vinicorp.com.vn> a ?crit?:
+> B?y gi? l?m sao ?? turn off ldap ?? c? th? ssh hay physically login ???c?
+
+N?u c? th? kh?i ??ng l?i ???c th? v?o grub, th?m v?o "init=/bin/bash"
+cu?i c?u "kernel", th? boot. Sao ??, g? l?nh "mount -o remount,rw /"
+?? c? ph?p s?a c?c t?p trong h? th?ng.
+
+R?i ch?y l?nh "pam-auth-update" ?? ch?n c?c m?-dun mu?n s? d?ng v?i PAM
+v? t?t LDAP.
+
+> Em kh?ng r? /etc/pam.d/login c? li?n quan kh?ng?
+
+"login" l? khi v?o t? console ho?c qua ph?n m?m n?o kh?c c?ng d?ng
+"login" ?? ki?m tra ng??i v?o h? th?ng. SSH c? th? d?ng "login" m?
+m?c ??nh th? kh?ng.
+-- 
+Jean Christophe Andr? - Responsable technique r?gional
+Agence universitaire de la Francophonie - Bureau Asie-Pacifique
+
+
+From jean-christophe.andre at auf.org  Tue Jun 22 09:48:49 2010
+From: jean-christophe.andre at auf.org (Jean Christophe =?utf-8?b?QW5kcsOp?=)
+Date: Tue, 22 Jun 2010 09:48:49 +0700
+Subject: [HanoiLUG] turn off pam ldap?
+In-Reply-To: <4C2010B2.9000806@vinicorp.com.vn>
+References: <4C1F131B.50506@vinicorp.com.vn>
+	<AANLkTinrpWAf4dIv4FPF8VDSTivuB-A-E3YVrZIUuNiV@mail.gmail.com>
+	<4C2010B2.9000806@vinicorp.com.vn>
+Message-ID: <20100622094849.14333qwki8p9q0zk@www.vn.auf.org>
+
+"Nguyen Vu Hung (VNC)" <vuhung at vinicorp.com.vn> a ?crit?:
+> L?m ti?p th? n?o h? b?c?
+
+> [root at vinicorp ~]# cat /etc/pam.d/system-auth
+> # This file is auto-generated.
+> # User changes will be destroyed the next time authconfig is run.
+
+> [root at vinicorp ~]# cat /etc/pam.d/system-auth-ac
+> # This file is auto-generated.
+> # User changes will be destroyed the next time authconfig is run.
+
+??c c?c comments ? tr?n th? bi?t l?m g? lu?n !
+Ch?y l?nh "authconfig" ?? t?t LDAP th? th?i !
+-- 
+Jean Christophe Andr? - Responsable technique r?gional
+Agence universitaire de la Francophonie - Bureau Asie-Pacifique
+
+
+From vuhung at vinicorp.com.vn  Tue Jun 22 10:26:44 2010
+From: vuhung at vinicorp.com.vn (Nguyen Vu Hung (VNC))
+Date: Tue, 22 Jun 2010 10:26:44 +0700
+Subject: [HanoiLUG] turn off pam ldap?
+In-Reply-To: <20100622094849.14333qwki8p9q0zk@www.vn.auf.org>
+References: <4C1F131B.50506@vinicorp.com.vn>	<AANLkTinrpWAf4dIv4FPF8VDSTivuB-A-E3YVrZIUuNiV@mail.gmail.com>	<4C2010B2.9000806@vinicorp.com.vn>
+	<20100622094849.14333qwki8p9q0zk@www.vn.auf.org>
+Message-ID: <4C202D74.9040503@vinicorp.com.vn>
+
+  (2010/06/22 9:48), Jean Christophe Andr? wrote:
+> "Nguyen Vu Hung (VNC)" <vuhung at vinicorp.com.vn> a ?crit :
+>> L?m ti?p th? n?o h? b?c?
+>
+>> [root at vinicorp ~]# cat /etc/pam.d/system-auth
+>> # This file is auto-generated.
+>> # User changes will be destroyed the next time authconfig is run.
+>
+>> [root at vinicorp ~]# cat /etc/pam.d/system-auth-ac
+>> # This file is auto-generated.
+>> # User changes will be destroyed the next time authconfig is run.
+>
+> ??c c?c comments ? tr?n th? bi?t l?m g? lu?n !
+> Ch?y l?nh "authconfig" ?? t?t LDAP th? th?i !
+
+hack hack.
+
+-- 
+**********************************************************************
+
+Viet Nhat General Joint Stock Company (Vinicorp)
+
+Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+
+Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+
+Nguyen Vu Hung
+
+Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+
+***********************************************************************
+
+
+
+From vuhung at vinicorp.com.vn  Tue Jun 22 10:31:04 2010
+From: vuhung at vinicorp.com.vn (Nguyen Vu Hung (VNC))
+Date: Tue, 22 Jun 2010 10:31:04 +0700
+Subject: [HanoiLUG] turn off pam ldap? (solved)
+In-Reply-To: <20100622094434.29905bejtc10k0hs@www.vn.auf.org>
+References: <4C1F131B.50506@vinicorp.com.vn>
+	<20100622094434.29905bejtc10k0hs@www.vn.auf.org>
+Message-ID: <4C202E78.7050106@vinicorp.com.vn>
+
+  (2010/06/22 9:44), Jean Christophe Andr? wrote:
+> "Nguyen Vu Hung (VNC)" <vuhung at vinicorp.com.vn> a ?crit :
+>> B?y gi? l?m sao ?? turn off ldap ?? c? th? ssh hay physically login 
+>> ???c?
+>
+> N?u c? th? kh?i ??ng l?i ???c th? v?o grub, th?m v?o "init=/bin/bash"
+> cu?i c?u "kernel", th? boot. Sao ??, g? l?nh "mount -o remount,rw /"
+> ?? c? ph?p s?a c?c t?p trong h? th?ng.
+>
+V?n may m?n l? c? vnc session, login ???c, type ???c command.
+
+> R?i ch?y l?nh "pam-auth-update" ?? ch?n c?c m?-dun mu?n s? d?ng v?i PAM
+> v? t?t LDAP.
+L?nh pam-auth-update n?y kh?ng t?n t?i trong CentOS
+
+authconfig c?ng kh?ng work (m?c d? ldap ??u ???c disabled).
+# btw, authconfig ???c system-config-authentication g?i)
+
+Hi?n t??ng: Khi ch?y system-config-authentication th? config c?a LDAP b? 
+grey out
+(xem h?nh ??nh k?m).
+
+C?ch fix:
+
+1. yum -y install nss_ldap (Nguy?n nh?n ch?nh l? do thi?u package n?y)
+2. Ch?y system-config-authentication (l?c n?y 2 option c?a LDAP kh?ng b? 
+grey out n?a)
+    T?m th?i enable 02 LDAP options.
+3. T?t m?n h?nh system-config-authentication
+4. Kh?i ??ng l?i system-config-authentication
+5. Disable 02 LDAP options.
+
+-> L?c n?y ssh l?i ???c v?o server :)
+
+Thanks b?c komare v? Jean.
+
+[root at vinicorp ~]# authconfig --disableldap --disableldapauth  --update
+[root at vinicorp ~]# authconfig | grep ldap
+   --enableldap          enable LDAP for user information by default
+   --disableldap         disable LDAP for user information by default
+   --enableldapauth      enable LDAP for authentication by default
+   --disableldapauth     disable LDAP for authentication by default
+   --ldapserver=<server>
+   --ldapbasedn=<dn>     default LDAP base DN
+   --enableldaptls, --enableldapssl
+   --disableldaptls, --disableldapssl
+   --ldaploadcacert=<URL>
+
+[vuhung at vinicorp ~]$ ssh vuhung at localhost
+The authenticity of host 'localhost (127.0.0.1)' can't be established.
+RSA key fingerprint is 5f:93:1b:04:0d:95:8f:98:46:b6:c6:7d:da:52:57:2f.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'localhost' (RSA) to the list of known hosts.
+vuhung at localhost's password:
+Connection closed by 127.0.0.1
+
+tail /var/log/secure
+Jun 22 10:06:17 vinicorp sshd[10617]: PAM [error: 
+/lib/security/pam_ldap.so: cannot open shared object file: No such file 
+or directory]
+Jun 22 10:06:17 vinicorp sshd[10617]: PAM adding faulty module: 
+/lib/security/pam_ldap.so
+Jun 22 10:06:20 vinicorp sshd[10617]: Failed password for vuhung from 
+127.0.0.1 port 50506 ssh2
+Jun 22 03:06:20 vinicorp sshd[10618]: fatal: Access denied for user 
+vuhung by PAM account configuration
+
+
+[root at vinicorp ~]# authconfig --disableldap --disableldapauth --test
+caching is disabled
+nss_files is always enabled
+nss_compat is disabled
+nss_db is disabled
+nss_hesiod is disabled
+  hesiod LHS = ""
+  hesiod RHS = ""
+nss_ldap is disabled
+  LDAP+TLS is disabled
+  LDAP server = "ldap://127.0.0.1/"
+  LDAP base DN = "dc=example,dc=com"
+nss_nis is disabled
+  NIS server = ""
+  NIS domain = ""
+nss_nisplus is disabled
+nss_winbind is disabled
+  SMB workgroup = "VINICORP"
+  SMB servers = ""
+  SMB security = "user"
+  SMB realm = ""
+  Winbind template shell = "/bin/false"
+  SMB idmap uid = "16777216-33554431"
+  SMB idmap gid = "16777216-33554431"
+nss_wins is disabled
+pam_unix is always enabled
+  shadow passwords are enabled
+  password hashing algorithm is md5
+pam_krb5 is disabled
+  krb5 realm = "EXAMPLE.COM"
+  krb5 realm via dns is disabled
+  krb5 kdc = "kerberos.example.com:88"
+  krb5 kdc via dns is disabled
+  krb5 admin server = "kerberos.example.com:749"
+pam_ldap is disabled
+
+  LDAP+TLS is disabled
+  LDAP server = "ldap://127.0.0.1/"
+  LDAP base DN = "dc=example,dc=com"
+pam_pkcs11 is disabled
+
+  use only smartcard for login is disabled
+  smartcard module = "coolkey"
+  smartcard removal action = "Ignore"
+pam_smb_auth is disabled
+  SMB workgroup = "VINICORP"
+  SMB servers = ""
+pam_winbind is disabled
+  SMB workgroup = "VINICORP"
+  SMB servers = ""
+  SMB security = "user"
+  SMB realm = ""
+pam_cracklib is enabled (try_first_pass retry=3)
+pam_passwdqc is disabled ()
+pam_access is disabled ()
+pam_mkhomedir is disabled ()
+Always authorize local users is disabled ()
+Authenticate system accounts against network services is disabled
+
+
+
+
+
+
+-- 
+**********************************************************************
+
+Viet Nhat General Joint Stock Company (Vinicorp)
+
+Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+
+Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+
+Nguyen Vu Hung
+
+Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+
+***********************************************************************
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: ldap-disabled-01.png
+Type: image/png
+Size: 32724 bytes
+Desc: not available
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100622/253fa531/attachment-0002.png>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: ldap-disabled-02.png
+Type: image/png
+Size: 28124 bytes
+Desc: not available
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100622/253fa531/attachment-0003.png>
+
+From vu.do.quynh at auf.org  Wed Jun 23 10:54:36 2010
+From: vu.do.quynh at auf.org (Vu Do Quynh)
+Date: Wed, 23 Jun 2010 10:54:36 +0700
+Subject: [HanoiLUG] =?utf-8?b?VMOgaSBsaeG7h3UgZ2nhu5tpIHRoaeG7h3UgVWJ1bnR1?=
+ =?utf-8?q?_10=2E04_LTS?=
+Message-ID: <4C21857C.9030605@auf.org>
+
+Ch?o c?c anh ch?,
+
+Ai quan t?m ??n c? th? t?i v? ??c m?t t?i li?u ng?n, gi?i thi?u v? nh?ng 
+n?t m?i c?a Ubuntu 10.04 LTS Lucid Lynx t?i ??y:
+
+http://hanoi.centre-linux.org/article.php3?id_article=121
+
+Ch?c m?nh kh?e.
+-- 
+M. VU DO Quynh
+AUF (T? ch?c h?p t?c ?H Ph?p ng?)
+Campus num?rique francophone (CNF) de Hanoi
+Nh? D, ng? 42 T? Quang B?u
+T?l.: (84-4) 38.68.48.85 ; Fax: (84-4) 38.69.45.09
+http://www.vn.refer.org/vietnam/
+
+
+From vuhung at vinicorp.com.vn  Wed Jun 23 16:42:51 2010
+From: vuhung at vinicorp.com.vn (Nguyen Vu Hung (VNC))
+Date: Wed, 23 Jun 2010 16:42:51 +0700
+Subject: [HanoiLUG] exuberant-ctags
+Message-ID: <4C21D71B.8040606@vinicorp.com.vn>
+
+  C?c b?c cho em h?i,
+
+//exuberant-ctags trong h? debian ch?nh l? ctags trong d?ng Redhat ph?i 
+kh?ng nh??
+
+Debian: apt-get install exuberant-ctags
+Redhat: yum install ctags?
+
+ctags: ctags.sf.net
+
+-- 
+**********************************************************************
+
+Viet Nhat General Joint Stock Company (Vinicorp)
+
+Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+
+Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+
+Nguyen Vu Hung
+
+Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+
+***********************************************************************
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100623/a69b23c3/attachment.htm>
+
+From nguyen.hong.quang at auf.org  Thu Jun 24 17:43:11 2010
+From: nguyen.hong.quang at auf.org (Nguyen Hong Quang (home))
+Date: Thu, 24 Jun 2010 17:43:11 +0700
+Subject: [HanoiLUG] =?utf-8?b?RndkOiBbaWN0LXZuXSBHaeG6o2kgdGjGsOG7n25nIE0=?=
+ =?utf-8?b?w7lhIGjDqCBzw6FuZyB04bqhbyB2aeG6v3QgUGjhuqduIG3hu4FtIG5ndQ==?=
+ =?utf-8?b?4buTbiBt4bufIGzhuqduIHRo4bupIDIgbsSDbSAyMDEwIGdpw6BuaCBjaG8g?=
+ =?utf-8?b?c2luaCB2acOqbiBi4bqvdCDEkeG6p3Uga2jhu59pIMSR4buZbmcs?=
+Message-ID: <4C2336BF.7070706@auf.org>
+
+Ch?o HanoiLUGers,
+
+T?i xin g?i cho t?t c? anh ch? em c?a HanoiLUG l?i k?u g?i h??ng ?ng
+cu?c thi "M?a h? s?ng t?o, SV vi?t PM TDNM 2010" d??i ??y c?a anh Nguy?n
+Long, TTK H?i Tin h?c VN (VAIP). ??y l? m?t cu?c thi r?t h?u ?ch, ??c
+bi?t l? v?i c?c b?n SV ?ang tham gia HanoiLUG. Cu?c thi n?m ngo?i ??
+???c t? ch?c kh? th?nh c?ng. H?m OpenDay cu?i th?ng tr??c ? Hanoi, t?i
+?? c? m?t b?o c?o ng?n v? cu?c thi n?y.
+
+V?i c?c HanoiLUGers kh?ng c?n l? SV th? c?c anh ch? v?n c? th? tham gia
+v? ??ng g?p v?i vai tr? ?? xu?t ? t??ng, l?m mentor cho c?c nh?m d? ?n,
+ho?c tham gia h?i ??ng gi?m kh?o. N?m ngo?i, t?i c?ng ?? nh?n ???c ???c
+s? tham gia nhi?t t?nh c?a m?t s? anh em HanoiLUG. N?u anh ch? n?o c? ?
+t??ng ph?t tri?n, ho?n thi?n m?t PMNM n?o ?? m? m?nh cho l? h?u ?ch, h?y
+g?i ? t??ng c?a m?nh cho t?i. H?y c?ng b? ? t??ng c?a m?nh r?ng r?i tr?n
+HanoiLUG v? tr?n c?c di?n ??n kh?c ?? l?i cu?n c?c b?n SV c?ng tham gia
+th?c hi?n v? l?m h? s? ??ng k? g?i BTC.
+
+?? c? th?ng tin chi ti?t, xin m?i h?y ??c th? d??i v? v?o th?m trang web
+c?a cu?c thi. Ch? c?n 2 tu?n n?a l? h?t th?i gian ??ng k? n?n d? ?ang
+gi?a m?a worldcup, v?n mong m?i ng??i s? l?u t?m cho.
+
+Xin c?m ?n.
+
+Quang
+
+-------- Message original --------
+Sujet: 	[ict-vn] Gi?i th??ng M?a h? s?ng t?o vi?t Ph?n m?m ngu?n m? l?n
+th? 2 n?m 2010 gi?nh cho sinh vi?n b?t ??u kh?i ??ng,
+Date : 	Wed, 2 Jun 2010 12:05:08 +0700
+De : 	nguyenlongvaip <nguyenlongvaip at gmail.com>
+
+
+K?nh th?a c?c Anh, Ch?,
+V?i s? n? l?c c?a Anh H?ng Quang v? nh?m chuy?n tr?ch,
+*Gi?i th??ng M?a h? s?ng t?o vi?t Ph?n m?m ngu?n m? l?n th? 2 n?m 2010
+gi?nh cho sinh vi?n b?t ??u kh?i ??ng,*
+Chi ti?t v? Quy ch?, c?ch th?c, th?i gian tr?n trang :
+ http://www.olp.vn/mhst
+Tham gia Gi?i th??ng sinh vi?n s? ti?p c?n v? th?c hi?n c?c d? ?n PMNM
+trong 3 th?ng h? (t? th?ng 7-10) v? trao gi?i v?o d?p K? ni?m ??i l?
+1000 n?m Th?ng Long - H? N?i c?ng v?i s? ki?n Olympic Tin h?c Sinh vi?n
+Vi?t Nam v? K? thi ACM/ICPC Ch?u ? t? ch?c t?i ??i h?c C?ng ngh? - ?HQG
+H? N?i v?o cu?i th?ng 11/2010.
+H?i Tin h?c Vi?t Nam c?ng ?? g?i Th?ng b?o t?i 300 tr??ng ??i h?c v? Cao
+??ng trong c? n??c,
+H?i Tin h?c Vi?t Nam ??n v? ch? tr? Gi?i th??ng k?u g?i:
+- C?c Anh, Ch? (CQ-??n v?) ??ng g?p ? t??ng v? ?? xu?t - ??t h?ng c?c d?
+?n PMNM cho sinh vi?n
+- C?c chuy?n gia ??ng k? l?m Mentor cho c?c d? ?n sinh vi?n
+- C?c tr??ng ??i h?c v? Cao ??ng t?ch c?c tuy?n truy?n cho sinh vi?n
+tham gia.
+- C?c CQ-?V h? tr? - t?i tr? cho c?ng t?c t? ch?c, ??u t? cho c?c Team
+SV th?c hi?n d? ?n, Qu? gi?i th??ng (chi ti?t tr?n
+http://docs.google.com/a/olp.vn/viewer?a=v&pid=sites&srcid=b2xwLnZufHd3d3xneDphMzZmMTcwYjFhMzA3Mzc
+<http://docs.google.com/a/olp.vn/viewer?a=v&pid=sites&srcid=b2xwLnZufHd3d3xneDphMzZmMTcwYjFhMzA3Mzc>)
+
+BTC ch?n th?nh c?m ?n c?c DN ?? t?ch c?c tham gia nh?: VP CNTT- B?
+KHCN, SUN (t?i tr?), FPT online ??t h?ng d? ?n v? h? tr? sinh vi?n c?ng
+nh? ??ng t? ch?c ph?t ??ng MHST FOSS 2010 t?i Tp HCM, ?? N?ng, H? N?i.
+R?t mong nh?n nhi?u ?ng h? h?n n?a.
+BTC c?ng mong r?ng c?c chuy?n gia tham gia MHST FOSS 2009 ti?p t?c ??ng
+h?nh c?ng MHST FOSS 2010,
+Chi ti?t li?n h? g?i v?:  mhst at olp.vn , nguyen.hong.quang at auf.org
+<mailto:nguyen.hong.quang at auf.org> , itweek at vnn.vn <mailto:itweek at vnn.vn>
+Tr?n tr?ng,
+Nguy?n Long
+
+
+
+
+
+----- Original Message -----
+
+    *From:* Nguy?n Hi?n <mailto:hiennguyen at truthinet.com>
+    *To:* ICT-VN <mailto:ict-vn at coltech.vnu.vn>
+    *Sent:* Tuesday, June 01, 2010 4:56 PM
+    *Subject:* [ict-vn] H??ng d?ch v? v? nh?ng ?i?u s? x?y ra trong
+    t??ng lai - ngu?n g?c th?ng tin v? lu?t c?a ch?ng?
+
+    K?nh th?a c?c anh ch?,
+
+    M?t th?ng tin r?t th?c qua ???ng link
+
+http://www.stuff.co.nz/technology/digital-living/3764173/Google-sued-after-map-directions-lead-to-accident
+    s? ??a c?c anh ch? ??n m?t c?u h?i l?n r?ng: gi? tr? d?ch v? c?n c?
+    c? nh?ng ? th?c t?n tr?ng, b?o v? l?i ?ch con ng??i hay ch? l? cung
+    c?p d?ch v? m?t c?ch ??n thu?n.
+
+    Hi?n Nguy?n
+    iNet Soluitons
+
+    ------------------------------------------------------------------------
+
+    ---------
+    # Ghi chu: ICT-VN at coltech.vnu.vn la mailing-list gom cac nha
+    nghien cuu, giang day, trien khai va quan ly CNTT-TT tu cac Truong,
+    Vien, Cong ty va Co quan - To chuc Chinh phu va phi Chinh phu;
+    # Xin chi gui nhung trao doi huu ich chung cho cong dong ICT-VN;
+    # Website cac ICT-Events 2008 tai VN: www.coltech.vnu.vn/ict-vn
+-------------- next part --------------
+An embedded and charset-unspecified text was scrubbed...
+Name: Portion de message jointe
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100624/60f577df/attachment.txt>
+
+From vu.do.quynh at auf.org  Fri Jun 25 10:57:29 2010
+From: vu.do.quynh at auf.org (Vu Do Quynh)
+Date: Fri, 25 Jun 2010 10:57:29 +0700
+Subject: [HanoiLUG] Shutdown and restart Ubuntu 10.04
+In-Reply-To: <602893.25370.qm@web45009.mail.sp1.yahoo.com>
+References: <602893.25370.qm@web45009.mail.sp1.yahoo.com>
+Message-ID: <4C242929.5020804@auf.org>
+
+Le 25/06/2010 10:27, Tri Nguyen Dinh a ?crit :
+> Hello ca nha ,
+> 
+> Minh vua nang cap may con Ubuntu desktop trong van phong minh len
+> Ununtu 10.04 nhung minh dang co van de voi shutsown hoac restart , no
+> cu dung im va chang co phan ung gi . toan phai dung terminal hoac nut
+> power. Co ai biet cach gi khac phuc may vu day khong nhi
+> 
+
+V?n ?? n?y nhi?u ng??i ?? g?p.
+https://bugs.launchpad.net/ubuntu/+source/linux/+bug/582129
+
+B?n th?n t?i c? 01 m?y ? nh? (laptop ??i c? -2004- v?i card Nvidia) t? 
+nhi?n g?p v?n ?? ?? (th? ph?i m? terminal v? ra l?nh "sudo shutdown -h 
+now"), trong khi c?c lo?i laptop Acer + c?c m?y t?nh ?? b?n kh?c th? 
+kh?ng c? v?n ?? g? h?t. Trong post tr?n ng??i ta b?o b? OOo Quickstarter 
+s? gi?i quy?t v?n ??. T?i s? th? chi?u nay xem ra sau.
+
+C? th? do v?n ?? kernel + ph?n c?ng : b?n n?n cho bi?t phi?n b?n kernel 
+?ang d?ng v?i Lucid m? b? v?n ?? tr?n (= output c?a l?nh "uname -r" 
+trong terminal) v? n?n cho bi?t c?u h?nh (mainboard, video chipset) t?n 
+h?ng c?a m?y t?nh ?? bi?t r? h?n.
+
+-- 
+M. VU DO Quynh
+AUF (T? ch?c h?p t?c ?H Ph?p ng?)
+Campus num?rique francophone (CNF) de Hanoi
+Nh? D, ng? 42 T? Quang B?u
+T?l.: (84-4) 38.68.48.85 ; Fax: (84-4) 38.69.45.09
+http://www.vn.refer.org/vietnam/
+
+
+From viethanguyen at gmail.com  Sat Jun 26 09:06:03 2010
+From: viethanguyen at gmail.com (Nguyen Viet Ha)
+Date: Sat, 26 Jun 2010 09:06:03 +0700
+Subject: [HanoiLUG] Google outs source code for Android 2.2
+Message-ID: <AANLkTinr38o5jwE4TyvnsijNkTch_HUjXAST2GC8OLWl@mail.gmail.com>
+
+FYI
+
+http://www.theregister.co.uk/2010/06/25/froyo_source_code/
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100626/e309b9be/attachment.htm>
+
+From vuhung16plus at gmail.com  Sat Jun 26 17:45:26 2010
+From: vuhung16plus at gmail.com (Nguyen Vu Hung)
+Date: Sat, 26 Jun 2010 17:45:26 +0700
+Subject: [HanoiLUG] Java vs. NET
+Message-ID: <AANLkTinU6Mp53HsxOuRQUCPo0mHcrApIVJhtYNfgsz8S@mail.gmail.com>
+
+Hi all,
+
+C?c xem v? ??c script c?a trailer n?y:
+
+http://www.youtube.com/watch?v=A1zySeNpW20
+
+Comments?
+
+-- 
+Best Regards,
+Nguyen Hung Vu [aka: NVH] ( in Vietnamese: Nguy?n V? H?ng )
+vuhung16plus{remove}@gmail.dot.com
+<vuhung16plus%7Bremove%7D at gmail.dot.com>, YIM: vuhung16 , Skype:
+vuhung16plus
+A brief profile: http://www.hn.is.uec.ac.jp/~vuhung/Nguyen.Vu.Hung.html
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100626/7b74e455/attachment.htm>
+
+From huantnh at gmail.com  Sun Jun 27 02:38:48 2010
+From: huantnh at gmail.com (Huan T)
+Date: Sat, 26 Jun 2010 14:38:48 -0500
+Subject: [HanoiLUG] Shutdown and restart Ubuntu 10.04
+In-Reply-To: <4C242929.5020804@auf.org>
+Message-ID: <4c26574b.5770e70a.1d6b.3c52@mx.google.com>
+
+Minh dang su dung card ATi voi stock driver (Open source) voi Ubuntu 10.4 cung bi hien tuong bay.
+
+Tuc qua thao being cai card ATi ra de dung integrated Intel graphics thi OK.&nbsp;
+
+Kinh nghiem la khong bao gio dung ATi hay Nvidia tru khi ban biet chac han la no chay tot, minh tu lau da mua tat ca cac san pham card do hoa (va nhu the, di nhien ca CPU) cua intel. Never had a single problem. Sap toi intel con dua ra ca ho tro VA-API cho tat ca cac card di kem CPU core + 4500MHD nua :-)
+
+
+
+
+
+-- Sent from my Linux/webOSOn Jun 24, 2010 22:57, Vu Do Quynh &lt;vu.do.quynh at auf.org&gt; wrote: 
+
+Le 25/06/2010 10:27, Tri Nguyen Dinh a ?crit :
+&gt; Hello ca nha ,
+&gt; 
+&gt; Minh vua nang cap may con Ubuntu desktop trong van phong minh len
+&gt; Ununtu 10.04 nhung minh dang co van de voi shutsown hoac restart , no
+&gt; cu dung im va chang co phan ung gi . toan phai dung terminal hoac nut
+&gt; power. Co ai biet cach gi khac phuc may vu day khong nhi
+&gt; 
+
+V?n ?? n?y nhi?u ng??i ?? g?p.
+https://bugs.launchpad.net/ubuntu/+source/linux/+bug/582129
+
+B?n th?n t?i c? 01 m?y ? nh? (laptop ??i c? -2004- v?i card Nvidia) t? 
+nhi?n g?p v?n ?? ?? (th? ph?i m? terminal v? ra l?nh "sudo shutdown -h 
+now"), trong khi c?c lo?i laptop Acer + c?c m?y t?nh ?? b?n kh?c th? 
+kh?ng c? v?n ?? g? h?t. Trong post tr?n ng??i ta b?o b? OOo Quickstarter 
+s? gi?i quy?t v?n ??. T?i s? th? chi?u nay xem ra sau.
+
+C? th? do v?n ?? kernel + ph?n c?ng : b?n n?n cho bi?t phi?n b?n kernel 
+?ang d?ng v?i Lucid m? b? v?n ?? tr?n (= output c?a l?nh "uname -r" 
+trong terminal) v? n?n cho bi?t c?u h?nh (mainboard, video chipset) t?n 
+h?ng c?a m?y t?nh ?? bi?t r? h?n.
+
+-- 
+M. VU DO Quynh
+AUF (T? ch?c h?p t?c ?H Ph?p ng?)
+Campus num?rique francophone (CNF) de Hanoi
+Nh? D, ng? 42 T? Quang B?u
+T?l.: (84-4) 38.68.48.85 ; Fax: (84-4) 38.69.45.09
+http://www.vn.refer.org/vietnam/
+
+_______________________________________________
+POST RULES : http://wiki.hanoilug.org/hanoilug:mailing_list_guidelines
+_______________________________________________
+HanoiLUG mailing lists: http://lists.hanoilug.org/
+HanoiLUG wiki: http://wiki.hanoilug.org/
+HanoiLUG blog: http://blog.hanoilug.org/
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100626/c9d25761/attachment.htm>
+
+From huantnh at gmail.com  Sun Jun 27 02:43:35 2010
+From: huantnh at gmail.com (Huan T)
+Date: Sat, 26 Jun 2010 14:43:35 -0500
+Subject: [HanoiLUG] Java vs. NET
+In-Reply-To: <AANLkTinU6Mp53HsxOuRQUCPo0mHcrApIVJhtYNfgsz8S@mail.gmail.com>
+Message-ID: <4c26586a.5770e70a.1d72.3d69@mx.google.com>
+
+How about Nokia/Qt?
+
+
+
+-- Sent from my Linux/webOSOn Jun 26, 2010 5:45, Nguyen Vu Hung &lt;vuhung16plus at gmail.com&gt; wrote: 
+
+Hi all,
+
+C?c xem v? ??c script c?a trailer n?y:
+
+http://www.youtube.com/watch?v=A1zySeNpW20
+
+Comments?
+-- 
+Best Regards,
+Nguyen Hung Vu [aka: NVH] ( in Vietnamese: Nguy?n V? H?ng )
+
+vuhung16plus{remove}@gmail.dot.com , YIM: vuhung16 , Skype: vuhung16plus
+A brief profile: http://www.hn.is.uec.ac.jp/~vuhung/Nguyen.Vu.Hung.html
+
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100626/73d4ad64/attachment.htm>
+
+From vuhung at vinicorp.com.vn  Wed Jun 30 13:18:20 2010
+From: vuhung at vinicorp.com.vn (Nguyen Vu Hung (VNC))
+Date: Wed, 30 Jun 2010 13:18:20 +0700
+Subject: [HanoiLUG] FF 4 bloated?
+Message-ID: <4C2AE1AC.3050708@vinicorp.com.vn>
+
+  Ch?o c?c b?c,
+
+FF c?ng ng?y c?ng l?n, ?m ??m nhi?u ch?c n?ng
+v? ch?y ch?m (ngay c? khi ch?a c? addon).
+
+H?n n?a, java script engine c?a FF4 tuy ??? c?i thi?n
+nh?ng v?n k?m c?c browser kh?c, ??c bi?t l? Chrome.
+
+http://www.conceivablytech.com/1572/products/mozilla-posts-firefox-4-0-beta-1/
+
+-- 
+**********************************************************************
+
+Viet Nhat General Joint Stock Company (Vinicorp)
+
+Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+
+Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+
+Nguyen Vu Hung
+
+Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+
+***********************************************************************
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100630/7fc370db/attachment.htm>
+
+From viethanguyen at gmail.com  Wed Jun 30 13:57:25 2010
+From: viethanguyen at gmail.com (Nguyen Viet Ha)
+Date: Wed, 30 Jun 2010 13:57:25 +0700
+Subject: [HanoiLUG] FF 4 bloated?
+In-Reply-To: <4C2AE1AC.3050708@vinicorp.com.vn>
+References: <4C2AE1AC.3050708@vinicorp.com.vn>
+Message-ID: <AANLkTinDtXJGGu_sWyhsn6K_QR8s0DO_sHER4njcYkiS@mail.gmail.com>
+
+Em kh?ng d?ng FF t? l?u r?i b?c ? v? c? tr?n win l?n linux ??u n?ng qu?. Em
+to?n d?ng chrome.
+
+2010/6/30 Nguyen Vu Hung (VNC) <vuhung at vinicorp.com.vn>
+
+> Ch?o c?c b?c,
+>
+> FF c?ng ng?y c?ng l?n, ?m ??m nhi?u ch?c n?ng
+> v? ch?y ch?m (ngay c? khi ch?a c? addon).
+>
+> H?n n?a, java script engine c?a FF4 tuy ??? c?i thi?n
+> nh?ng v?n k?m c?c browser kh?c, ??c bi?t l? Chrome.
+>
+>
+> http://www.conceivablytech.com/1572/products/mozilla-posts-firefox-4-0-beta-1/
+>
+> --
+> **********************************************************************
+>
+> Viet Nhat General Joint Stock Company (Vinicorp)
+>
+> Add:  3F, 92 Hoang Ngan - Trung Hoa - Cau Giay - Hanoi
+>
+> Tel :(+84)-4-3556-3607 Fax :(+84)-4-3556-3608
+>
+> Nguyen Vu Hung
+>
+> Email: vuhung at vinicorp.com.vn Mobile: (+84)-167-252-5834
+>
+> ***********************************************************************
+>
+>
+>
+> _______________________________________________
+> POST RULES : http://wiki.hanoilug.org/hanoilug:mailing_list_guidelines
+> _______________________________________________
+> HanoiLUG mailing lists: http://lists.hanoilug.org/
+> HanoiLUG wiki: http://wiki.hanoilug.org/
+> HanoiLUG blog: http://blog.hanoilug.org/
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100630/c36da9e0/attachment.htm>
+

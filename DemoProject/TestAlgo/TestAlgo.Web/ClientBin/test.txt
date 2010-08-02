@@ -1,0 +1,97 @@
+From trungtpbk at gmail.com  Tue Jun  1 01:10:30 2010
+From: trungtpbk at gmail.com (=?UTF-8?B?bmd1eeG7hW4gdmnhur90IHRow6BuaCB0cnVuZyA=?=)
+Date: Tue, 1 Jun 2010 01:10:30 +0700
+Subject: [HanoiLUG] mic trong ubuntu 10.04 64 bit
+Message-ID: <AANLkTimvZE6AL323CfvWSHGftIHX0ld2y0UwrbC2fkoa@mail.gmail.com>
+
+em c? m?t v?n ?? mong m?i ng??i gi?p ?? kh?c ph?c: em c?i ubuntu 10.04 tr?n
+lap NGN-NS240E, khi headphone v?n ho?t ??ng b?nh th??ng nh?ng khi n?i v?o
+mic th? ko nghe th?y j. em th? d?ng recorder ?? ghi ?m th? th?y v?n ghi
+???c, khi ph?t l?i v?n nghe ???c nh?ng c?i ?? thu ?m. em ?? c?i b?n 9.04
+c?ng tr?n m?y n?y th? ho?t ??ng t?t.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100601/f32fc907/attachment.htm>
+
+From vu.do.quynh at auf.org  Tue Jun  1 10:22:49 2010
+From: vu.do.quynh at auf.org (Vu Do Quynh)
+Date: Tue, 01 Jun 2010 10:22:49 +0700
+Subject: [HanoiLUG] mic trong ubuntu 10.04 64 bit
+In-Reply-To: <AANLkTimvZE6AL323CfvWSHGftIHX0ld2y0UwrbC2fkoa@mail.gmail.com>
+References: <AANLkTimvZE6AL323CfvWSHGftIHX0ld2y0UwrbC2fkoa@mail.gmail.com>
+Message-ID: <4C047D09.8030502@auf.org>
+
+Le 01/06/2010 01:10, nguy?n vi?t th?nh trung a ?crit :
+> em c? m?t v?n ?? mong m?i ng??i gi?p ?? kh?c ph?c: em c?i ubuntu 10.04 tr?n
+> lap NGN-NS240E, khi headphone v?n ho?t ??ng b?nh th??ng nh?ng khi n?i v?o
+> mic th? ko nghe th?y j. em th? d?ng recorder ?? ghi ?m th? th?y v?n ghi
+> ???c, khi ph?t l?i v?n nghe ???c nh?ng c?i ?? thu ?m. em ?? c?i b?n 9.04
+> c?ng tr?n m?y n?y th? ho?t ??ng t?t.
+
+C? l? anh ph?i ki?m tra c?c settings c?a ?m thanh:
+
+1) nh?n ph?i v?o bi?u t??ng ?m thanh tr?n thanh ?i?u khi?n ph?a tr?n 
+(b?n ph?i)
+
+2) ch?n m? tr?nh ?i?u khi?n ?m l??ng.
+
+N?u kh?ng c? bi?u t??ng ?m thanh tr?n thanh ?i?u khi?n, v?o tr?nh ??n H? 
+Th?ng (System) > T?y th?ch > ?m thanh.
+
+Sau ?? t?m ch?nh l?i c?c tr?nh ?i?u khi?n thi?t b? h?p l? nh? Front 
+Front Mic, Surround (c?c l?a ch?n t?y theo ph?n c?ng)
+
+-- 
+M. VU DO Quynh
+AUF (T? ch?c h?p t?c ?H Ph?p ng?)
+Campus num?rique francophone (CNF) de Hanoi
+Nh? D, ng? 42 T? Quang B?u
+T?l.: (84-4) 38.68.48.85 ; Fax: (84-4) 38.69.45.09
+http://www.vn.refer.org/vietnam/
+
+
+From pham.bich.lien at auf.org  Tue Jun  1 10:36:54 2010
+From: pham.bich.lien at auf.org (Pham Bich Lien)
+Date: Tue, 01 Jun 2010 10:36:54 +0700
+Subject: [HanoiLUG] Thu bay tu do 5/6/2010
+Message-ID: <4C048056.4010903@auf.org>
+
+Ch?o c?c b?n,
+
+Th? b?y 05 th?ng 06/2010, Trung t?m CNF s? gi?i thi?u h? ?i?u h?nh 
+Sugar, d?ng tr?n c?c m?y t?nh n?i ti?ng XO c?a d? ?n OLPC (One Laptop 
+Per Child).
+
+Giao di?n ?? h?a Sugar ???c thi?t k? d?nh ri?ng cho c?c tr? em ?? tu?i 
+m?u gi?o v? ti?u h?c.
+
+1) Bu?i s?ng, t? 10g-12g c?c b?n c? th? t?m hi?u c?ch c?i ??t, ch?y 
+Sugar tr?n m?t ? USB.
+
+2) Bu?i chi?u, m?t s? chuy?n gia s? tr?nh b?y v? d? ?n OLPC-Vi?t Nam v? 
+t?nh h?nh tri?n khai m?t d? ?n nh? t?i l?ng ng? d?n V?ng Vi?ng (V?nh h? 
+Long).
+
+C? th? t?i ch??ng tr?nh b?ng ti?ng Vi?t t? trang:
+
+http://www.vn.refer.org/vietnam/article.php3?id_article=445
+
+R?t mong nh?n ???c s? tham gia ??ng g?p c?a c?c b?n.
+
+-- 
+Pham Thi Bich Lien
+Agence universitaire de la Francophonie, Bureau Asie Pacifique
+Campus num?rique francophone (CNF) de Hanoi
+IFI - Rez de chauss?e
+Ngo 42, Ta Quang Buu
+Q. Hai Ba Trung, Hanoi
+T?l: +84-4-3 868.48.85 ; T?l?copie: +84-4-3 869.45.09
+Sites de toile: http://www.vn.refer.org/
+
+-------------- section suivante --------------
+Une pi?ce jointe autre que texte a ?t? nettoy?e...
+Nom: ThuBay_TuDo_04-Sugar-Trisquel.pdf
+Type: application/pdf
+Taille: 130971 octets
+Desc: non disponible
+URL: <http://lists.hanoilug.org/pipermail/hanoilug/attachments/20100601/92f4423a/attachment-0001.pdf>
