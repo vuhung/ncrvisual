@@ -8,14 +8,11 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
-using System.Collections.Generic;
-using NCRVisual.Entities;
 
-namespace NCRVisual.DataProvider
+namespace NCRVisual.Entities
 {
-    public interface IDataProvider
+    public class User
     {
-        int[][] GetGaphMatrix();
-        List<Message> GetMessageList();
+        private String name;
     }
 }
