@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace NCRVisual.RelationGraph
+namespace NCRVisual.RelationDiagram
 {
     public interface IEntity
     {
