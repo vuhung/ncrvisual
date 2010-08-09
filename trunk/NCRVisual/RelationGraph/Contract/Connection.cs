@@ -1,4 +1,4 @@
-﻿namespace NCRVisual.RelationGraph
+﻿namespace NCRVisual.RelationDiagram
 {
     public class Connection
     {
