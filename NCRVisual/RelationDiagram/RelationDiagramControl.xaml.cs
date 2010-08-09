@@ -17,24 +17,23 @@ namespace NCRVisual.RelationDiagram
         int n;
         private ScaleTransform _scale;
 
+        DiagramController _myDiagramController;
+
         /// <summary>
         /// Default constructor
         /// </summary>
         public RelationDiagramControl()
         {
             InitializeComponent();
-
-            //getfile
-            WebClient client = new WebClient();
-            client.OpenReadAsync(new Uri("output.txt", UriKind.Relative));
-            client.OpenReadCompleted += new OpenReadCompletedEventHandler(client_OpenReadCompleted);
-
+           
             _entityCollection = new Collection<EntityControl>();
             _scale = new ScaleTransform();
             this.LayoutRoot.RenderTransform = _scale;
-            CreateTestNode();
-        }
 
+            _myDiagramController = new DiagramController();
+            _myDiagramController.InputReadingComplete += new EventHandler(_myDiagramController_InputReadingComplete);            
+        }
+       
         /// <summary>
         /// Create a node of the graph ( entity Control )
         /// </summary>
@@ -47,8 +46,11 @@ namespace NCRVisual.RelationDiagram
             GenericEntity entity = new GenericEntity(Display);
             EntityControl ctrl = new EntityControl(entity);
             ctrl.Title = entity.Name;
-            ctrl.Width = ctrl.RenderedWidth;
-            ctrl.Height = ctrl.RenderedHeight;
+
+            //ctrl.Width = ctrl.RenderedWidth;
+            //ctrl.Height = ctrl.RenderedHeight;
+            //ctrl.Width = ctrl.titleBlock.ActualWidth + (ctrl.rectangle.Padding.Left + ctrl.rectangle.BorderThickness.Left) * 2;
+            //ctrl.Height = ctrl.titleBlock.ActualHeight + (ctrl.rectangle.Padding.Top + ctrl.rectangle.BorderThickness.Top) * 2;
 
             LayoutRoot.Children.Add(ctrl);
             _entityCollection.Add(ctrl);
@@ -76,8 +78,9 @@ namespace NCRVisual.RelationDiagram
             LayoutRoot.Children.Add(connectionLine);
         }
 
-        //By Eledra
+        
         #region TestNode
+
         //Create Test graph collection - Each Node have 50x50 size
         private void CreateTestNode()
         {
@@ -113,96 +116,24 @@ namespace NCRVisual.RelationDiagram
             this._scale.ScaleX = factor;
             this._scale.ScaleY = factor;
         }
-        #endregion
+        #endregion  
 
-        //By HellDevil
-        #region LayoutAlgo
+        #region EventHandler
 
-        void TestController()
+        /// <summary>
+        /// Event handler after reading input
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void _myDiagramController_InputReadingComplete(object sender, EventArgs e)
         {
-
-        }
-
-        void client_OpenReadCompleted(object sender, OpenReadCompletedEventArgs e)
-        {
-            StreamReader reader = new StreamReader(e.Result);
-            int i = 0;
-            while (!reader.EndOfStream)
+            Collection<Point> pointPositions = (Collection<Point>)sender;
+            //Generate node
+            for (int i = 0; i < pointPositions.Count; i++)
             {
-                a[i] = new int[100];
-                string s = reader.ReadLine().Trim();
-                string[] r = s.Split(' ');
-                n = r.Length;
-                for (int j = 0; j < n; j++)
-                    a[i][j] = Int16.Parse(r[j]);
-                i++;
-            }
-            reader.Close();
-            //CreateRectangleNode();
-        }
-
-        void CreateTreeNode()
-        {
-            int[] save = new int[100];
-            for (int i = 0; i < n; i++)
-            {
-                save[i] = 0;
-            }
-            for (int i = 0; i < n; i++)
-            {
-                int count = 0;
-                for (int j = 0; j < n; j++)
-                    if (a[i][j] > 0)
-                        count++;
-                CreateNode(i.ToString(), save[count] * 70, count * 50);
-                save[count]++;
+                CreateNode(i.ToString(), pointPositions[i].X, pointPositions[i].Y);
             }
         }
-
-        void CreateRectangleNode()
-        {
-            double distance = 70;
-            int vNum = (int)(Math.Ceiling(n / 4));
-            double length = distance * vNum;
-            double pre;
-            int vTemp = vNum;
-            if (n % 4 == 1)
-                vTemp = vNum + 1;
-            int count = 1;
-            for (int i = 1; i <= vTemp; i++)
-            {
-
-                CreateNode(count.ToString(), i * distance, distance);
-                count++;
-            }
-            pre = vTemp * distance + distance;
-            vTemp = vNum;
-            if (n % 4 == 2)
-                vTemp = vNum + 1;
-            for (int i = 1; i <= vTemp; i++)
-            {
-                CreateNode(count.ToString(), pre, i * distance);
-                count++;
-            }
-            pre = vTemp * distance + distance;
-            vTemp = vNum;
-
-            if (n % 4 == 3)
-                vTemp = vNum + 1;
-            for (int i = vTemp + 1; i >= 2; i--)
-            {
-                CreateNode(count.ToString(), i * distance, pre);
-                count++;
-            }
-
-            for (int i = vNum + 1; i >= 2; i--)
-            {
-                CreateNode(count.ToString(), distance, i * distance);
-                count++;
-            }
-
-        }
-
         #endregion
 
     }

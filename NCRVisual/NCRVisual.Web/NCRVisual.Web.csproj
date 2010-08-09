@@ -80,6 +80,7 @@
     <Content Include="Global.asax" />
     <Content Include="NCRVisualTestPage.aspx" />
     <Content Include="NCRVisualTestPage.html" />
+    <Content Include="Output\output.txt" />
     <Content Include="RelationDiagramTestPage.aspx" />
     <Content Include="RelationDiagramTestPage.html" />
     <Content Include="Silverlight.js" />
