@@ -2,31 +2,58 @@
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Windows;
+using System.Net;
+using NCRVisual.RelationDiagram.Algo;
 
 namespace NCRVisual.RelationDiagram
 {
-    public class Controller
+    public class DiagramController
     {
-        public string ProjectDirectory { get; set; }
-        public Collection<Point> GetData()
+        private int[][] _input = new int[100][];
+        private int _vertexNumber;
+
+        /// <summary>
+        /// Event after reading input from data provider
+        /// </summary>
+        public EventHandler InputReadingComplete;
+
+        public IAlgorithm LayoutAlgorithm { get; set; }
+
+
+        /// <summary>
+        /// Create new instance of Diagram controller
+        /// </summary>
+        public DiagramController()
+        {            
+            LayoutAlgorithm = new TreeNodeAlgorithm();            
+            //getfile
+            WebClient client = new WebClient();
+            client.OpenReadAsync(new Uri("..\\Output\\output.txt", UriKind.Relative));
+            client.OpenReadCompleted += new OpenReadCompletedEventHandler(client_OpenReadCompleted);
+        }
+
+        void client_OpenReadCompleted(object sender, OpenReadCompletedEventArgs e)
         {
-            int [][] a=new int[100][];
-            char[] splitArr = { ' ' };
-            int n = 0;
-            ProjectDirectory = "output.txt";
-            StreamReader reader = new StreamReader(ProjectDirectory);
+            StreamReader reader = new StreamReader(e.Result);
             int i = 0;
             while (!reader.EndOfStream)
             {
-                string s=reader.ReadLine();
+                _input[i] = new int[100];
+                string s = reader.ReadLine().Trim();
                 string[] r = s.Split(' ');
-                n = r.Length;
-                for (int j = 0; j < n; j++)
-                    a[i][j] = Int16.Parse(r[j]) - 49;
+                _vertexNumber = r.Length;
+                for (int j = 0; j < _vertexNumber; j++)
+                    _input[i][j] = Int16.Parse(r[j]);
+                i++;
             }
-            return null;
-        }
-        
+            reader.Close();
 
+            Collection<Point> tempPoints = LayoutAlgorithm.RunAlgo(_input, _vertexNumber);
+
+            if (this.InputReadingComplete != null)
+            {
+                this.InputReadingComplete(tempPoints, null);
+            };
+        }    
     }
 }
