@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCRVisual", "NCRVisual\NCRV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCRVisual.Web", "NCRVisual.Web\NCRVisual.Web.csproj", "{DB0A9447-33E6-416E-A9C3-A53214D2B237}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationGraph", "RelationGraph\RelationGraph.csproj", "{8B154ED1-8B5C-4E0B-B0EB-087058E75E4E}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -23,6 +25,10 @@ Global
 		{DB0A9447-33E6-416E-A9C3-A53214D2B237}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB0A9447-33E6-416E-A9C3-A53214D2B237}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB0A9447-33E6-416E-A9C3-A53214D2B237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B154ED1-8B5C-4E0B-B0EB-087058E75E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B154ED1-8B5C-4E0B-B0EB-087058E75E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B154ED1-8B5C-4E0B-B0EB-087058E75E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B154ED1-8B5C-4E0B-B0EB-087058E75E4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

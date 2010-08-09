@@ -87,7 +87,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Content\Site.css" />
+    <Content Include="Controllers\Content\Site.css" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
