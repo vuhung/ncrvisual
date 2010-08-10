@@ -3,13 +3,8 @@ C:\Users\Welcome\Documents\Visual Studio 2008\Projects\TestAlgo\TestAlgo.Web\bin
 C:\Users\Welcome\Documents\Visual Studio 2008\Projects\TestAlgo\TestAlgo.Web\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Welcome\Documents\Visual Studio 2008\Projects\TestAlgo\TestAlgo.Web\obj\Debug\TestAlgo.Web.dll
 C:\Users\Welcome\Documents\Visual Studio 2008\Projects\TestAlgo\TestAlgo.Web\obj\Debug\TestAlgo.Web.pdb
-C:\Users\Welcome\Downloads\TestAlgo\TestAlgo\TestAlgo.Web\bin\TestAlgo.Web.dll
-C:\Users\Welcome\Downloads\TestAlgo\TestAlgo\TestAlgo.Web\bin\TestAlgo.Web.pdb
-C:\Users\Welcome\Downloads\TestAlgo\TestAlgo\TestAlgo.Web\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Welcome\Downloads\TestAlgo\TestAlgo\TestAlgo.Web\obj\Debug\TestAlgo.Web.dll
-C:\Users\Welcome\Downloads\TestAlgo\TestAlgo\TestAlgo.Web\obj\Debug\TestAlgo.Web.pdb
-D:\WORK\NCRV\NCRV\TestAlgo\TestAlgo.Web\bin\TestAlgo.Web.dll
-D:\WORK\NCRV\NCRV\TestAlgo\TestAlgo.Web\bin\TestAlgo.Web.pdb
-D:\WORK\NCRV\NCRV\TestAlgo\TestAlgo.Web\obj\Debug\ResolveAssemblyReference.cache
-D:\WORK\NCRV\NCRV\TestAlgo\TestAlgo.Web\obj\Debug\TestAlgo.Web.dll
-D:\WORK\NCRV\NCRV\TestAlgo\TestAlgo.Web\obj\Debug\TestAlgo.Web.pdb
+D:\Working\MHST2010\Source\DemoProject\TestAlgo\TestAlgo.Web\bin\TestAlgo.Web.dll
+D:\Working\MHST2010\Source\DemoProject\TestAlgo\TestAlgo.Web\bin\TestAlgo.Web.pdb
+D:\Working\MHST2010\Source\DemoProject\TestAlgo\TestAlgo.Web\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\MHST2010\Source\DemoProject\TestAlgo\TestAlgo.Web\obj\Debug\TestAlgo.Web.dll
+D:\Working\MHST2010\Source\DemoProject\TestAlgo\TestAlgo.Web\obj\Debug\TestAlgo.Web.pdb

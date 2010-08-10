@@ -1,0 +1,14 @@
+D:\Working\MHST2010\Source\NCRVisual\RelationDiagram\Bin\Debug\RelationDiagram.dll
+D:\Working\MHST2010\Source\NCRVisual\RelationDiagram\Bin\Debug\RelationDiagram.pdb
+D:\Working\MHST2010\Source\NCRVisual\RelationDiagram\Bin\Debug\AppManifest.xaml
+D:\Working\MHST2010\Source\NCRVisual\RelationDiagram\Bin\Debug\RelationDiagram.xap
+D:\Working\MHST2010\Source\NCRVisual\RelationDiagram\Bin\Debug\RelationDiagramTestPage.html
+D:\Working\MHST2010\Source\NCRVisual\RelationDiagram\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\MHST2010\Source\NCRVisual\RelationDiagram\obj\Debug\App.g.i.cs
+D:\Working\MHST2010\Source\NCRVisual\RelationDiagram\obj\Debug\EdgeControl.g.i.cs
+D:\Working\MHST2010\Source\NCRVisual\RelationDiagram\obj\Debug\EntityControl.g.i.cs
+D:\Working\MHST2010\Source\NCRVisual\RelationDiagram\obj\Debug\RelationDiagramControl.g.i.cs
+D:\Working\MHST2010\Source\NCRVisual\RelationDiagram\obj\Debug\RelationDiagram.g.resources
+D:\Working\MHST2010\Source\NCRVisual\RelationDiagram\obj\Debug\RelationDiagram.dll
+D:\Working\MHST2010\Source\NCRVisual\RelationDiagram\obj\Debug\RelationDiagram.pdb
+D:\Working\MHST2010\Source\NCRVisual\RelationDiagram\obj\Debug\XapCacheFile.xml
