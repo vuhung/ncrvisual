@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="TestAlgo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+   >    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Canvas x:Name="LayoutRoot"/>
+        <Grid Grid.Row="1">
+            <Slider x:Name="zoomSlider" Value="30" Minimum="1" Maximum="100" Margin="5" ValueChanged="zoomSlider_ValueChanged"/>
+        </Grid>
+   </Grid>
+</UserControl>

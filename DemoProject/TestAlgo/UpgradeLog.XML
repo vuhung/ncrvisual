@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="TestAlgo">
+</Property><Property Name="Solution File" Value="D:\Working\MHST2010\Source\DemoProject\TestAlgo\TestAlgo.sln">
+</Property><Property Name="User Options File" Value="D:\Working\MHST2010\Source\DemoProject\TestAlgo\TestAlgo.suo">
+</Property><Property Name="Date" Value="08 Tháng Tám 2010">
+</Property><Property Name="Time" Value="23:29 CH">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="TestAlgo.sln" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo.sln">
+</Event><Event ErrorLevel="0" Project="" Source="TestAlgo.suo" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo.suo">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\TestAlgo.csproj" Description="Project file successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\TestAlgo.csproj">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\TestAlgo.csproj.user" Description="Project user file successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\TestAlgo.csproj.user">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\App.xaml.cs" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\Contract\Connection.cs" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\Contract\Connection.cs">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\Contract\GenericEntity.cs" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\Contract\GenericEntity.cs">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\Contract\IEntity.cs" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\Contract\IEntity.cs">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\Controller.cs" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\Controller.cs">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\EntityControl.xaml.cs" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\EntityControl.xaml.cs">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\EntityControlClickedEventArgs.cs" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\EntityControlClickedEventArgs.cs">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\MainPage.xaml.cs" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\MainPage.xaml.cs">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\EdgeControl.xaml.cs" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\EdgeControl.xaml.cs">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\Properties\AppManifest.xml" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\Properties\AppManifest.xml">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\App.xaml" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\App.xaml">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\EntityControl.xaml" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\EntityControl.xaml">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\MainPage.xaml" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\MainPage.xaml">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\EdgeControl.xaml" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo\EdgeControl.xaml">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\TestAlgo.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TestAlgo" Source="TestAlgo\TestAlgo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TestAlgo.Web" Source="TestAlgo.Web\TestAlgo.Web.csproj" Description="Project file successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo.Web\TestAlgo.Web.csproj">
+</Event><Event ErrorLevel="0" Project="TestAlgo.Web" Source="TestAlgo.Web\TestAlgo.Web.csproj.user" Description="Project user file successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo.Web\TestAlgo.Web.csproj.user">
+</Event><Event ErrorLevel="0" Project="TestAlgo.Web" Source="TestAlgo.Web\Default.aspx.cs" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo.Web\Default.aspx.cs">
+</Event><Event ErrorLevel="0" Project="TestAlgo.Web" Source="TestAlgo.Web\Default.aspx.designer.cs" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo.Web\Default.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="TestAlgo.Web" Source="TestAlgo.Web\Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo.Web\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="TestAlgo.Web" Source="TestAlgo.Web\ClientBin\output.txt" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo.Web\ClientBin\output.txt">
+</Event><Event ErrorLevel="0" Project="TestAlgo.Web" Source="TestAlgo.Web\ClientBin\TestAlgo.xap" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo.Web\ClientBin\TestAlgo.xap">
+</Event><Event ErrorLevel="0" Project="TestAlgo.Web" Source="TestAlgo.Web\Default.aspx" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo.Web\Default.aspx">
+</Event><Event ErrorLevel="0" Project="TestAlgo.Web" Source="TestAlgo.Web\Silverlight.js" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo.Web\Silverlight.js">
+</Event><Event ErrorLevel="0" Project="TestAlgo.Web" Source="TestAlgo.Web\TestAlgoTestPage.aspx" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo.Web\TestAlgoTestPage.aspx">
+</Event><Event ErrorLevel="0" Project="TestAlgo.Web" Source="TestAlgo.Web\TestAlgoTestPage.html" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo.Web\TestAlgoTestPage.html">
+</Event><Event ErrorLevel="0" Project="TestAlgo.Web" Source="TestAlgo.Web\Web.config" Description="File successfully backed up as D:\Working\MHST2010\Source\DemoProject\TestAlgo\Backup\TestAlgo.Web\Web.config">
+</Event><Event ErrorLevel="0" Project="TestAlgo.Web" Source="TestAlgo.Web\TestAlgo.Web.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TestAlgo.Web" Source="TestAlgo.Web\TestAlgo.Web.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="TestAlgo.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="TestAlgo.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TestAlgo" Source="TestAlgo\TestAlgo.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="TestAlgo.Web" Source="TestAlgo.Web\TestAlgo.Web.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

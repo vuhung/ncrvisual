@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAlgo", "TestAlgo\TestAlgo.csproj", "{415F0D74-5B8B-438B-AE2D-C6F2C3605619}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAlgo.Web", "TestAlgo.Web\TestAlgo.Web.csproj", "{D721B726-8B4F-4520-BE4A-DE5067E375CE}"

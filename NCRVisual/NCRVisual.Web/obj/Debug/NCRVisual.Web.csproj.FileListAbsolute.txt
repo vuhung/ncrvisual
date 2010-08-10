@@ -1,0 +1,5 @@
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual.Web\bin\NCRVisual.Web.dll
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual.Web\bin\NCRVisual.Web.pdb
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual.Web\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual.Web\obj\Debug\NCRVisual.Web.dll
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual.Web\obj\Debug\NCRVisual.Web.pdb

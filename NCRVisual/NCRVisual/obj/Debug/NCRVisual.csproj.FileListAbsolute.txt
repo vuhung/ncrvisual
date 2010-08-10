@@ -1,0 +1,12 @@
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual\obj\Debug\App.g.i.cs
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual\obj\Debug\MainPage.g.i.cs
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual\obj\Debug\NCRVisual.g.resources
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual\Bin\Debug\NCRVisual.dll
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual\Bin\Debug\NCRVisual.pdb
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual\Bin\Debug\AppManifest.xaml
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual\Bin\Debug\NCRVisual.xap
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual\Bin\Debug\NCRVisualTestPage.html
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual\obj\Debug\NCRVisual.dll
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual\obj\Debug\NCRVisual.pdb
+D:\Working\MHST2010\Source\NCRVisual\NCRVisual\obj\Debug\XapCacheFile.xml

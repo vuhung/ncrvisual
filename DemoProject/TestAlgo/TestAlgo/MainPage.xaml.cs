@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using TestAlgo.Library;
+using System.Windows.Shapes;
 
 namespace TestAlgo
 {
@@ -32,7 +33,7 @@ namespace TestAlgo
             _entityCollection = new Collection<EntityControl>();
             _scale = new ScaleTransform();
             this.LayoutRoot.RenderTransform = _scale;
-            CreateTestNode();            
+            //CreateTestNode();
         }
 
         /// <summary>
@@ -47,6 +48,9 @@ namespace TestAlgo
             GenericEntity entity = new GenericEntity(Display);
             EntityControl ctrl = new EntityControl(entity);
             ctrl.Title = entity.Name;
+            ctrl.Width = ctrl.titleBlock.ActualWidth + (ctrl.rectangle.Padding.Left + ctrl.rectangle.BorderThickness.Left) * 2;
+            ctrl.Height = ctrl.titleBlock.ActualHeight + (ctrl.rectangle.Padding.Top + ctrl.rectangle.BorderThickness.Top) * 2;
+
             LayoutRoot.Children.Add(ctrl);
             _entityCollection.Add(ctrl);
 
@@ -55,14 +59,41 @@ namespace TestAlgo
             Canvas.SetTop(ctrl, top);
         }
 
+        /// <summary>
+        /// Draw Connection between 2 entity Control
+        /// </summary>
+        /// <param name="startingPoint"></param>
+        /// <param name="endPoint"></param>
+        public void drawConnection(EntityControl startingPoint, EntityControl endPoint)
+        {
+            Line connectionLine = new Line();
+            connectionLine.X1 = Canvas.GetLeft(startingPoint) + startingPoint.Width / 2;
+            connectionLine.Y1 = Canvas.GetTop(startingPoint) + startingPoint.Height / 2;
+            connectionLine.X2 = Canvas.GetLeft(endPoint) + endPoint.Width / 2;
+            connectionLine.Y2 = Canvas.GetTop(endPoint) + endPoint.Height / 2;
+            connectionLine.StrokeThickness = 1;
+            connectionLine.Stroke = new SolidColorBrush(Colors.Black);
+            connectionLine.Opacity = .5;
+            LayoutRoot.Children.Add(connectionLine);
+        }
+
         //By Eledra
         #region TestNode
         //Create Test graph collection - Each Node have 50x50 size
         private void CreateTestNode()
         {
+            //Create Nodes
             for (int i = 0; i < 10; i++)
             {
-                CreateNode(i.ToString(), i * 70, i * 50);
+                CreateNode((i + 100).ToString(), i * 100, i * i * 5);
+            }
+
+            //Create connections for node 0
+            for (int i = 1; i < 10; i++)
+            {
+                //_entityCollection[0].Entity.Connections.Add(_entityCollection[i].Entity);
+                //_entityCollection[0].ConnectedControls.Add(_entityCollection[i]);
+                drawConnection(_entityCollection[0], _entityCollection[i]);
             }
         }
         #endregion
@@ -108,7 +139,7 @@ namespace TestAlgo
                 i++;
             }
             reader.Close();
-            //CreateRectangleNode();
+            CreateRectangleNode();
         }
 
         void CreateTreeNode()
