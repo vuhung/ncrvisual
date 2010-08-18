@@ -4,49 +4,52 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
+using System.Windows;
 
 namespace NCRVisual.RelationDiagram
 {
     public partial class EntityControl : UserControl
     {
-        
-        Color startColor;
-        Color highlightColor;
-        IEntity entity;
-        List<EntityControl> connectedControls = null;
-        List<Line> connectionLines = null;
+        #region private
+        private Color _startColor;
+        private Color _highlightColor;
+        private IEntity _entity;
+        private List<EntityControl> _connectedControls = null;
+        private List<Line> _connectionLines = null;
+        private Point _position;
+        #endregion
+
 
         /// <summary>
         /// Get the desired width of the control after render
         /// </summary>
-        public double RenderedWidth 
+        public double DesiredWidth
         {
             get
             {
-                return this.titleBlock.ActualWidth + (this.rectangle.Padding.Left + this.rectangle.BorderThickness.Left) * 2;
+                return this.titleBlock.ActualWidth + (this.rectangle.Padding.Left + this.rectangle.BorderThickness.Left) * 2 + 1;
             }
         }
 
         /// <summary>
         /// Get the desired Height of the control after render
         /// </summary>
-        public double RenderedHeight
+        public double DesiredHeight
         {
             get
             {
-                return this.titleBlock.ActualHeight + (this.rectangle.Padding.Top + this.rectangle.BorderThickness.Top) * 2;
+                return this.titleBlock.ActualHeight + (this.rectangle.Padding.Top + this.rectangle.BorderThickness.Top) * 2 + 1;
             }
         }
-
 
         public EntityControl(IEntity entity)
         {
             InitializeComponent();
-            this.connectedControls = new List<EntityControl>();
-            this.connectionLines = new List<Line>();
-            this.entity = entity;
-            this.highlightColor = Colors.Yellow;
-            this.startColor = this.endStop.Color;
+            this._connectedControls = new List<EntityControl>();
+            this._connectionLines = new List<Line>();
+            this._entity = entity;
+            this._highlightColor = Colors.Yellow;
+            this._startColor = this.endStop.Color;
             this.MouseLeftButtonDown += new MouseButtonEventHandler(EntityControl_MouseLeftButtonDown);
         }
 
@@ -58,7 +61,8 @@ namespace NCRVisual.RelationDiagram
 
         public IEntity Entity
         {
-            get { return this.entity; }
+            get { return this._entity; }
+            set { this._entity = value; }
         }
 
         public string Title
@@ -79,20 +83,26 @@ namespace NCRVisual.RelationDiagram
             set
             {
                 this.endStop.Color = value;
-                this.startColor = this.endStop.Color;
+                this._startColor = this.endStop.Color;
             }
         }
 
         public List<Line> ConnectionLines
         {
-            get { return this.connectionLines; }
-            set { this.connectionLines = value; }
+            get { return this._connectionLines; }
+            set { this._connectionLines = value; }
         }
 
         public List<EntityControl> ConnectedControls
         {
-            get { return this.connectedControls; }
-            set { this.connectedControls = value; }
+            get { return this._connectedControls; }
+            set { this._connectedControls = value; }
+        }
+
+        public Point Position
+        {
+            get { return this._position; }
+            set { this._position = value; }
         }
 
         public void Highlight()
@@ -107,20 +117,20 @@ namespace NCRVisual.RelationDiagram
 
         public void UnHighlight()
         {
-            this.unHighlightAnimation.To = this.startColor;
+            this.unHighlightAnimation.To = this._startColor;
             this.unHighlightStoryboard.Begin();
         }
 
         private void Canvas_MouseEnter(object sender, MouseEventArgs e)
         {
             this.Highlight();
-            foreach (EntityControl control in this.connectedControls)
+            foreach (EntityControl control in this._connectedControls)
             {
                 control.HighlightSecondary();
             }
-            foreach (Line line in this.connectionLines)
+            foreach (Line line in this._connectionLines)
             {
-                line.Opacity = 1;                
+                line.Opacity = 1;
                 line.StrokeThickness = 10;
                 SolidColorBrush brush = line.Stroke as SolidColorBrush;
                 brush.Color = Colors.Red;
@@ -130,11 +140,11 @@ namespace NCRVisual.RelationDiagram
         private void Canvas_MouseLeave(object sender, MouseEventArgs e)
         {
             this.UnHighlight();
-            foreach (EntityControl control in this.connectedControls)
+            foreach (EntityControl control in this._connectedControls)
             {
                 control.UnHighlight();
             }
-            foreach (Line line in this.connectionLines)
+            foreach (Line line in this._connectionLines)
             {
                 line.Opacity = .3;
                 line.StrokeThickness = 1;

@@ -8,7 +8,7 @@ namespace NCRVisual.RelationDiagram.Algo
     {
 
         #region IALgorithm Members
-
+        
         public Collection<Point> RunAlgo(int[][] input, int vertexNumber)
         {
             double distance = 70;
@@ -16,6 +16,7 @@ namespace NCRVisual.RelationDiagram.Algo
             double length = distance * vNum;
             double pre;
             Collection<Point> PointPositions = new Collection<Point>();
+            
             int vTemp = vNum;
             if (vertexNumber % 4 == 1)
                 vTemp = vNum + 1;

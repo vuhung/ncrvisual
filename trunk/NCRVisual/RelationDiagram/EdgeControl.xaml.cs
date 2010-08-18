@@ -7,41 +7,32 @@ namespace NCRVisual.RelationDiagram
 {
     public partial class EdgeControl : UserControl
     {
-        public Point StartingPoint { get; set; }
-        public Point EndPoint { get; set; }
+        public EntityControl StartingEntity { get; set; }
+        public EntityControl EndEntity { get; set; }       
 
-        public EdgeControl()
+        public EdgeControl(EntityControl start, EntityControl end)
         {
             InitializeComponent();
-            DrawPath();
+            this.StartingEntity = start;
+            this.EndEntity = end;
         }
 
-        private void DrawPath()
+        /// <summary>
+        /// Draw Connection between 2 entity Control
+        /// </summary>
+        /// <param name="startingPoint">Source control</param>
+        /// <param name="endPoint">End control</param>
+        public void drawEdge()
         {
-            // Create a blue and a black Brush
-            SolidColorBrush blueBrush = new SolidColorBrush();
-            blueBrush.Color = Colors.Blue;
-            SolidColorBrush blackBrush = new SolidColorBrush();
-            blackBrush.Color = Colors.Black;
-
-            // Create a Path with black brush and blue fill
-            Path bluePath = new Path();
-            bluePath.Stroke = blackBrush;
-            bluePath.StrokeThickness = 3;
-            bluePath.Fill = blueBrush;
-
-            // Create a line geometry
-            LineGeometry blackLineGeometry = new LineGeometry();
-            blackLineGeometry.StartPoint = StartingPoint;
-            blackLineGeometry.EndPoint = EndPoint;
-
-            // Add all the geometries to a GeometryGroup.
-            GeometryGroup blueGeometryGroup = new GeometryGroup();
-            blueGeometryGroup.Children.Add(blackLineGeometry);            
-
-            // Set Path.Data
-            bluePath.Data = blueGeometryGroup;
-            MainCanvas.Children.Add(bluePath);
+            Line connectionLine = new Line();
+            connectionLine.X1 = Canvas.GetLeft(StartingEntity) + StartingEntity.Width / 2;
+            connectionLine.Y1 = Canvas.GetTop(StartingEntity) + StartingEntity.Height / 2;
+            connectionLine.X2 = Canvas.GetLeft(EndEntity) + EndEntity.Width / 2;
+            connectionLine.Y2 = Canvas.GetTop(EndEntity) + EndEntity.Height / 2;
+            connectionLine.StrokeThickness = 1;
+            connectionLine.Stroke = new SolidColorBrush(Colors.Black);
+            connectionLine.Opacity = .5;
+            MainGrid.Children.Add(connectionLine);
         }
     }
 }
