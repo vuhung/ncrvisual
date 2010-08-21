@@ -1,19 +1,12 @@
 ﻿using System;
-using System.Net;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Ink;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Net;
+using System.Reflection;
+using System.Windows;
 using System.Windows.Resources;
 using System.Xml.Linq;
-using System.Reflection;
-using System.Linq;
 
 namespace NCRVisual.Helper
 {
@@ -21,10 +14,12 @@ namespace NCRVisual.Helper
     {
         #region Constants
         private const string XAP_EXT = ".xap";
-        private const string DLL_EXT = ".dll";
-        public const string MODULE_EXT = ".MainPage";
+        private const string DLL_EXT = ".dll";        
         private const string MANIFEST_FILENAME = "AppManifest.xaml";
         private const string FILE_NAME_ATTR = "Source";
+
+        public const string MODULE_EXT = ".RelationDiagramControl";
+        public const string MAIN_NAMESPACE = "NCRVisual.";
         #endregion
 
         #region Variables
@@ -55,6 +50,7 @@ namespace NCRVisual.Helper
                 WebClient wc = new WebClient();
                 wc.OpenReadCompleted += new OpenReadCompletedEventHandler(wc_OpenReadCompleted);
                 wc.OpenReadAsync(new Uri(loadingModuleName + XAP_EXT, UriKind.Relative));
+                //wc.OpenReadAsync(new Uri("D:/Working/MHST2010/Source/NCRVisual.Web/ClientBin/RelationDiagram.xap"));
             }
         }
 

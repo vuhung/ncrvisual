@@ -2,8 +2,15 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCRVisual", "NCRVisual\NCRVisual.csproj", "{9FE80925-D432-4CCF-BB66-F92C60497AD7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59006AA4-0F00-42D4-B51B-2B1581CA1F5A} = {59006AA4-0F00-42D4-B51B-2B1581CA1F5A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCRVisual.Web", "NCRVisual.Web\NCRVisual.Web.csproj", "{DB0A9447-33E6-416E-A9C3-A53214D2B237}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9FE80925-D432-4CCF-BB66-F92C60497AD7} = {9FE80925-D432-4CCF-BB66-F92C60497AD7}
+		{59006AA4-0F00-42D4-B51B-2B1581CA1F5A} = {59006AA4-0F00-42D4-B51B-2B1581CA1F5A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationDiagram", "RelationDiagram\RelationDiagram.csproj", "{59006AA4-0F00-42D4-B51B-2B1581CA1F5A}"
 EndProject

@@ -27,7 +27,8 @@ namespace NCRVisual
             Assembly asm = loadModuleHelper.LoadedModules[moduleToLoad];
 
             // Init the user control
-            UserControl uc = asm.CreateInstance(moduleToLoad + LoadSilverlightModuleHelper.MODULE_EXT) as UserControl;
+            //Type ex = asm.CreateInstance(moduleToLoad + LoadSilverlightModuleHelper.MODULE_EXT).GetType();
+            UserControl uc = asm.CreateInstance(LoadSilverlightModuleHelper.MAIN_NAMESPACE + moduleToLoad + LoadSilverlightModuleHelper.MODULE_EXT) as UserControl;
 
             // add it to the main page
             this.Content = uc;
