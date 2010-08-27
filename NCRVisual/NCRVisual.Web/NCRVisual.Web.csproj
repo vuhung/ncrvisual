@@ -67,12 +67,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DataInputController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Items\Email.cs" />
+    <Compile Include="Items\Point.cs" />
+    <Compile Include="Items\User.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uploader.aspx.cs">
+      <DependentUpon>Uploader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Uploader.aspx.designer.cs">
+      <DependentUpon>Uploader.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientBin\NCRVisual.xap" />
@@ -80,10 +91,12 @@
     <Content Include="Global.asax" />
     <Content Include="NCRVisualTestPage.aspx" />
     <Content Include="NCRVisualTestPage.html" />
+    <Content Include="Input\2010-June.txt" />
     <Content Include="Output\output.txt" />
     <Content Include="RelationDiagramTestPage.aspx" />
     <Content Include="RelationDiagramTestPage.html" />
     <Content Include="Silverlight.js" />
+    <Content Include="Uploader.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
