@@ -11,7 +11,7 @@ namespace NCRVisual.RelationDiagram
 {
     public partial class RelationDiagramControl : UserControl
     {
-        private Collection<EntityControl> _entityCollection;        
+        private Collection<EntityControl> _entityControlCollection;        
     
         private ScaleTransform _scale;
 
@@ -24,7 +24,7 @@ namespace NCRVisual.RelationDiagram
         {
             InitializeComponent();
            
-            _entityCollection = new Collection<EntityControl>();
+            _entityControlCollection = new Collection<EntityControl>();
             _scale = new ScaleTransform();
             this.LayoutRoot.RenderTransform = _scale;
 
@@ -49,7 +49,7 @@ namespace NCRVisual.RelationDiagram
             ctrl.Height = ctrl.DesiredHeight;
            
             LayoutRoot.Children.Add(ctrl);
-            _entityCollection.Add(ctrl);
+            _entityControlCollection.Add(ctrl);
 
             //Set the Anxis of the node
             Canvas.SetLeft(ctrl, left);
@@ -100,10 +100,10 @@ namespace NCRVisual.RelationDiagram
             //Generate node
             for (int i = 0; i < pointPositions.Count; i++)
             {
-                CreateNode(i.ToString(), pointPositions[i].X, pointPositions[i].Y);
+                CreateNode(_myDiagramController.entityCollection[i].Email, pointPositions[i].X, pointPositions[i].Y);
 
                 //Test connection                
-                drawConnection(_entityCollection[0], _entityCollection[i]);
+                //drawConnection(_entityCollection[0], _entityCollection[i]);
             }                             
         }
         #endregion

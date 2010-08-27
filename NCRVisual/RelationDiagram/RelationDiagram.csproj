@@ -78,6 +78,7 @@
     <Compile Include="Contract\Connection.cs" />
     <Compile Include="Contract\GenericEntity.cs" />
     <Compile Include="Contract\IEntity.cs" />
+    <Compile Include="Contract\MailListEntity.cs" />
     <Compile Include="Controller.cs" />
     <Compile Include="EdgeControl.xaml.cs">
       <DependentUpon>EdgeControl.xaml</DependentUpon>
@@ -112,7 +113,6 @@
   <ItemGroup>
     <None Include="Properties\AppManifest.xml" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
