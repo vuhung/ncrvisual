@@ -27,5 +27,9 @@ namespace NCRVisual.RelationDiagram
         public string UserName { get; set; }
         public string Email { get; set; }
 
+        public MailListEntity()
+        {
+            Connections = new List<IEntity>();
+        }
     }
 }
