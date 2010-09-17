@@ -69,6 +69,7 @@
     <Reference Include="System.Windows.Browser" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algo\FruchtermanAlgorithm.cs" />
     <Compile Include="Algo\IAlgorithm.cs" />
     <Compile Include="Algo\RectangleAlgorithm.cs" />
     <Compile Include="Algo\TreeNodeAlgorithm.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Contract\GenericEntity.cs" />
     <Compile Include="Contract\IEntity.cs" />
     <Compile Include="Contract\MailListEntity.cs" />
+    <Compile Include="Contract\Node.cs" />
     <Compile Include="Controller.cs" />
     <Compile Include="EdgeControl.xaml.cs">
       <DependentUpon>EdgeControl.xaml</DependentUpon>

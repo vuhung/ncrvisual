@@ -21,7 +21,7 @@ namespace NCRVisual.RelationDiagram.Algo
                 for (int j = 0; j < vertexNumber; j++)
                     if (input[i][j] > 0)
                         count++;
-                PointPositions.Add(new Point(save[count] * 70, count * 50));
+                PointPositions.Add(new Point(save[count] *250, count * 50));
                 save[count]++;
             }
 

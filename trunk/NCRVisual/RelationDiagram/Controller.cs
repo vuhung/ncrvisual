@@ -11,6 +11,7 @@ namespace NCRVisual.RelationDiagram
     public class DiagramController
     {
         #region constant
+
         string INPUT_FILE_NAME = "..\\Output\\output.xml";
         string ID_TAG = "UserId";
         string NAME_TAG = "Name";
@@ -20,13 +21,13 @@ namespace NCRVisual.RelationDiagram
         string START_EDGE_TAG = "Start";
         string END_EDGE_TAG = "End";
         string EDGE_VALUE_TAG = "Value";
-            
 
         #endregion
 
         #region private
         private int[][] _input = new int[100][];
         private int _vertexNumber = 0;
+
         #endregion
 
         /// <summary>
@@ -49,7 +50,7 @@ namespace NCRVisual.RelationDiagram
         /// </summary>
         public DiagramController()
         {
-            LayoutAlgorithm = new TreeNodeAlgorithm();
+            LayoutAlgorithm = new FruchtermanAlgorithm();
             entityCollection = new Collection<MailListEntity>();
 
             //getfile from output.txt
@@ -59,7 +60,7 @@ namespace NCRVisual.RelationDiagram
         }
 
         void client_OpenReadCompleted(object sender, OpenReadCompletedEventArgs e)
-        {            
+        {
             using (XmlReader reader = XmlReader.Create(e.Result))
             {
                 ReadRelation(reader);
@@ -71,6 +72,20 @@ namespace NCRVisual.RelationDiagram
             {
                 this.InputReadingComplete(tempPoints, null);
             };
+        }
+
+        private void populateConnection(int[][] matrixInput)
+        {
+            for (int i = 0; i < _vertexNumber; i++)
+            {
+                for (int j = 0; j < _vertexNumber; j++)
+                {
+                    if (matrixInput[i][j] > 0 && i != j)
+                    {                        
+                        entityCollection[i].Connections.Add(entityCollection[j]);
+                    }
+                }
+            }
         }
 
         void ReadRelation(XmlReader reader)
@@ -101,6 +116,8 @@ namespace NCRVisual.RelationDiagram
                     entity.UserId = id;
                     entity.UserId = name;
                     entity.Email = email;
+                    entity.Name = email;
+
                     this.entityCollection.Add(entity);
 
                     //Build matrix for connection
@@ -124,6 +141,7 @@ namespace NCRVisual.RelationDiagram
             }
 
             _vertexNumber = count;
+            populateConnection(_input);
         }
     }
 }

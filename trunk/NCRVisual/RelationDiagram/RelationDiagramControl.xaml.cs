@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
+using System.Collections.Generic;
 
 namespace NCRVisual.RelationDiagram
 {
@@ -14,6 +15,8 @@ namespace NCRVisual.RelationDiagram
         private Collection<EntityControl> _entityControlCollection;        
     
         private ScaleTransform _scale;
+
+        private Dictionary<IEntity, EntityControl> _entityRegistry;
 
         DiagramController _myDiagramController;
 
@@ -25,6 +28,7 @@ namespace NCRVisual.RelationDiagram
             InitializeComponent();
            
             _entityControlCollection = new Collection<EntityControl>();
+            _entityRegistry = new Dictionary<IEntity, EntityControl>();
             _scale = new ScaleTransform();
             this.LayoutRoot.RenderTransform = _scale;
 
@@ -38,18 +42,19 @@ namespace NCRVisual.RelationDiagram
         /// <param name="Display">The title of the node</param>
         /// <param name="left">The distance between the top-left of the node to the left of the browser</param>
         /// <param name="top">The distance between the top-left of the node to the top of the browser</param>
-        public void CreateNode(string Display, double left, double top)
+        public void CreateNode(IEntity entity, double left, double top)
         {
-            //Create the node control
-            GenericEntity entity = new GenericEntity(Display);            
+            //Create the node control            
             EntityControl ctrl = new EntityControl(entity);
-            ctrl.Title = Display;
-            
+            //ctrl.Title = entity.Name;            
+            ctrl.Title = "1";
             ctrl.Width = ctrl.DesiredWidth;
             ctrl.Height = ctrl.DesiredHeight;
            
             LayoutRoot.Children.Add(ctrl);
             _entityControlCollection.Add(ctrl);
+
+            _entityRegistry.Add(entity, ctrl);
 
             //Set the Anxis of the node
             Canvas.SetLeft(ctrl, left);
@@ -100,11 +105,17 @@ namespace NCRVisual.RelationDiagram
             //Generate node
             for (int i = 0; i < pointPositions.Count; i++)
             {
-                CreateNode(_myDiagramController.entityCollection[i].Email, pointPositions[i].X, pointPositions[i].Y);
+                CreateNode(_myDiagramController.entityCollection[i], pointPositions[i].X, pointPositions[i].Y);                
+            }
 
-                //Test connection                
-                //drawConnection(_entityCollection[0], _entityCollection[i]);
-            }                             
+            //Generate Connection
+            for (int i = 0; i < _entityControlCollection.Count; i++)
+            {
+                foreach (IEntity entity in _entityControlCollection[i].Entity.Connections)
+                {
+                    drawConnection(_entityControlCollection[i], _entityRegistry[entity]);
+                }
+            }
         }
         #endregion
 
