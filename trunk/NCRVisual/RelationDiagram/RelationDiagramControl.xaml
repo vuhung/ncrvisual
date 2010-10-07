@@ -3,16 +3,46 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SizeChanged="UserControl_SizeChanged"
    >
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="100"/>
-        </Grid.RowDefinitions>
-        <Canvas x:Name="LayoutRoot"/>
-        <Grid Grid.Row="1">
-            <Slider x:Name="zoomSlider" Value="30" Minimum="1" Maximum="100" Margin="5" ValueChanged="zoomSlider_ValueChanged"/>
-        </Grid>
+        <Image Source="bg1.jpg" Stretch="UniformToFill" />
+        <Canvas x:Name="panelStarfield" IsHitTestVisible="False">
+        </Canvas>        
+
+        <Canvas x:Name="MainGrid" Background="Transparent">
+            <Canvas x:Name="LayoutRoot" Margin="5" >
+            <Canvas.Resources>
+                <Storyboard x:Name="leftAnimationStoryboard">
+                    <DoubleAnimation x:Name="leftAnimation" 
+              Storyboard.TargetName="LayoutRoot"
+              Storyboard.TargetProperty="(Canvas.Left)"
+              To="100" Duration="0:0:0.200" />
+                </Storyboard>
+
+                <Storyboard x:Name="topAnimationStoryboard">
+                    <DoubleAnimation x:Name="topAnimation"
+              Storyboard.TargetName="LayoutRoot"
+              Storyboard.TargetProperty="(Canvas.Top)"
+              To="100" Duration="0:0:0.200" />
+                </Storyboard>
+
+                <Storyboard x:Name="fadeOutStoryboard">
+                    <DoubleAnimation x:Name="fadeOutAnimation" 
+              Storyboard.TargetName="LayoutRoot"
+              Storyboard.TargetProperty="Opacity"
+              To="0" Duration="0:0:0.300" />
+                </Storyboard>
+
+                <Storyboard x:Name="fadeInStoryboard">
+                    <DoubleAnimation x:Name="fadeInAnimation" 
+              Storyboard.TargetName="LayoutRoot"
+              Storyboard.TargetProperty="Opacity"
+              To="1" Duration="0:0:0.700" />
+                </Storyboard>
+            </Canvas.Resources>                
+            </Canvas>
+        </Canvas>        
     </Grid>
 </UserControl>

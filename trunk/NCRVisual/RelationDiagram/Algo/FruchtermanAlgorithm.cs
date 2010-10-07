@@ -8,7 +8,7 @@ namespace NCRVisual.RelationDiagram.Algo
     public class FruchtermanAlgorithm:IAlgorithm
     {        
         const int maxRepulsiveForceDistance=6;
-        const int iterations = 1000;
+        const int iterations = 500;
         const double k = 0.2;
         const double c = 0.01;
         const double maxVertexMovement = 0.5;
