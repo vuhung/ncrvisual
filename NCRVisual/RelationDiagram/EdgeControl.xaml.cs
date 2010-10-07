@@ -32,23 +32,39 @@ namespace NCRVisual.RelationDiagram
             connectionLine.X2 = Canvas.GetLeft(EndEntity) + EndEntity.Width / 2;
             connectionLine.Y2 = Canvas.GetTop(EndEntity) + EndEntity.Height / 2;
             connectionLine.StrokeThickness = 3;
-            connectionLine.Stroke = new SolidColorBrush(Colors.Black);
+            connectionLine.Stroke = new SolidColorBrush(Colors.White);
             connectionLine.Opacity = .5;
             MainGrid.Children.Add(connectionLine);           
         }
 
         void EdgeControl_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
         {
-            Line connectionLine = (Line)MainGrid.Children[0];
-            connectionLine.Opacity = .5;
-            connectionLine.StrokeThickness = 3;
+            UnHighLight();
         }
 
         void EdgeControl_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
         {
+            HighLight();  
+        }
+
+        public void UnHighLight()
+        {
+            Line connectionLine = (Line)MainGrid.Children[0];
+            connectionLine.Opacity = .5;
+            connectionLine.StrokeThickness = 3;
+            connectionLine.Stroke = new SolidColorBrush(Colors.White);
+            this.StartingEntity.UnHighlight();
+            this.EndEntity.UnHighlight();
+        }
+
+        public void HighLight()
+        {
             Line connectionLine = (Line)MainGrid.Children[0];
             connectionLine.Opacity = 1;
             connectionLine.StrokeThickness = 5;
+            connectionLine.Stroke = new SolidColorBrush(Colors.Red);
+            this.StartingEntity.HighlightSecondary();
+            this.EndEntity.HighlightSecondary();
         }
     }
 }

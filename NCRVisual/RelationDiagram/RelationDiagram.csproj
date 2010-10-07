@@ -71,10 +71,17 @@
   <ItemGroup>
     <Compile Include="Algo\FruchtermanAlgorithm.cs" />
     <Compile Include="Algo\IAlgorithm.cs" />
+    <Compile Include="Algo\KKAlgorithm.cs" />
     <Compile Include="Algo\RectangleAlgorithm.cs" />
     <Compile Include="Algo\TreeNodeAlgorithm.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Block.xaml.cs">
+      <DependentUpon>Block.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ColourfulFirework.xaml.cs">
+      <DependentUpon>ColourfulFirework.xaml</DependentUpon>
     </Compile>
     <Compile Include="Contract\Connection.cs" />
     <Compile Include="Contract\GenericEntity.cs" />
@@ -89,16 +96,28 @@
       <DependentUpon>EntityControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="EntityControlClickedEventArgs.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="MagicDot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RelationDiagramControl.xaml.cs">
       <DependentUpon>RelationDiagramControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Star.cs" />
+    <Compile Include="StarField.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Block.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ColourfulFirework.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="EdgeControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -114,6 +133,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bg1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -14,8 +14,6 @@ namespace NCRVisual.RelationDiagram
         private Color _startColor;
         private Color _highlightColor;
         private IEntity _entity;
-        private List<EntityControl> _connectedControls = null;
-        private List<Line> _connectionLines = null;
         private Point _position;
         #endregion
 
@@ -42,15 +40,22 @@ namespace NCRVisual.RelationDiagram
             }
         }
 
-        public EntityControl(IEntity entity)
+        /// <summary>
+        /// Collection of connected edges to this entity control
+        /// </summary>
+        public List<EdgeControl> ConnectedEdges { get; set; }
+
+        private Dictionary<IEntity, EntityControl> _entityRegistry;
+
+        public EntityControl(IEntity entity, Dictionary<IEntity, EntityControl> reg)
         {
             InitializeComponent();
-            this._connectedControls = new List<EntityControl>();
-            this._connectionLines = new List<Line>();
             this._entity = entity;
             this._highlightColor = Colors.Yellow;
             this._startColor = this.endStop.Color;
             this.MouseLeftButtonDown += new MouseButtonEventHandler(EntityControl_MouseLeftButtonDown);
+            this._entityRegistry = reg;
+            ConnectedEdges = new List<EdgeControl>();
         }
 
 
@@ -87,18 +92,6 @@ namespace NCRVisual.RelationDiagram
             }
         }
 
-        public List<Line> ConnectionLines
-        {
-            get { return this._connectionLines; }
-            set { this._connectionLines = value; }
-        }
-
-        public List<EntityControl> ConnectedControls
-        {
-            get { return this._connectedControls; }
-            set { this._connectedControls = value; }
-        }
-
         public Point Position
         {
             get { return this._position; }
@@ -110,7 +103,7 @@ namespace NCRVisual.RelationDiagram
             this.highlightStoryboard.Begin();
         }
 
-        void HighlightSecondary()
+        public void HighlightSecondary()
         {
             this.highlightSecondaryStoryboard.Begin();
         }
@@ -123,33 +116,32 @@ namespace NCRVisual.RelationDiagram
 
         private void Canvas_MouseEnter(object sender, MouseEventArgs e)
         {
-            this.Highlight();
-            foreach (EntityControl control in this._connectedControls)
+            this.Highlight();           
+
+            foreach (IEntity entity in this.Entity.Connections)
             {
-                control.HighlightSecondary();
+                EntityControl ec = (EntityControl)_entityRegistry[entity];
+                ec.HighlightSecondary();
             }
-            foreach (Line line in this._connectionLines)
+
+            foreach (EdgeControl edc in this.ConnectedEdges)
             {
-                line.Opacity = 1;
-                line.StrokeThickness = 10;
-                SolidColorBrush brush = line.Stroke as SolidColorBrush;
-                brush.Color = Colors.Red;
+                edc.HighLight();
             }
         }
 
         private void Canvas_MouseLeave(object sender, MouseEventArgs e)
         {
-            this.UnHighlight();
-            foreach (EntityControl control in this._connectedControls)
+            this.UnHighlight();            
+            foreach (IEntity entity in this.Entity.Connections)
             {
-                control.UnHighlight();
+                EntityControl ec = (EntityControl)_entityRegistry[entity];
+                ec.UnHighlight();
             }
-            foreach (Line line in this._connectionLines)
+
+            foreach (EdgeControl edc in this.ConnectedEdges)
             {
-                line.Opacity = .3;
-                line.StrokeThickness = 1;
-                SolidColorBrush brush = line.Stroke as SolidColorBrush;
-                brush.Color = Colors.Black;
+                edc.UnHighLight();
             }
         }
 
