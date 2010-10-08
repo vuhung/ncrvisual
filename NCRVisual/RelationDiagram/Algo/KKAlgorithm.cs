@@ -7,9 +7,8 @@ namespace NCRVisual.RelationDiagram.Algo
 {
     public class KKAlgorithm:IAlgorithm
     {
-
-        private int Factor = 500;
-        private double width = 300;
+        private int Factor = 1;
+        private double width = 800;
         private double LIMIT = 100;
         /// <summary>
         /// Width of the bounding box.
@@ -23,7 +22,7 @@ namespace NCRVisual.RelationDiagram.Algo
             }
         }
 
-        private double height = 300;
+        private double height = 800;
         /// <summary>
         /// Height of the bounding box.
         /// </summary>
@@ -97,7 +96,7 @@ namespace NCRVisual.RelationDiagram.Algo
             }
         }
 
-        private double disconnectedMultiplier = 0.5;
+        private double disconnectedMultiplier = 1;
         /// <summary>
         /// Ideal distance between the disconnected points (1 is equal the ideal edge length).
         /// </summary>
@@ -111,7 +110,7 @@ namespace NCRVisual.RelationDiagram.Algo
         }
 
         const int MAX = 100;
-        const double MAXDIAMETER = 300;
+        const double MAXDIAMETER = 1600;
         private Collection<Point> Nodes { get; set; }
         private double[,] distances;
         private double[,] edgeLengths;
@@ -196,7 +195,7 @@ namespace NCRVisual.RelationDiagram.Algo
             Random ran = new Random();
             for (int i = 0; i < vertexNumber; i++)
             {
-                Nodes.Add(new Point(ran.NextDouble(),ran.NextDouble()));
+                Nodes.Add(new Point(ran.NextDouble()*Width,ran.NextDouble()*Height));
             }            
 
             edgeLengths = new double[MAX, MAX]; ;
@@ -217,6 +216,12 @@ namespace NCRVisual.RelationDiagram.Algo
             springConstants = new double[MAX, MAX];
         }
 
+        private void calEdgeLength(int vertexNumber)
+        {
+            for (int i = 0; i < vertexNumber; i++)
+                for (int j = 0; j < vertexNumber; j++)
+                    edgeLengths[i, j] = GetDistance(positions[i], positions[j]);
+        }
         private double GetDistance(Point p1, Point p2)
         {
             return (Math.Sqrt((p1.X - p2.X) * (p1.X - p2.X) + (p1.Y - p2.Y) * (p1.Y - p2.Y)));            
@@ -328,6 +333,8 @@ namespace NCRVisual.RelationDiagram.Algo
                         }
                     }
                 }
+
+                //calEdgeLength(vertexNumber);
             }           
         }
       
