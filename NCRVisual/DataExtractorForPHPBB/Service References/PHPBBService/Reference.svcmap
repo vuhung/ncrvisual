@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="93b6cd60-4e87-485f-80e2-131acdb6ae7c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51165/PHPBBForumService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PHPBBForumService.xsd" MetadataType="Schema" ID="97c95431-7fe3-4773-b4f8-608dc0d47fd6" SourceId="1" SourceUrl="http://localhost:51165/PHPBBForumService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PHPBBForumService.disco" MetadataType="Disco" ID="143d6668-f0bc-4cef-8aab-5913ebc78996" SourceId="1" SourceUrl="http://localhost:51165/PHPBBForumService.svc?disco" />
+    <MetadataFile FileName="PHPBBForumService1.xsd" MetadataType="Schema" ID="73e829f7-87ae-46a3-844b-39ebb088cc35" SourceId="1" SourceUrl="http://localhost:51165/PHPBBForumService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PHPBBForumService2.xsd" MetadataType="Schema" ID="d51bf282-3e7a-47a7-802f-0066d39b7549" SourceId="1" SourceUrl="http://localhost:51165/PHPBBForumService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PHPBBForumService.wsdl" MetadataType="Wsdl" ID="8328524d-0f5e-42be-8331-8633d7412e55" SourceId="1" SourceUrl="http://localhost:51165/PHPBBForumService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

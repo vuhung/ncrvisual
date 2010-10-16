@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DBWebService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DBWebService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfForumPost">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ForumPost" nillable="true" type="tns:ForumPost" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfForumPost" nillable="true" type="tns:ArrayOfForumPost" />
+  <xs:complexType name="ForumPost">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PostTime" type="xs:int" />
+      <xs:element minOccurs="0" name="PosterId" type="xs:int" />
+      <xs:element minOccurs="0" name="TopicId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ForumPost" nillable="true" type="tns:ForumPost" />
+</xs:schema>
