@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="false" Service="DBWebService.PHPBBForumService" CodeBehind="Service1.svc.cs" %>
