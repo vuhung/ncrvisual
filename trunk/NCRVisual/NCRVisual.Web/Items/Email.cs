@@ -10,5 +10,11 @@ namespace NCRVisual.Web.Items
         public string MessageId { get; set; }
 
         public int UserId { get; set; }
+
+        public string MessageSubject { get; set; }
+
+        public string SendDate { get; set; }
+
+        public int UserTo { get; set; }
     }
 }
