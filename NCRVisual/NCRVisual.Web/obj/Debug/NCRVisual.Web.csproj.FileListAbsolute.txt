@@ -3,3 +3,13 @@ D:\Personal Projects\CS\NCRVisual\NCRVisual.Web\bin\NCRVisual.Web.pdb
 D:\Personal Projects\CS\NCRVisual\NCRVisual.Web\obj\Debug\ResolveAssemblyReference.cache
 D:\Personal Projects\CS\NCRVisual\NCRVisual.Web\obj\Debug\NCRVisual.Web.dll
 D:\Personal Projects\CS\NCRVisual\NCRVisual.Web\obj\Debug\NCRVisual.Web.pdb
+D:\Working\MHST2010\ABC\NCRVisual\NCRVisual.Web\bin\NCRVisual.Web.dll
+D:\Working\MHST2010\ABC\NCRVisual\NCRVisual.Web\bin\NCRVisual.Web.pdb
+D:\Working\MHST2010\ABC\NCRVisual\NCRVisual.Web\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\MHST2010\ABC\NCRVisual\NCRVisual.Web\obj\Debug\NCRVisual.Web.dll
+D:\Working\MHST2010\ABC\NCRVisual\NCRVisual.Web\obj\Debug\NCRVisual.Web.pdb
+D:\Working\MHST2010\Source\NCRVisual.Web\bin\NCRVisual.Web.dll
+D:\Working\MHST2010\Source\NCRVisual.Web\bin\NCRVisual.Web.pdb
+D:\Working\MHST2010\Source\NCRVisual.Web\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\MHST2010\Source\NCRVisual.Web\obj\Debug\NCRVisual.Web.dll
+D:\Working\MHST2010\Source\NCRVisual.Web\obj\Debug\NCRVisual.Web.pdb

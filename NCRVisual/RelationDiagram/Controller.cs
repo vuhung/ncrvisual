@@ -11,7 +11,6 @@ namespace NCRVisual.RelationDiagram
     public class DiagramController
     {
         #region constant
-
         string INPUT_FILE_NAME = "..\\Output\\output.xml";
         string ID_TAG = "UserId";
         string NAME_TAG = "Name";
@@ -21,24 +20,25 @@ namespace NCRVisual.RelationDiagram
         string START_EDGE_TAG = "Start";
         string END_EDGE_TAG = "End";
         string EDGE_VALUE_TAG = "Value";
+        string EDGE_CONTENT_TAG = "Content";
+        string EDGE_DATE_TAG = "Date";
+        string EDGE_SUBJECT_TAG = "Subject";
 
         #endregion
 
         #region private
         private int[][] _input = new int[100][];
-        private int _vertexNumber = 0;
-
         #endregion
 
         /// <summary>
         /// Event after reading input from data provider
         /// </summary>
-        public EventHandler InputReadingComplete;
+        public event EventHandler InputReadingComplete;
 
         /// <summary>
-        /// Get or set the LayoutAlgorithm 
+        /// Event after running layoutAlgorithm
         /// </summary>
-        public IAlgorithm LayoutAlgorithm { get; set; }
+        public event EventHandler AlgoRunComplete;
 
         /// <summary>
         /// Get or set the Entity Collection
@@ -46,11 +46,18 @@ namespace NCRVisual.RelationDiagram
         public Collection<MailListEntity> entityCollection { get; set; }
 
         /// <summary>
+        /// Number of vertex
+        /// </summary>
+        public int VertexNumber = 0;
+
+        public Point TopLeft;
+        public Point LowRight;
+
+        /// <summary>
         /// Create new instance of Diagram controller
         /// </summary>
         public DiagramController()
         {
-            LayoutAlgorithm = new FruchtermanAlgorithm();
             entityCollection = new Collection<MailListEntity>();
 
             //getfile from output.txt
@@ -66,23 +73,21 @@ namespace NCRVisual.RelationDiagram
                 ReadRelation(reader);
             }
 
-            Collection<Point> tempPoints = LayoutAlgorithm.RunAlgo(_input, _vertexNumber);
-
             if (this.InputReadingComplete != null)
             {
-                this.InputReadingComplete(tempPoints, null);
+                this.InputReadingComplete(null, null);
             };
         }
 
         private void populateConnection(int[][] matrixInput)
         {
-            for (int i = 0; i < _vertexNumber; i++)
+            for (int i = 0; i < VertexNumber; i++)
             {
-                for (int j = 0; j < _vertexNumber; j++)
+                for (int j = 0; j < VertexNumber; j++)
                 {
                     if (matrixInput[i][j] > 0 && i != j)
-                    {                        
-                        entityCollection[i].Connections.Add(entityCollection[j]);
+                    {
+                        entityCollection[i].Connections.Add(new Connection(entityCollection[i], entityCollection[j]));
                     }
                 }
             }
@@ -98,7 +103,6 @@ namespace NCRVisual.RelationDiagram
             {
                 if (reader.NodeType == XmlNodeType.Element && reader.Name == VERTEX_TAG)
                 {
-
                     MailListEntity entity = new MailListEntity();
 
                     //Read Userid
@@ -118,8 +122,6 @@ namespace NCRVisual.RelationDiagram
                     entity.Email = email;
                     entity.Name = email;
 
-                    this.entityCollection.Add(entity);
-
                     //Build matrix for connection
                     _input[count] = new int[100];
 
@@ -131,17 +133,66 @@ namespace NCRVisual.RelationDiagram
                         int end = reader.ReadElementContentAsInt();
                         reader.ReadToFollowing(EDGE_VALUE_TAG);
                         int value = reader.ReadElementContentAsInt();
-
                         _input[start - 1][end - 1] = value;
+
+                        while (reader.ReadToNextSibling(EDGE_CONTENT_TAG))
+                        {
+                            reader.ReadToFollowing(EDGE_DATE_TAG);
+                            string time = reader.ReadElementContentAsString();
+                            //entity.SendDate.Add(time);
+                            reader.ReadToFollowing(EDGE_SUBJECT_TAG);
+                            //entity.MessageSubject.Add(reader.ReadElementContentAsString());
+                        }
                         reader.Read();
                     }
 
+                    this.entityCollection.Add(entity);
                     count++;
                 }
             }
 
-            _vertexNumber = count;
+            VertexNumber = count;
             populateConnection(_input);
+        }
+
+        public void RunAlgo(IAlgorithm algorithm)
+        {
+            double maxX = 0;
+            double minX = 0;
+            double maxY = 0;
+            double minY = 0;
+
+            Collection<Point> tempPoints = algorithm.RunAlgo(_input, VertexNumber);
+
+            foreach (Point p in tempPoints)
+            {
+                if (p.X > maxX)
+                {
+                    maxX = p.X;
+                }
+
+                if (p.X < minX)
+                {
+                    minX = p.X;
+                }
+
+                if (p.Y > maxY)
+                {
+                    maxY = p.Y;
+                }
+
+                if (p.X < minY)
+                {
+                    minY = p.Y;
+                }
+            }
+
+            this.TopLeft = new Point(minX, minY);
+            this.LowRight = new Point(maxX, maxY);
+            if (this.AlgoRunComplete != null)
+            {
+                this.AlgoRunComplete(tempPoints, null);
+            };
         }
     }
 }
