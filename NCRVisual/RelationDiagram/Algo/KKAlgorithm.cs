@@ -129,7 +129,7 @@ namespace NCRVisual.RelationDiagram.Algo
         {
             InternalCompute(input, vertexNumber);
             Collection<Point> points = new Collection<Point>();
-            //UpdatePosition(vertexNumber);
+            UpdatePosition(vertexNumber);
             for (int i = 0; i < vertexNumber; i++)
             {
                 points.Add(new Point(positions[i].X*Factor,positions[i].Y*Factor));
@@ -139,51 +139,20 @@ namespace NCRVisual.RelationDiagram.Algo
 
         private void UpdatePosition(int vertexNumber)
         {
-            Point limit=new Point(0,0);            
-            bool check=true;
-            while (check)
-            {
-                check = false;
-                double reduce = LIMIT;
-                int uplimit = 5;
-                for (int i = 0; i < vertexNumber; i++)//find reduce
-                {
-                    if (Math.Abs(positions[i].X) > uplimit)
-                    {
-                        reduce = Math.Min(reduce, Math.Abs(positions[i].X));
-                        check = true;
-                    }
-
-                    if (Math.Abs(positions[i].Y) > uplimit)
-                    {
-                        reduce = Math.Min(reduce, Math.Abs(positions[i].Y));
-                        check = true;
-                    }
-                }
-
-                reduce = reduce / 1.2;
-
-                for (int i = 0; i < vertexNumber; i++)//reduce too far node
-                    if (Math.Abs(positions[i].X) > uplimit || Math.Abs(positions[i].Y) > uplimit)
-                    {
-                        positions[i].X = positions[i].X / reduce;
-                        positions[i].Y = positions[i].Y / reduce;
-                    }
-            }
-
-            //find min limit of vertex
+            double minx = double.MaxValue;
+            double miny = double.MaxValue;
             for (int i = 0; i < vertexNumber; i++)
             {
-                if (positions[i].X < limit.X)
-                    limit.X = positions[i].X;
-                if (positions[i].Y < limit.Y)
-                    limit.Y = positions[i].Y;                
+                if (positions[i].X < minx)
+                    minx = positions[i].X;
+                if (positions[i].Y < miny)
+                    miny = positions[i].Y;
             }
-            
+
             for (int i = 0; i < vertexNumber; i++)
             {
-                positions[i].X -= limit.X;
-                positions[i].Y -= limit.Y;                
+                positions[i].X = positions[i].X - minx;
+                positions[i].Y = positions[i].Y - miny;
             }
 
             
