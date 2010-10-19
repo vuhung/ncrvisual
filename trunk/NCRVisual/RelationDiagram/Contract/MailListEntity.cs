@@ -6,7 +6,6 @@ namespace NCRVisual.RelationDiagram
 {
     public class MailListEntity : IEntity
     {
-
         #region IEntity Members
 
         public string Name
@@ -15,11 +14,12 @@ namespace NCRVisual.RelationDiagram
             set;
         }
 
-        public List<IEntity> Connections
+        public List<IConnection> Connections
         {
             get;
             set;
         }
+        //public int UserTo { get; set; }
 
         #endregion
 
@@ -29,7 +29,9 @@ namespace NCRVisual.RelationDiagram
 
         public MailListEntity()
         {
-            Connections = new List<IEntity>();
+            Connections = new List<IConnection>();
+            //MessageSubject = new List<string>();
+            //SendDate = new List<string>();
         }
     }
 }

@@ -8,6 +8,6 @@ namespace NCRVisual.RelationDiagram
         string Name { get; set; }
 
         //Set of connected entities with this entity
-        List<IEntity> Connections { get; set; }
+        List<IConnection> Connections { get; set; }
     }
 }

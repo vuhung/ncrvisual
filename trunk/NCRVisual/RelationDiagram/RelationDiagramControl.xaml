@@ -7,26 +7,27 @@
    >
 
     <Grid>
-        <Image Source="bg1.jpg" Stretch="UniformToFill" />
-        <Canvas x:Name="panelStarfield" IsHitTestVisible="False">
-        </Canvas>        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8"/>
+            <ColumnDefinition Width="45"/>
+            <ColumnDefinition Width="*"/>            
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="8"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8"/>
+            <RowDefinition Height="64"/>
+            <RowDefinition Height="64"/>
+            <RowDefinition Height="64"/>
+            <RowDefinition Height="64"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-        <Canvas x:Name="MainGrid" Background="Transparent">
-            <Canvas x:Name="LayoutRoot" Margin="5" >
+        <Image Source="Image/bg1.jpg" Stretch="UniformToFill" Grid.Row="0" Grid.RowSpan="6"  Grid.Column="0" Grid.ColumnSpan="5"/>
+        <Canvas x:Name="panelStarfield" IsHitTestVisible="False" Grid.Row="0" Grid.RowSpan="6"  Grid.Column="0" Grid.ColumnSpan="5"/>
+        <Canvas x:Name="MainGrid" Background="Transparent" Grid.Row="0" Grid.RowSpan="6"  Grid.Column="0" Grid.ColumnSpan="5">
+            <Canvas x:Name="LayoutRoot" Margin="5">
             <Canvas.Resources>
-                <Storyboard x:Name="leftAnimationStoryboard">
-                    <DoubleAnimation x:Name="leftAnimation" 
-              Storyboard.TargetName="LayoutRoot"
-              Storyboard.TargetProperty="(Canvas.Left)"
-              To="100" Duration="0:0:0.200" />
-                </Storyboard>
-
-                <Storyboard x:Name="topAnimationStoryboard">
-                    <DoubleAnimation x:Name="topAnimation"
-              Storyboard.TargetName="LayoutRoot"
-              Storyboard.TargetProperty="(Canvas.Top)"
-              To="100" Duration="0:0:0.200" />
-                </Storyboard>
 
                 <Storyboard x:Name="fadeOutStoryboard">
                     <DoubleAnimation x:Name="fadeOutAnimation" 
@@ -43,6 +44,13 @@
                 </Storyboard>
             </Canvas.Resources>                
             </Canvas>
-        </Canvas>        
+        </Canvas>
+
+        <Image Source="Image/home.png" x:Name='Home' Grid.Row="1" Grid.Column="1" MouseLeftButtonDown="Home_MouseLeftButtonDown"></Image>
+        <Image Source="Image/zoomin.png"  x:Name='ZoomIn' Grid.Row="2" Grid.Column="1" MouseLeftButtonDown="ZoomIn_MouseLeftButtonDown"></Image>
+        <Image Source="Image/zoomout.png"  x:Name='ZoomOut' Grid.Row="3" Grid.Column="1" MouseLeftButtonDown="ZoomOut_MouseLeftButtonDown"></Image>
+        
+        <ComboBox x:Name="AlgoList" Grid.Row="1" Grid.Column="3" Margin="10" Height="20"/>
+        <Button x:Name="Render" Grid.Row="2" Grid.Column="3" Content="Start" Width="100" Height="20" IsEnabled="False"/>
     </Grid>
 </UserControl>

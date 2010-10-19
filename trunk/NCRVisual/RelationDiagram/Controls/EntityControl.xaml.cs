@@ -118,9 +118,9 @@ namespace NCRVisual.RelationDiagram
         {
             this.Highlight();           
 
-            foreach (IEntity entity in this.Entity.Connections)
+            foreach (IConnection con in this.Entity.Connections)
             {
-                EntityControl ec = (EntityControl)_entityRegistry[entity];
+                EntityControl ec = (EntityControl)_entityRegistry[con.Destination];
                 ec.HighlightSecondary();
             }
 
@@ -132,10 +132,10 @@ namespace NCRVisual.RelationDiagram
 
         private void Canvas_MouseLeave(object sender, MouseEventArgs e)
         {
-            this.UnHighlight();            
-            foreach (IEntity entity in this.Entity.Connections)
+            this.UnHighlight();
+            foreach (IConnection con in this.Entity.Connections)
             {
-                EntityControl ec = (EntityControl)_entityRegistry[entity];
+                EntityControl ec = (EntityControl)_entityRegistry[con.Destination];
                 ec.UnHighlight();
             }
 

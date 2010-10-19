@@ -1,19 +1,26 @@
-﻿namespace NCRVisual.RelationDiagram
+﻿using System.Collections.Generic;
+namespace NCRVisual.RelationDiagram
 {
     /// <summary>
     /// The connection between 2 entities
     /// </summary>
-    public class Connection
-    {
-        /// <summary>
-        /// Get or set the source entity
-        /// </summary>
+    public class Connection: IConnection
+    {            
+        #region IConnection Members
         public IEntity Source { get; set; }
 
+        public IEntity Destination { get; set; }       
+        #endregion
+
         /// <summary>
-        /// Get or set the destination entity
+        /// Get or set the Message Subject collection
         /// </summary>
-        public IEntity Destination { get; set; }
+        public List<string> MessageSubject { get; set; }
+
+        /// <summary>
+        /// Get or set the SendDate collection
+        /// </summary>
+        public List<string> SendDate { get; set; }
 
         /// <summary>
         /// Constructor

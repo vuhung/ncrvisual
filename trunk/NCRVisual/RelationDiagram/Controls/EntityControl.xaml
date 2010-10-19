@@ -38,7 +38,8 @@
                 <!--<DoubleAnimation Storyboard.TargetName="rectangle"
                                   Storyboard.TargetProperty="BorderThickness" To="1" Duration="0:0:0.100"/>-->
             </Storyboard>
-        </Grid.Resources>        
+        </Grid.Resources>
+        
         <Border BorderBrush="#FF393939" x:Name="rectangle" BorderThickness="5,3,5,3" 
         CornerRadius="10,10,10,10" Padding="10,5,10,5">
             <Border.Background>
@@ -49,8 +50,7 @@
                        TextWrapping="Wrap" 
                        Width="auto" Height="auto" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="titleBlock" Foreground="Black">
             </TextBlock>
-        </Border>
-        
+        </Border>        
 
     </Grid>
 
