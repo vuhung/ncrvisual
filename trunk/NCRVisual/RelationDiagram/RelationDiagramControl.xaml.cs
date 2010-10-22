@@ -5,9 +5,8 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Threading;
 using NCRVisual.RelationDiagram.Algo;
-using System.Windows.Shapes;
+using RelationDiagram;
 
 namespace NCRVisual.RelationDiagram
 {
@@ -24,9 +23,13 @@ namespace NCRVisual.RelationDiagram
         private StarField _starField;
         private DateTime _lastUpdate = DateTime.Now;
         private ColorfulFireworks _colourfulFirework;
-
         private bool _mouseDown = false;
-        //private double _velocity = 0;        
+
+        //Private variable for handling transformation of layoutroot
+        private Transform FirstTransform;
+        private double firstX;
+        private double firstY;
+
         private Point _mouseDownPoint = new Point();
         private Point _lastMouseDownPoint = new Point();
 
@@ -138,7 +141,7 @@ namespace NCRVisual.RelationDiagram
         }
 
         void _myDiagramController_AlgoRunComplete(object sender, EventArgs e)
-        {
+        {            
             PointPositions = (Collection<Point>)sender;
 
             //Generate node
@@ -156,71 +159,57 @@ namespace NCRVisual.RelationDiagram
                     drawConnection(_entityControlCollection[i], EntityRegistry[con.Destination]);
                     t = _entityControlCollection.IndexOf(EntityRegistry[con.Destination]);
                 }
-
-                if (i == 72 || i == 73 || i == 74)
-                {
-                    i.ToString();
-                    _entityControlCollection[i].Highlight();
-                }
             }
+            
+            Centerize();
 
-            //ScaleTransform transform = new ScaleTransform();
-            //transform.CenterX = (_myDiagramController.LowRight.X - _myDiagramController.TopLeft.X) / 2.0;
-            //transform.CenterY = (_myDiagramController.LowRight.Y - _myDiagramController.TopLeft.Y) / 2.0;
+            //Deep copy for save the first transform of the diagram
+            FirstTransform = new ScaleTransform
+            {
+                CenterX = double.Parse(((ScaleTransform)LayoutRoot.RenderTransform).CenterX.ToString()),
+                CenterY = double.Parse(((ScaleTransform)LayoutRoot.RenderTransform).CenterY.ToString()),
+                ScaleX = double.Parse(((ScaleTransform)LayoutRoot.RenderTransform).ScaleX.ToString()),
+                ScaleY = double.Parse(((ScaleTransform)LayoutRoot.RenderTransform).ScaleY.ToString()),
+            };
+                
+            firstX = Canvas.GetLeft(LayoutRoot);
+            firstY = Canvas.GetTop(LayoutRoot);
+        }
 
-            //double scaleX = (double)(panelStarfield.ActualWidth) / (double)(_myDiagramController.LowRight.X - _myDiagramController.TopLeft.X);
-            //double scaleY = (double)(panelStarfield.ActualHeight) / (double)(_myDiagramController.LowRight.Y - _myDiagramController.TopLeft.Y);
+        private void Centerize()
+        {
+            double middleX = (_myDiagramController.LowRight.X - _myDiagramController.TopLeft.X) / 2.0;
+            double middleY = (_myDiagramController.LowRight.Y - _myDiagramController.TopLeft.Y) / 2.0;
 
-            //transform.ScaleX = Math.Min(scaleX, scaleY);
-            //transform.ScaleY = Math.Min(scaleX, scaleY);
+            double diffX = middleX - (App.Current.Host.Content.ActualWidth) / 2.0;
+            double diffY = middleX - (App.Current.Host.Content.ActualHeight) / 2.0;
 
-            //MainGrid.RenderTransform = transform;
+            Canvas.SetTop(LayoutRoot, -diffY);
+            Canvas.SetLeft(LayoutRoot, -diffX);
 
-            Line a = new Line();
-            a.X1 = _myDiagramController.TopLeft.X;
-            a.Y1 = _myDiagramController.TopLeft.Y;
-            a.X2 = _myDiagramController.TopLeft.X;
-            a.Y2 = _myDiagramController.LowRight.Y;
-            a.StrokeThickness = 5;
-            a.Stroke = new SolidColorBrush(Colors.Red);
-            LayoutRoot.Children.Add(a);
+            double scaleX = (double)(panelStarfield.ActualWidth) / (double)(_myDiagramController.LowRight.X - _myDiagramController.TopLeft.X);
+            double scaleY = (double)(panelStarfield.ActualHeight) / (double)(_myDiagramController.LowRight.Y - _myDiagramController.TopLeft.Y);
+            ScaleTransform scale = new ScaleTransform();
+            scale.CenterX = middleX;
+            scale.CenterY = middleY;
+            scale.ScaleX = Math.Min(scaleX, scaleY) - 0.1;
+            scale.ScaleY = scale.ScaleX;
 
-            Line b = new Line();
-            b.X1 = _myDiagramController.TopLeft.X;
-            b.Y1 = _myDiagramController.TopLeft.Y;
-            b.X2 = _myDiagramController.LowRight.X;
-            b.Y2 = _myDiagramController.TopLeft.Y;
-            b.StrokeThickness = 5;
-            b.Stroke = new SolidColorBrush(Colors.Red);
-            LayoutRoot.Children.Add(b);
-
-            Line c = new Line();
-            c.X1 = _myDiagramController.TopLeft.X;
-            c.Y1 = _myDiagramController.LowRight.Y;
-            c.X2 = _myDiagramController.LowRight.X;
-            c.Y2 = _myDiagramController.LowRight.Y;
-            c.StrokeThickness = 5;
-            c.Stroke = new SolidColorBrush(Colors.Red);
-            LayoutRoot.Children.Add(c);
-
-            Line d = new Line();
-            d.X1 = _myDiagramController.LowRight.X;
-            d.Y1 = _myDiagramController.TopLeft.Y;
-            d.X2 = _myDiagramController.LowRight.X;
-            d.Y2 = _myDiagramController.LowRight.Y;
-            d.StrokeThickness = 5;
-            d.Stroke = new SolidColorBrush(Colors.Red);
-            LayoutRoot.Children.Add(d);
+            this.LayoutRoot.RenderTransform = scale;
         }
 
         private void Home_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-
+            this.LayoutRoot.RenderTransform = FirstTransform;
+            Canvas.SetLeft(LayoutRoot, firstX);
+            Canvas.SetTop(LayoutRoot, firstY);
         }
 
         private void ZoomIn_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-
+            ScaleTransform scale = (ScaleTransform)this.LayoutRoot.RenderTransform;            
+            scale.ScaleX += 0.1;
+            scale.ScaleY += 0.1;
         }
 
         private void ZoomOut_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -234,6 +223,9 @@ namespace NCRVisual.RelationDiagram
             this.EntityRegistry.Clear();
             this._entityControlCollection.Clear();
             count = 0;
+            this.LayoutRoot.RenderTransform = new MatrixTransform();
+            Canvas.SetLeft(LayoutRoot, 0);
+            Canvas.SetTop(LayoutRoot, 0);
 
             if (this.AlgoList.SelectedItem != null)
             {
@@ -263,6 +255,7 @@ namespace NCRVisual.RelationDiagram
                 }
             }
         }
+
         #endregion
 
         #region Render
@@ -296,6 +289,10 @@ namespace NCRVisual.RelationDiagram
 
                 block.RenderTransform = grouptransform;
             }
+
+            FirstTransform = LayoutRoot.RenderTransform;
+            firstX = Canvas.GetLeft(LayoutRoot);
+            firstY = Canvas.GetTop(LayoutRoot);
         }
 
         private void DrawGraphLayout(IAlgorithm algo)
@@ -309,7 +306,7 @@ namespace NCRVisual.RelationDiagram
         /// <param name="Display">The title of the node</param>
         /// <param name="left">The distance between the top-left of the node to the left of the browser</param>
         /// <param name="top">The distance between the top-left of the node to the top of the browser</param>
-        public void CreateNode(IEntity entity, double left, double top)
+        public EntityControl CreateNode(IEntity entity, double left, double top)
         {
             //Create the node control            
             EntityControl ctrl = new EntityControl(entity, this.EntityRegistry);
@@ -327,6 +324,8 @@ namespace NCRVisual.RelationDiagram
             //Set the Anxis of the node
             Canvas.SetLeft(ctrl, left);
             Canvas.SetTop(ctrl, top);
+
+            return ctrl;
         }
 
         /// <summary>
