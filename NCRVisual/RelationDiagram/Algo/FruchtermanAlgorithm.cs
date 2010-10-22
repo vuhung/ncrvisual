@@ -10,8 +10,8 @@ namespace NCRVisual.RelationDiagram.Algo
         const int maxRepulsiveForceDistance=6;
         const int iterations = 500;
         const double k = 0.2;
-        const double c = 0.01;
-        const double maxVertexMovement = 0.5;
+        const double c = 0.002;
+        const double maxVertexMovement = 1;
         const int Factorx=400;
         const int Factory=400;
         private Collection<Node> Nodes { get; set; }
