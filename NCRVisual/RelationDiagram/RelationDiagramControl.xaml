@@ -11,8 +11,8 @@
             <ColumnDefinition Width="8"/>
             <ColumnDefinition Width="45"/>
             <ColumnDefinition Width="*"/>            
+            <ColumnDefinition Width="300"/>
             <ColumnDefinition Width="100"/>
-            <ColumnDefinition Width="8"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="8"/>
@@ -21,11 +21,12 @@
             <RowDefinition Height="64"/>
             <RowDefinition Height="64"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
-        <Image Source="Image/bg1.jpg" Stretch="UniformToFill" Grid.Row="0" Grid.RowSpan="6"  Grid.Column="0" Grid.ColumnSpan="5"/>
-        <Canvas x:Name="panelStarfield" IsHitTestVisible="False" Grid.Row="0" Grid.RowSpan="6"  Grid.Column="0" Grid.ColumnSpan="5"/>
-        <Canvas x:Name="MainGrid" Background="Transparent" Grid.Row="0" Grid.RowSpan="6"  Grid.Column="0" Grid.ColumnSpan="5">
+        <Image Source="Image/bg1.jpg" Stretch="UniformToFill" Grid.Row="0" Grid.RowSpan="7"  Grid.Column="0" Grid.ColumnSpan="5"/>
+        <Canvas x:Name="panelStarfield" IsHitTestVisible="False" Grid.Row="0" Grid.RowSpan="7"  Grid.Column="0" Grid.ColumnSpan="5"/>
+        <Canvas x:Name="MainGrid" Background="Transparent" Grid.Row="0" Grid.RowSpan="7"  Grid.Column="0" Grid.ColumnSpan="5">
             <Canvas x:Name="LayoutRoot" Margin="5">
             <Canvas.Resources>
 
@@ -46,11 +47,21 @@
             </Canvas>
         </Canvas>
 
-        <Image Source="Image/home.png" x:Name='Home' Grid.Row="1" Grid.Column="1" MouseLeftButtonDown="Home_MouseLeftButtonDown"></Image>
-        <Image Source="Image/zoomin.png"  x:Name='ZoomIn' Grid.Row="2" Grid.Column="1" MouseLeftButtonDown="ZoomIn_MouseLeftButtonDown"></Image>
-        <Image Source="Image/zoomout.png"  x:Name='ZoomOut' Grid.Row="3" Grid.Column="1" MouseLeftButtonDown="ZoomOut_MouseLeftButtonDown"></Image>
+        <Image Source="Image/home.png" x:Name='Home' Grid.Row="2" Grid.Column="1" Margin="5" MouseLeftButtonDown="Home_MouseLeftButtonDown"></Image>
+        <Image Source="Image/zoomin.png"  x:Name='ZoomIn' Grid.Row="3" Grid.Column="1" Margin="5" MouseLeftButtonDown="ZoomIn_MouseLeftButtonDown"></Image>
+        <Image Source="Image/zoomout.png"  x:Name='ZoomOut' Grid.Row="4" Grid.Column="1" Margin="5" MouseLeftButtonDown="ZoomOut_MouseLeftButtonDown"></Image>
         
-        <ComboBox x:Name="AlgoList" Grid.Row="1" Grid.Column="3" Margin="10" Height="20"/>
-        <Button x:Name="Render" Grid.Row="2" Grid.Column="3" Content="Start" Width="100" Height="20" IsEnabled="False"/>
+        <TextBlock Grid.Row="1" Grid.ColumnSpan="5" IsHitTestVisible="False" Foreground="White" FontSize="56" VerticalAlignment="Center">NCR VISUAL</TextBlock>
+        <Border Grid.Row="6" Background="Black" Opacity="0.5" Grid.ColumnSpan="6">
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock Foreground="White" FontSize="20">Networked community relation Visualization</TextBlock>
+            </StackPanel>
+        </Border>
+        <ComboBox x:Name="AlgoList" Grid.Row="1" Grid.Column="4" Margin="10" Height="20"/>
+        <Button x:Name="Render" Grid.Row="2" Grid.Column="4" Content="Start" Width="100" Height="20" IsEnabled="False"/>
+        
+        <Border Grid.Column="3" Grid.Row="3" Grid.RowSpan="3" Grid.ColumnSpan="2" Background="White" CornerRadius="20,0,0,20" Name="DetailBorder">
+            
+        </Border>
     </Grid>
 </UserControl>

@@ -33,12 +33,7 @@ namespace NCRVisual.RelationDiagram
         /// <summary>
         /// Event after reading input from data provider
         /// </summary>
-        public event EventHandler InputReadingComplete;
-
-        /// <summary>
-        /// Event after running layoutAlgorithm
-        /// </summary>
-        public event EventHandler AlgoRunComplete;
+        public event EventHandler InputReadingComplete; 
 
         /// <summary>
         /// Get or set the Entity Collection
@@ -135,14 +130,14 @@ namespace NCRVisual.RelationDiagram
                         int value = reader.ReadElementContentAsInt();
                         _input[start - 1][end - 1] = value;
 
-                        while (reader.ReadToNextSibling(EDGE_CONTENT_TAG))
-                        {
-                            reader.ReadToFollowing(EDGE_DATE_TAG);
-                            string time = reader.ReadElementContentAsString();
-                            //entity.SendDate.Add(time);
-                            reader.ReadToFollowing(EDGE_SUBJECT_TAG);
-                            //entity.MessageSubject.Add(reader.ReadElementContentAsString());
-                        }
+                        //while (reader.ReadToNextSibling(EDGE_CONTENT_TAG))
+                        //{
+                        //    reader.ReadToFollowing(EDGE_DATE_TAG);
+                        //    string time = reader.ReadElementContentAsString();
+                        //    //entity.SendDate.Add(time);
+                        //    reader.ReadToFollowing(EDGE_SUBJECT_TAG);
+                        //    //entity.MessageSubject.Add(reader.ReadElementContentAsString());
+                        //}
                         reader.Read();
                     }
 
@@ -155,7 +150,7 @@ namespace NCRVisual.RelationDiagram
             populateConnection(_input);
         }
 
-        public void RunAlgo(IAlgorithm algorithm)
+        public Collection<Point> RunAlgo(IAlgorithm algorithm)
         {
             double maxX = 0;
             double minX = 0;
@@ -189,10 +184,8 @@ namespace NCRVisual.RelationDiagram
 
             this.TopLeft = new Point(minX, minY);
             this.LowRight = new Point(maxX, maxY);
-            if (this.AlgoRunComplete != null)
-            {
-                this.AlgoRunComplete(tempPoints, null);
-            };
+
+            return tempPoints;            
         }
     }
 }
