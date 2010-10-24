@@ -214,7 +214,7 @@ namespace NCRVisual.Web.Controllers
             string content = "";
             if (s.Length > 0)
             {
-                for (int i = 3; i < s.Length; i++)
+                for (int i = 1; i < s.Length; i++)
                 {
                     content = content + s[i] + " ";
                 }
