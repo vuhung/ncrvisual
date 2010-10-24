@@ -93,7 +93,9 @@
     <Content Include="NCRVisualTestPage.html" />
     <Content Include="Input\2010-June.txt" />
     <Content Include="Output\output.txt" />
-    <Content Include="Output\output.xml" />
+    <Content Include="Output\output.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="RelationDiagramTestPage.aspx" />
     <Content Include="RelationDiagramTestPage.html" />
     <Content Include="Silverlight.js" />

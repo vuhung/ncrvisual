@@ -8,13 +8,15 @@ namespace NCRVisual.RelationDiagram
     public partial class EdgeControl : UserControl
     {
         public EntityControl StartingEntity { get; set; }
-        public EntityControl EndEntity { get; set; }       
+        public EntityControl EndEntity { get; set; }
+        public Color OriginalColor { get; set; }
 
-        public EdgeControl(EntityControl start, EntityControl end)
+        public EdgeControl(EntityControl start, EntityControl end, Color originalColor)
         {
             InitializeComponent();
             this.StartingEntity = start;
             this.EndEntity = end;
+            this.OriginalColor = originalColor;
             this.MouseEnter += new System.Windows.Input.MouseEventHandler(EdgeControl_MouseEnter);
             this.MouseLeave += new System.Windows.Input.MouseEventHandler(EdgeControl_MouseLeave);
         }        
@@ -32,7 +34,7 @@ namespace NCRVisual.RelationDiagram
             connectionLine.X2 = Canvas.GetLeft(EndEntity) + EndEntity.Width / 2;
             connectionLine.Y2 = Canvas.GetTop(EndEntity) + EndEntity.Height / 2;
             connectionLine.StrokeThickness = 3;
-            connectionLine.Stroke = new SolidColorBrush(Colors.White);
+            connectionLine.Stroke = new SolidColorBrush(OriginalColor);
             connectionLine.Opacity = .5;
             MainGrid.Children.Add(connectionLine);           
         }
@@ -52,7 +54,7 @@ namespace NCRVisual.RelationDiagram
             Line connectionLine = (Line)MainGrid.Children[0];
             connectionLine.Opacity = .5;
             connectionLine.StrokeThickness = 3;
-            connectionLine.Stroke = new SolidColorBrush(Colors.White);
+            connectionLine.Stroke = new SolidColorBrush(OriginalColor);
             this.StartingEntity.UnHighlight();
             this.EndEntity.UnHighlight();
         }

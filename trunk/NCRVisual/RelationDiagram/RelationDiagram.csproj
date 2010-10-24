@@ -147,6 +147,12 @@
     <Resource Include="Image\zoomin.png" />
     <Resource Include="Image\zoomout.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PersonalInfoAndStatistics\PersonalInfoAndStatistics.csproj">
+      <Project>{95195C7D-2688-4AB3-B8C2-79F869878C81}</Project>
+      <Name>PersonalInfoAndStatistics</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

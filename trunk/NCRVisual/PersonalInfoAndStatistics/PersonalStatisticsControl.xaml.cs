@@ -169,26 +169,26 @@ namespace PersonalInfoAndStatistics
         public PersonalStatisticsControl()
         {
             InitializeComponent();
-            //#region debug code to create dummy data
-            //List<DateTime> tmp1 = new List<DateTime>();
-            //List<DateTime> tmp2 = new List<DateTime>();
+            #region debug code to create dummy data
+            List<DateTime> tmp1 = new List<DateTime>();
+            List<DateTime> tmp2 = new List<DateTime>();
 
-            //Random random = new Random();
-            //for (int i = 0; i < 50; i++)
-            //{
-            //    int randomMonth = random.Next(12);
-            //    int randomDay = random.Next(28);
-            //    tmp1.Add(new DateTime(2010, randomMonth + 1, randomDay + 1));
-            //}
-            //for (int i = 0; i < 50; i++)
-            //{
-            //    int randomMonth = random.Next(12);
-            //    int randomDay = random.Next(28);
-            //    tmp2.Add(new DateTime(2010, randomMonth + 1, randomDay + 1));
-            //}
-            //AllMessagesReceivedTime = tmp1;
-            //AllMessagesSentTime = tmp2;
-            //#endregion
+            Random random = new Random();
+            for (int i = 0; i < 50; i++)
+            {
+                int randomMonth = random.Next(12);
+                int randomDay = random.Next(28);
+                tmp1.Add(new DateTime(2010, randomMonth + 1, randomDay + 1));
+            }
+            for (int i = 0; i < 50; i++)
+            {
+                int randomMonth = random.Next(12);
+                int randomDay = random.Next(28);
+                tmp2.Add(new DateTime(2010, randomMonth + 1, randomDay + 1));
+            }
+            AllMessagesReceivedTime = tmp1;
+            AllMessagesSentTime = tmp2;
+            #endregion
         }
     }
 }
