@@ -130,15 +130,18 @@ namespace NCRVisual.RelationDiagram
                         int value = reader.ReadElementContentAsInt();
                         _input[start - 1][end - 1] = value;
 
-                        //while (reader.ReadToNextSibling(EDGE_CONTENT_TAG))
-                        //{
-                        //    reader.ReadToFollowing(EDGE_DATE_TAG);
-                        //    string time = reader.ReadElementContentAsString();
-                        //    //entity.SendDate.Add(time);
-                        //    reader.ReadToFollowing(EDGE_SUBJECT_TAG);
-                        //    //entity.MessageSubject.Add(reader.ReadElementContentAsString());
-                        //}
+                        while (reader.ReadToNextSibling(EDGE_CONTENT_TAG))
+                        {
+                            reader.ReadToFollowing(EDGE_DATE_TAG);
+                            string time = reader.ReadElementContentAsString();
+                            //entity.SendDate.Add(time);
+                            reader.ReadToFollowing(EDGE_SUBJECT_TAG);
+                            string subject = reader.ReadElementContentAsString();
+                            //entity.MessageSubject.Add(reader.ReadElementContentAsString());
+                            reader.Read();
+                        }
                         reader.Read();
+                        //reader.Read();
                     }
 
                     this.entityCollection.Add(entity);
