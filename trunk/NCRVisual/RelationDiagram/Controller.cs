@@ -28,12 +28,14 @@ namespace NCRVisual.RelationDiagram
 
         #region private
         private int[][] _input = new int[100][];
+        private Collection<Email> EmailList = new Collection<Email>();
         #endregion
 
+        #region properties
         /// <summary>
         /// Event after reading input from data provider
         /// </summary>
-        public event EventHandler InputReadingComplete; 
+        public event EventHandler InputReadingComplete;
 
         /// <summary>
         /// Get or set the Entity Collection
@@ -44,6 +46,7 @@ namespace NCRVisual.RelationDiagram
         /// Number of vertex
         /// </summary>
         public int VertexNumber = 0;
+        #endregion
 
         public Point TopLeft;
         public Point LowRight;
@@ -80,9 +83,20 @@ namespace NCRVisual.RelationDiagram
             {
                 for (int j = 0; j < VertexNumber; j++)
                 {
-                    if (matrixInput[i][j] > 0 && i != j)
+                    if (matrixInput[i][j] > 0)
                     {
-                        entityCollection[i].Connections.Add(new Connection(entityCollection[i], entityCollection[j]));
+                        entityCollection[i].Connections.Add(new Connection(entityCollection[i], entityCollection[j], matrixInput[i][j]));
+                    }
+                }
+            }
+
+            foreach( Email mail in this.EmailList)
+            {
+                foreach (IConnection con in entityCollection[int.Parse(mail.UserId)-1].Connections)
+                {
+                    if (con.Destination.Id == mail.SendTo)
+                    {
+                        ((Connection)con).SendDate.Add(mail.sendDate);
                     }
                 }
             }
@@ -111,9 +125,8 @@ namespace NCRVisual.RelationDiagram
                     //Read Name
                     reader.ReadToFollowing(NAME_TAG);
                     string name = reader.ReadElementContentAsString();
-
-                    entity.UserId = id;
-                    entity.UserId = name;
+                    
+                    entity.Id = id;
                     entity.Email = email;
                     entity.Name = email;
 
@@ -134,14 +147,21 @@ namespace NCRVisual.RelationDiagram
                         {
                             reader.ReadToFollowing(EDGE_DATE_TAG);
                             string time = reader.ReadElementContentAsString();
-                            //entity.SendDate.Add(time);
                             reader.ReadToFollowing(EDGE_SUBJECT_TAG);
                             string subject = reader.ReadElementContentAsString();
-                            //entity.MessageSubject.Add(reader.ReadElementContentAsString());
+                            this.EmailList.Add(
+                                new Email
+                                {
+                                    MessageSubject = subject,
+                                    UserId = start.ToString(),
+                                    sendDate = toDateTime(time),
+                                    SendTo = end.ToString()
+                                }
+                                );
+
                             reader.Read();
                         }
                         reader.Read();
-                        //reader.Read();
                     }
 
                     this.entityCollection.Add(entity);
@@ -188,7 +208,50 @@ namespace NCRVisual.RelationDiagram
             this.TopLeft = new Point(minX, minY);
             this.LowRight = new Point(maxX, maxY);
 
-            return tempPoints;            
+            return tempPoints;
         }
+
+        public DateTime toDateTime(string input)
+        {
+            string[] split = input.Split(' ');
+            int year = int.Parse(split[3]);
+            int Date = int.Parse(split[1]);
+            int Month = 1;
+
+            switch (split[2])
+            {
+                case "Jan": Month = 1; break;
+                case "Feb": Month = 2; break;
+                case "Mar": Month = 3; break;
+                case "Apr": Month = 4; break;
+                case "May": Month = 5; break;
+                case "Jun": Month = 6; break;
+                case "Jul": Month = 7; break;
+                case "Aug": Month = 8; break;
+                case "Sep": Month = 9; break;
+                case "Oct": Month = 10; break;
+                case "Nov": Month = 11; break;
+                case "Dec": Month = 12; break;
+            }
+
+            string[] splitTime = split[4].Split(':');
+            int hour = int.Parse(splitTime[0]);
+            int min = int.Parse(splitTime[1]);
+            int sec = int.Parse(splitTime[2]);
+
+            DateTime dt = new DateTime(year, Month, Date, hour, min, sec, 0);
+            return dt;
+        }
+    }
+
+    /// <summary>
+    /// Anonymous class for saving Email
+    /// </summary>
+    public class Email
+    {
+        public string UserId { get; set; }
+        public DateTime sendDate { get; set; }
+        public string MessageSubject { get; set; }
+        public string SendTo { get; set; }
     }
 }

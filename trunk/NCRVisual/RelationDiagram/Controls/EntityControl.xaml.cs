@@ -15,8 +15,11 @@ namespace NCRVisual.RelationDiagram
         private Color _highlightColor;
         private IEntity _entity;
         private Point _position;
-        #endregion
 
+        private DateTime _lastClick = DateTime.Now;
+        private bool _firstClickDone = false;
+
+        #endregion
 
         /// <summary>
         /// Get the desired width of the control after render
@@ -45,6 +48,8 @@ namespace NCRVisual.RelationDiagram
         /// </summary>
         public List<EdgeControl> ConnectedEdges { get; set; }
 
+        public event EventHandler MouseDoubleClick;
+
         private Dictionary<IEntity, EntityControl> _entityRegistry;
 
         public EntityControl(IEntity entity, Dictionary<IEntity, EntityControl> reg)
@@ -57,7 +62,6 @@ namespace NCRVisual.RelationDiagram
             this._entityRegistry = reg;
             ConnectedEdges = new List<EdgeControl>();
         }
-
 
         void EntityControl_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -116,7 +120,7 @@ namespace NCRVisual.RelationDiagram
 
         private void Canvas_MouseEnter(object sender, MouseEventArgs e)
         {
-            this.Highlight();           
+            this.Highlight();
 
             foreach (IConnection con in this.Entity.Connections)
             {
@@ -153,6 +157,34 @@ namespace NCRVisual.RelationDiagram
             {
                 EntityControlClickedEventArgs args = new EntityControlClickedEventArgs(this.Entity);
                 this.Clicked(this, args);
+            }
+        }
+
+        private void mainCanvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            UIElement element = sender as UIElement;
+            DateTime clickTime = DateTime.Now;
+            TimeSpan span = clickTime - _lastClick;
+
+            Point _clickPosition = e.GetPosition(element);
+
+            if (span.TotalMilliseconds > 300 || _firstClickDone == false)
+            {
+
+                _firstClickDone = true;
+                _lastClick = DateTime.Now;
+            }
+            else
+            {
+                Point position = e.GetPosition(element);
+                if (Math.Abs(_clickPosition.X - position.X) < 4 &&
+                    Math.Abs(_clickPosition.Y - position.Y) < 4)
+                {
+                    MouseDoubleClick(this.Entity, null);
+                }
+
+                _firstClickDone = false;
+
             }
         }
     }

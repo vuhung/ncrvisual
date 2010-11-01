@@ -111,6 +111,13 @@ namespace PersonalInfoAndStatistics
                     // Add the chart to the control
                     chart1.Children.Add(messagesSentChart);
                 }
+                else
+                {
+                    foreach (DataPoint tmpDP in messagesSentChart.Series[0].DataPoints)
+                    {
+                        tmpDP.YValue = 0;
+                    }
+                }
                 // refresh values of the chart
                 processMessageTime(allMessagesSentTime, messagesSentDataPoints, 2010);
             }
@@ -139,7 +146,7 @@ namespace PersonalInfoAndStatistics
                     {
                         messagesRecvDataPoints[i] = new DataPoint();
                         tmpDP = messagesRecvDataPoints[i];
-                        tmpDP.YValue = 1;
+                        tmpDP.YValue = 0;
                         tmpDP.AxisXLabel = months[i];
                         tmpDP.XValue = i + 1;
                         dataSeries.DataPoints.Add(tmpDP);
@@ -147,8 +154,15 @@ namespace PersonalInfoAndStatistics
                     // Add the chart to the control
                     chart2.Children.Add(messagesRecvChart);
                 }
+                else
+                {
+                    foreach (DataPoint tmpDP in messagesRecvChart.Series[0].DataPoints)
+                    {
+                        tmpDP.YValue = 0;
+                    }
+                }
                 // refresh values of the chart
-                processMessageTime(allMessagesReceivedTime, messagesRecvDataPoints, 2010);
+                processMessageTime(allMessagesReceivedTime, messagesRecvDataPoints, 2007);
             }
         }
         #endregion
@@ -158,36 +172,37 @@ namespace PersonalInfoAndStatistics
         {
             foreach (DateTime tmpDateTime in dateTimeList)
             {
-                if (tmpDateTime.Year == year)
-                {
+                //if (tmpDateTime.Year == year)
+                //{
                     dataPoints[tmpDateTime.Month-1].YValue++;
-                }
+                //}
             }
         }
         #endregion
 
         public PersonalStatisticsControl()
         {
-            InitializeComponent();
-            #region debug code to create dummy data
-            List<DateTime> tmp1 = new List<DateTime>();
-            List<DateTime> tmp2 = new List<DateTime>();
+            InitializeComponent();            
 
-            Random random = new Random();
-            for (int i = 0; i < 50; i++)
-            {
-                int randomMonth = random.Next(12);
-                int randomDay = random.Next(28);
-                tmp1.Add(new DateTime(2010, randomMonth + 1, randomDay + 1));
-            }
-            for (int i = 0; i < 50; i++)
-            {
-                int randomMonth = random.Next(12);
-                int randomDay = random.Next(28);
-                tmp2.Add(new DateTime(2010, randomMonth + 1, randomDay + 1));
-            }
-            AllMessagesReceivedTime = tmp1;
-            AllMessagesSentTime = tmp2;
+            #region debug code to create dummy data
+            //List<DateTime> tmp1 = new List<DateTime>();
+            //List<DateTime> tmp2 = new List<DateTime>();
+
+            //Random random = new Random();
+            //for (int i = 0; i < 50; i++)
+            //{
+            //    int randomMonth = random.Next(12);
+            //    int randomDay = random.Next(28);
+            //    tmp1.Add(new DateTime(2010, randomMonth + 1, randomDay + 1));
+            //}
+            //for (int i = 0; i < 50; i++)
+            //{
+            //    int randomMonth = random.Next(12);
+            //    int randomDay = random.Next(28);
+            //    tmp2.Add(new DateTime(2010, randomMonth + 1, randomDay + 1));
+            //}
+            //AllMessagesReceivedTime = tmp1;
+            //AllMessagesSentTime = tmp2;
             #endregion
         }
     }

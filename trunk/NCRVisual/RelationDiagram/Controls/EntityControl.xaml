@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    
 >
 
-    <Grid MouseEnter="Canvas_MouseEnter" MouseLeave="Canvas_MouseLeave" x:Name="mainCanvas">
+    <Grid MouseEnter="Canvas_MouseEnter" MouseLeave="Canvas_MouseLeave" MouseLeftButtonDown="mainCanvas_MouseLeftButtonDown"  x:Name="mainCanvas">
         <Grid.Resources>
             <Storyboard x:Name="highlightStoryboard">
                 <ColorAnimation x:Name="highlightAnimation" 

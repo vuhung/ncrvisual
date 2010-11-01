@@ -37,6 +37,8 @@ namespace NCRVisual.RelationDiagram
         private Point _mouseDownPoint = new Point();
         private Point _lastMouseDownPoint = new Point();
 
+        private CustomChildWindow _algorirthmChildWindow;
+
         #endregion
 
         #region Properties
@@ -64,48 +66,33 @@ namespace NCRVisual.RelationDiagram
             _entityControlCollection = new Collection<EntityControl>();
             EntityRegistry = new Dictionary<IEntity, EntityControl>();
             _scale = new ScaleTransform();
-
             _myDiagramController = new DiagramController();
-
+            
             //Event handler
-            _myDiagramController.InputReadingComplete += new EventHandler(_myDiagramController_InputReadingComplete);            
+            _myDiagramController.InputReadingComplete += new EventHandler(_myDiagramController_InputReadingComplete);
 
             MainGrid.MouseLeftButtonDown += new System.Windows.Input.MouseButtonEventHandler(MainGrid_MouseLeftButtonDown);
             MainGrid.MouseMove += new System.Windows.Input.MouseEventHandler(CircleField_MouseMove);
             MainGrid.MouseLeftButtonUp += new System.Windows.Input.MouseButtonEventHandler(MainGrid_MouseLeftButtonUp);
 
-            Render.Click += new RoutedEventHandler(Render_Click);
-
+            AlgoButton.MouseClick += new EventHandler(AlgoButton_MouseClick);
+            
             // add the controls to the back          
             _colourfulFirework = new ColorfulFireworks();
             MainGrid.Children.Add(_colourfulFirework);
-            _colourfulFirework.Start();
-
-            //Populate AlgoList
-            PopulateAlgoList();
+            _colourfulFirework.Start();           
 
             //Populate personalStatistic Control
-            PopulatePersonalStatistics();
-        }        
+            PopulatePersonalStatistics();            
+        }
+
         #endregion
 
         private void PopulatePersonalStatistics()
         {
             PersonalStatisticsControl psc = new PersonalStatisticsControl();
             this.DetailBorder.Child = psc;
-        }
-
-        private void PopulateAlgoList()
-        {
-            List<string> algoList = new List<string>();
-            algoList.Add("Circular");
-            algoList.Add("Kamada - Kawai");
-            algoList.Add("Fruchterman");
-            algoList.Add("Rectangle");
-            algoList.Add("TreeNode");
-
-            this.AlgoList.ItemsSource = algoList;
-        }
+        }        
 
         private static bool _initializedAfterScreenSizeChanged = false;
 
@@ -120,10 +107,7 @@ namespace NCRVisual.RelationDiagram
         }
 
         private void CompositionTarget_Rendering(object sender, EventArgs e)
-        {
-            //if (_mouseDown) _velocity *= MOUSE_DOWN_DECAY;
-            //else _velocity *= DECAY;
-
+        {            
             DateTime now = DateTime.Now;
             double msec = (now - _lastUpdate).TotalMilliseconds;
             if (msec == 0)
@@ -144,6 +128,25 @@ namespace NCRVisual.RelationDiagram
             InitIfNeededAfterScreenSizeIsKnown();
         }
 
+        private void DisableForLoading()
+        {
+            this.progressBar.Visibility = Visibility.Visible;
+            this.AlgoButton.IsEnabled = false;
+            this.Home.IsHitTestVisible = false;
+            this.ZoomIn.IsHitTestVisible = false;
+            this.ZoomOut.IsHitTestVisible = false;
+            this.DetailBorderMoveOut.Begin();
+        }
+
+        private void EnableAfterLoaded()
+        {
+            this.progressBar.Visibility = Visibility.Collapsed;
+            this.AlgoButton.IsEnabled = true;
+            this.Home.IsHitTestVisible = true;
+            this.ZoomIn.IsHitTestVisible = true;
+            this.ZoomOut.IsHitTestVisible = true;
+        }
+
         #region EventHandler
 
         void MainGrid_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
@@ -154,9 +157,7 @@ namespace NCRVisual.RelationDiagram
                 _mouseDownPoint = e.GetPosition(this);
                 _lastMouseDownPoint = e.GetPosition(this);
                 _mouseDown = true;
-                MainGrid.Cursor = Cursors.Hand;
-                //_mouseDownY = Canvas.GetTop(MainGrid);
-                //_mouseDownX
+                MainGrid.Cursor = Cursors.Hand;                
             }
         }
 
@@ -192,7 +193,10 @@ namespace NCRVisual.RelationDiagram
         /// <param name="e"></param>
         void _myDiagramController_InputReadingComplete(object sender, EventArgs e)
         {
-            this.Render.IsEnabled = true;
+            this.AlgoButton.IsEnabled = true;
+            _algorirthmChildWindow = new CustomChildWindow();
+            _algorirthmChildWindow.SelectAlgorithmCompleted += new EventHandler(_algorirthmChildWindow_SelectAlgorithmCompleted);
+            _algorirthmChildWindow.InitAlgo();
         }
 
         private void Centerize()
@@ -238,7 +242,7 @@ namespace NCRVisual.RelationDiagram
             scale.ScaleY -= 0.1;
         }
 
-        void Render_Click(object sender, RoutedEventArgs e)
+        void _algorirthmChildWindow_SelectAlgorithmCompleted(object sender, EventArgs e)
         {
             this.LayoutRoot.Children.Clear();
             this.EntityRegistry.Clear();
@@ -248,40 +252,36 @@ namespace NCRVisual.RelationDiagram
             Canvas.SetLeft(LayoutRoot, 0);
             Canvas.SetTop(LayoutRoot, 0);
 
-            if (this.AlgoList.SelectedItem != null)
+            IAlgorithm algo = new KKAlgorithm();
+
+            switch (sender.ToString())
             {
-                Render.IsEnabled = false;
-
-                IAlgorithm algo = new KKAlgorithm();
-
-                switch (AlgoList.SelectedItem.ToString())
-                {
-                    case "Circular":
-                        DrawCircular();
-                        break;
-                    case "Kamada - Kawai":
-                        algo = new KKAlgorithm();
-                        DrawGraphLayout(algo);
-                        break;
-                    case "Fruchterman":
-                        algo = new FruchtermanAlgorithm();
-                        DrawGraphLayout(algo);
-                        break;
-                    case "TreeNode":
-                        algo = new TreeNodeAlgorithm();
-                        DrawGraphLayout(algo);
-                        break;
-                    case "Rectangle":
-                        algo = new RectangleAlgorithm();
-                        DrawGraphLayout(algo);
-                        break;
-                }
+                case "Circular":
+                    DrawCircular();
+                    break;
+                case "Kamada - Kawai":
+                    algo = new KKAlgorithm();
+                    DrawGraphLayout(algo);
+                    break;
+                case "Fruchterman":
+                    algo = new FruchtermanAlgorithm();
+                    DrawGraphLayout(algo);
+                    break;
+                case "TreeNode":
+                    algo = new TreeNodeAlgorithm();
+                    DrawGraphLayout(algo);
+                    break;
+                case "Rectangle":
+                    algo = new RectangleAlgorithm();
+                    DrawGraphLayout(algo);
+                    break;
             }
+
         }
 
         void bg_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            PointPositions = (Collection<Point>) e.Result;
+            PointPositions = (Collection<Point>)e.Result;
 
             //Generate node
             for (int i = 0; i < PointPositions.Count; i++)
@@ -295,8 +295,11 @@ namespace NCRVisual.RelationDiagram
                 int t = 0;
                 foreach (IConnection con in _entityControlCollection[i].Entity.Connections)
                 {
-                    drawConnection(_entityControlCollection[i], EntityRegistry[con.Destination]);
-                    t = _entityControlCollection.IndexOf(EntityRegistry[con.Destination]);
+                    if (!con.Source.Equals(con.Destination))
+                    {
+                        drawConnection(_entityControlCollection[i], EntityRegistry[con.Destination]);
+                        t = _entityControlCollection.IndexOf(EntityRegistry[con.Destination]);
+                    }
                 }
             }
 
@@ -314,12 +317,22 @@ namespace NCRVisual.RelationDiagram
             firstX = Canvas.GetLeft(LayoutRoot);
             firstY = Canvas.GetTop(LayoutRoot);
 
-            Render.IsEnabled = true;
+            EnableAfterLoaded();
         }
 
         void bg_DoWork(object sender, DoWorkEventArgs e)
         {
-            e.Result = this._myDiagramController.RunAlgo((IAlgorithm) e.Argument);           
+            e.Result = this._myDiagramController.RunAlgo((IAlgorithm)e.Argument);            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.DetailBorderMoveOut.Begin();
+        }
+
+        void AlgoButton_MouseClick(object sender, EventArgs e)
+        {
+            _algorirthmChildWindow.Show();
         }
 
         #endregion
@@ -333,7 +346,7 @@ namespace NCRVisual.RelationDiagram
 
             for (int i = 0; i < _myDiagramController.VertexNumber; i++)
             {
-                double celcius = 360.0 / (_myDiagramController.VertexNumber +1);
+                double celcius = 360.0 / (_myDiagramController.VertexNumber + 1);
 
                 Block block = new Block();
                 LayoutRoot.Children.Add(block);
@@ -363,7 +376,7 @@ namespace NCRVisual.RelationDiagram
             firstX = Canvas.GetLeft(LayoutRoot);
             firstY = Canvas.GetTop(LayoutRoot);
 
-            Render.IsEnabled = true;
+            //Render.IsEnabled = true;
         }
 
         private void DrawGraphLayout(IAlgorithm algo)
@@ -373,6 +386,7 @@ namespace NCRVisual.RelationDiagram
             bg.WorkerSupportsCancellation = true;
             bg.DoWork += new DoWorkEventHandler(bg_DoWork);
             bg.RunWorkerCompleted += new RunWorkerCompletedEventHandler(bg_RunWorkerCompleted);
+            DisableForLoading();
             bg.RunWorkerAsync(algo);
         }
 
@@ -386,6 +400,7 @@ namespace NCRVisual.RelationDiagram
         {
             //Create the node control            
             EntityControl ctrl = new EntityControl(entity, this.EntityRegistry);
+            ctrl.MouseDoubleClick += new EventHandler(ctrl_MouseDoubleClick);
             ctrl.Title = count.ToString();
             count++;
             //ctrl.Title = "1";
@@ -402,6 +417,44 @@ namespace NCRVisual.RelationDiagram
             Canvas.SetTop(ctrl, top);
 
             return ctrl;
+        }
+
+        void ctrl_MouseDoubleClick(object sender, EventArgs e)
+        {
+            this.DetailBorderMoveIn.Begin();
+            MailListEntity me = (MailListEntity)sender;
+            PersonalStatisticsControl statisticsControl = (PersonalStatisticsControl)this.DetailBorder.Child;
+            statisticsControl.EmailAddr = me.Email;
+            statisticsControl.Name = me.Name;
+            statisticsControl.MessagesSent = 0;
+            statisticsControl.MessagesReceived = 0;
+
+            List<DateTime> sentTime = new List<DateTime>();
+            List<DateTime> receivedTime = new List<DateTime>();
+
+            foreach (Connection con in me.Connections)
+            {
+                if (con.Source.Equals(con.Destination))
+                {
+                    statisticsControl.MessagesSent = con.value;
+
+
+                    foreach (DateTime time in con.SendDate)
+                    {
+                        sentTime.Add(time);
+                    }
+                }
+                else
+                {
+                    statisticsControl.MessagesReceived += con.value;
+                    foreach (DateTime time in con.SendDate)
+                    {
+                        receivedTime.Add(time);
+                    }
+                }
+            }
+            statisticsControl.AllMessagesSentTime = sentTime;
+            statisticsControl.AllMessagesReceivedTime = receivedTime;
         }
 
         /// <summary>
