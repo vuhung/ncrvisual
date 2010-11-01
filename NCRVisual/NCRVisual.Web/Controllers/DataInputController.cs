@@ -36,7 +36,7 @@ namespace NCRVisual.Web.Controllers
             {
                 Relation[i] = new int[1000];
             }
-            
+
             GetDataFromFile(filePath + fileName);//read and solve data , then assign it into relation array
             //WriteDataToFile(filePath + "output.txt");//write data to the ouput file
             WriteDataToXml(filePath + "output.xml");//write data to the  XML file
@@ -88,7 +88,55 @@ namespace NCRVisual.Web.Controllers
         private void WriteDataToXml(String filePath)
         {
             XmlTextWriter writer = new XmlTextWriter(filePath, null);
-            writer.WriteStartElement("Relation");            
+            writer.WriteStartElement("Relation");
+
+            //write mail that haven't reply //id=0
+            {
+                writer.WriteWhitespace("\n\t");
+                writer.WriteStartElement("Vertex");
+                writer.WriteWhitespace("\n\t\t");
+                writer.WriteElementString("UserId", "0");
+                writer.WriteWhitespace("\n\t\t");
+                writer.WriteElementString("Email", "");
+                writer.WriteWhitespace("\n\t\t");
+                writer.WriteElementString("Name", "");
+                int count = 0;
+                for (int j = 1; j <= UserList.Count; j++)
+                {
+                    List<Email> emailCollection = (from oneemail in MailList where (oneemail.UserTo == 0 && oneemail.UserId == UserList[j - 1].UserId) select oneemail).ToList<Email>();//get email that has the messageid = s[i]
+                    if (emailCollection != null && emailCollection.Count > 0)
+                    {
+                        count++;
+                        writer.WriteWhitespace("\n\t\t");
+                        writer.WriteStartElement("Edge");
+                        writer.WriteAttributeString("count", count.ToString());
+                        writer.WriteWhitespace("\n\t\t\t");
+                        writer.WriteElementString("Start", "0");
+                        writer.WriteWhitespace("\n\t\t\t");
+                        writer.WriteElementString("End", UserList[j - 1].UserId.ToString());
+                        writer.WriteWhitespace("\n\t\t\t");
+                        writer.WriteElementString("Value", emailCollection.Count.ToString());
+                        for (int k = 0; k < emailCollection.Count; k++)
+                        {
+                            writer.WriteWhitespace("\n\t\t\t");
+                            writer.WriteStartElement("Content");
+                            writer.WriteAttributeString("count", k.ToString());
+                            writer.WriteWhitespace("\n\t\t\t\t");
+                            writer.WriteElementString("Date", emailCollection[k].SendDate);
+                            writer.WriteWhitespace("\n\t\t\t\t");
+                            writer.WriteElementString("Subject", emailCollection[k].MessageSubject);
+                            writer.WriteWhitespace("\n\t\t\t");
+                            writer.WriteEndElement();
+                        }
+                        writer.WriteWhitespace("\n\t\t");
+                        writer.WriteEndElement();
+                    }
+                }
+                writer.WriteWhitespace("\n\t");
+                writer.WriteEndElement();
+            }
+
+
             for (int i = 0; i < UserList.Count; i++)
             {
                 writer.WriteWhitespace("\n\t");
@@ -102,7 +150,7 @@ namespace NCRVisual.Web.Controllers
 
                 int count = 0;
                 for (int j = 1; j <= UserList.Count; j++)//write relation data beetween vertex i and the others
-                {                    
+                {
                     if (Relation[i + 1][j] > 0)//because the relation array begin with index 1
                     {
                         count++;
@@ -112,10 +160,10 @@ namespace NCRVisual.Web.Controllers
                         writer.WriteWhitespace("\n\t\t\t");
                         writer.WriteElementString("Start", UserList[i].UserId.ToString());
                         writer.WriteWhitespace("\n\t\t\t");
-                        writer.WriteElementString("End", UserList[j-1].UserId.ToString());
+                        writer.WriteElementString("End", UserList[j - 1].UserId.ToString());
                         writer.WriteWhitespace("\n\t\t\t");
-                        writer.WriteElementString("Value", Relation[i + 1][j].ToString());                        
-                        
+                        writer.WriteElementString("Value", Relation[i + 1][j].ToString());
+
                         //email date and email subject of the email which user has sent
                         List<Email> emailCollection = (from oneemail in MailList where (oneemail.UserId == UserList[i].UserId && oneemail.UserTo == UserList[j - 1].UserId) select oneemail).ToList<Email>();//get email that has the messageid = s[i]
                         try
@@ -131,19 +179,19 @@ namespace NCRVisual.Web.Controllers
                                 writer.WriteWhitespace("\n\t\t\t\t");
                                 writer.WriteElementString("Subject", emailCollection[k].MessageSubject);
                                 writer.WriteWhitespace("\n\t\t\t");
-                                writer.WriteEndElement();                                
-                            }                            
+                                writer.WriteEndElement();
+                            }
                         }
-                        catch(Exception e)
+                        catch (Exception e)
                         {
                             e.ToString();
-                        }                                                
-                        writer.WriteWhitespace("\n\t\t");                        
-                        writer.WriteEndElement();                       
+                        }
+                        writer.WriteWhitespace("\n\t\t");
+                        writer.WriteEndElement();
                     }
-                }                
+                }
                 writer.WriteWhitespace("\n\t");
-                writer.WriteEndElement();                
+                writer.WriteEndElement();
             }
 
             writer.WriteEndElement();
@@ -171,7 +219,7 @@ namespace NCRVisual.Web.Controllers
             string[] s = GetWords(line);
             return s[1] + "@" + s[3];
         }
-        
+
         /// <summary>
         /// name of user if from the word 4 to the end of string
         /// </summary>
@@ -238,7 +286,7 @@ namespace NCRVisual.Web.Controllers
         /// <param name="s"></param>
         /// <param name="userid">the identity of the sender</param>
         /// <returns></returns>
-        private bool SolveReply(string[] s, int userid,ref Email mail)
+        private bool SolveReply(string[] s, int userid, ref Email mail)
         {
             for (int i = 1; i < s.Length; i++)//the reply may contains many message-id of the previous emails
             {
@@ -352,7 +400,7 @@ namespace NCRVisual.Web.Controllers
         /// <returns>an 2 dimesion array</returns>
         private int[][] GetDataFromFile(string filePath)
         {
-            reader = new StreamReader(filePath);            
+            reader = new StreamReader(filePath);
             while (!reader.EndOfStream)//read file
             {
                 string firstLine = reader.ReadLine();//read the first line
@@ -373,7 +421,7 @@ namespace NCRVisual.Web.Controllers
                         string[] s = GetWords(firstLine);//split the string 
 
                         if (s.Length > 0)
-                        {                            
+                        {
                             switch (s[0])//check the first word of the string 
                             {
                                 case "Date:":
@@ -392,14 +440,14 @@ namespace NCRVisual.Web.Controllers
                                     Relation[user.UserId][user.UserId]++;//add 1 into the number of email
                                     break;
                                 case "Message-ID:"://this is the identity of header and the end line of the header also
-                                    
+
                                     email.MessageId = SolveId(s);//get the value of message id 
                                     email.UserId = user.UserId;//assign userid to email
                                     MailList.Add(email);//add new mail
                                     inHeader = false;//end of a header
                                     break;
                                 case "In-Reply-To:"://this is help to know the previous email,                                    
-                                    inHeader = SolveReply(s, user.UserId,ref email);//may be this process has go through the case messageid
+                                    inHeader = SolveReply(s, user.UserId, ref email);//may be this process has go through the case messageid
                                     break;
                             }
                         }
@@ -434,7 +482,7 @@ namespace NCRVisual.Web.Controllers
         /// <returns></returns>
         private bool IsNewMail(string line)
         {
-           
+
             line = Regex.Replace(line, "  ", " ");
             String[] s = Regex.Split(line, " ");
             if (s.Length == 9)
@@ -466,7 +514,7 @@ namespace NCRVisual.Web.Controllers
         /// </summary>
         public void SetPositionForData()
         {
-            Collection<Point> V=new Collection<Point>();
+            Collection<Point> V = new Collection<Point>();
             int[] dy = new int[UserList.Count + 1];
             for (int i = 1; i <= UserList.Count; i++)
                 for (int j = 1; j <= UserList.Count; j++)
