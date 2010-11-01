@@ -46,6 +46,17 @@ namespace NCRVisual.RelationDiagram
         /// Number of vertex
         /// </summary>
         public int VertexNumber = 0;
+
+        /// <summary>
+        /// The Maximum Number of a connection
+        /// </summary>
+        public int MaxSingleConnection { get; set; }
+
+        /// <summary>
+        /// The Minimum Number of a connection
+        /// </summary>
+        public int MinSingleConnection { get; set; }
+
         #endregion
 
         public Point TopLeft;
@@ -57,6 +68,7 @@ namespace NCRVisual.RelationDiagram
         public DiagramController()
         {
             entityCollection = new Collection<MailListEntity>();
+            MaxSingleConnection = 0;
 
             //getfile from output.txt
             WebClient client = new WebClient();
@@ -79,20 +91,33 @@ namespace NCRVisual.RelationDiagram
 
         private void populateConnection(int[][] matrixInput)
         {
+            MaxSingleConnection = 0;
+            MinSingleConnection = 10000;
             for (int i = 0; i < VertexNumber; i++)
             {
                 for (int j = 0; j < VertexNumber; j++)
+                if (i!=j)
                 {
                     if (matrixInput[i][j] > 0)
                     {
-                        entityCollection[i].Connections.Add(new Connection(entityCollection[i], entityCollection[j], matrixInput[i][j]));
+                        entityCollection[i].Connections.Add(new Connection(entityCollection[i], entityCollection[j], matrixInput[i][j] + matrixInput[j][i]));
+                    }
+
+                    if (matrixInput[i][j] + matrixInput[j][i] > MaxSingleConnection)
+                    {
+                        MaxSingleConnection = matrixInput[i][j] + matrixInput[j][i];
+                    }
+
+                    if (matrixInput[i][j] + matrixInput[j][i] < MinSingleConnection)
+                    {
+                        MinSingleConnection = matrixInput[i][j] + matrixInput[j][i];
                     }
                 }
             }
 
-            foreach( Email mail in this.EmailList)
+            foreach (Email mail in this.EmailList)
             {
-                foreach (IConnection con in entityCollection[int.Parse(mail.UserId)-1].Connections)
+                foreach (IConnection con in entityCollection[int.Parse(mail.UserId) - 1].Connections)
                 {
                     if (con.Destination.Id == mail.SendTo)
                     {
@@ -125,7 +150,7 @@ namespace NCRVisual.RelationDiagram
                     //Read Name
                     reader.ReadToFollowing(NAME_TAG);
                     string name = reader.ReadElementContentAsString();
-                    
+
                     entity.Id = id;
                     entity.Email = email;
                     entity.Name = email;

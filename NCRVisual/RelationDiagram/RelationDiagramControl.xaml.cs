@@ -67,7 +67,7 @@ namespace NCRVisual.RelationDiagram
             EntityRegistry = new Dictionary<IEntity, EntityControl>();
             _scale = new ScaleTransform();
             _myDiagramController = new DiagramController();
-            
+
             //Event handler
             _myDiagramController.InputReadingComplete += new EventHandler(_myDiagramController_InputReadingComplete);
 
@@ -76,14 +76,14 @@ namespace NCRVisual.RelationDiagram
             MainGrid.MouseLeftButtonUp += new System.Windows.Input.MouseButtonEventHandler(MainGrid_MouseLeftButtonUp);
 
             AlgoButton.MouseClick += new EventHandler(AlgoButton_MouseClick);
-            
+
             // add the controls to the back          
             _colourfulFirework = new ColorfulFireworks();
             MainGrid.Children.Add(_colourfulFirework);
-            _colourfulFirework.Start();           
+            _colourfulFirework.Start();
 
             //Populate personalStatistic Control
-            PopulatePersonalStatistics();            
+            PopulatePersonalStatistics();
         }
 
         #endregion
@@ -92,7 +92,7 @@ namespace NCRVisual.RelationDiagram
         {
             PersonalStatisticsControl psc = new PersonalStatisticsControl();
             this.DetailBorder.Child = psc;
-        }        
+        }
 
         private static bool _initializedAfterScreenSizeChanged = false;
 
@@ -107,7 +107,7 @@ namespace NCRVisual.RelationDiagram
         }
 
         private void CompositionTarget_Rendering(object sender, EventArgs e)
-        {            
+        {
             DateTime now = DateTime.Now;
             double msec = (now - _lastUpdate).TotalMilliseconds;
             if (msec == 0)
@@ -135,7 +135,9 @@ namespace NCRVisual.RelationDiagram
             this.Home.IsHitTestVisible = false;
             this.ZoomIn.IsHitTestVisible = false;
             this.ZoomOut.IsHitTestVisible = false;
+            this.Search.IsHitTestVisible = false;
             this.DetailBorderMoveOut.Begin();
+            this.SearchBorderMoveOut.Begin();
         }
 
         private void EnableAfterLoaded()
@@ -145,6 +147,18 @@ namespace NCRVisual.RelationDiagram
             this.Home.IsHitTestVisible = true;
             this.ZoomIn.IsHitTestVisible = true;
             this.ZoomOut.IsHitTestVisible = true;
+            this.Search.IsHitTestVisible = true;
+        }
+
+        private void PopulateSearchingNodeList()
+        {
+            //this.NodeList
+            foreach (MailListEntity entity in _myDiagramController.entityCollection)
+            {
+                ListBoxItem item = new ListBoxItem();
+                item.Content = entity.Email;
+                this.NodeList.Items.Add(item);
+            }
         }
 
         #region EventHandler
@@ -157,7 +171,7 @@ namespace NCRVisual.RelationDiagram
                 _mouseDownPoint = e.GetPosition(this);
                 _lastMouseDownPoint = e.GetPosition(this);
                 _mouseDown = true;
-                MainGrid.Cursor = Cursors.Hand;                
+                MainGrid.Cursor = Cursors.Hand;
             }
         }
 
@@ -194,6 +208,7 @@ namespace NCRVisual.RelationDiagram
         void _myDiagramController_InputReadingComplete(object sender, EventArgs e)
         {
             this.AlgoButton.IsEnabled = true;
+            PopulateSearchingNodeList();
             _algorirthmChildWindow = new CustomChildWindow();
             _algorirthmChildWindow.SelectAlgorithmCompleted += new EventHandler(_algorirthmChildWindow_SelectAlgorithmCompleted);
             _algorirthmChildWindow.InitAlgo();
@@ -297,7 +312,8 @@ namespace NCRVisual.RelationDiagram
                 {
                     if (!con.Source.Equals(con.Destination))
                     {
-                        drawConnection(_entityControlCollection[i], EntityRegistry[con.Destination]);
+
+                        drawConnection(_entityControlCollection[i], EntityRegistry[con.Destination], con.Value);
                         t = _entityControlCollection.IndexOf(EntityRegistry[con.Destination]);
                     }
                 }
@@ -322,7 +338,7 @@ namespace NCRVisual.RelationDiagram
 
         void bg_DoWork(object sender, DoWorkEventArgs e)
         {
-            e.Result = this._myDiagramController.RunAlgo((IAlgorithm)e.Argument);            
+            e.Result = this._myDiagramController.RunAlgo((IAlgorithm)e.Argument);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -333,6 +349,58 @@ namespace NCRVisual.RelationDiagram
         void AlgoButton_MouseClick(object sender, EventArgs e)
         {
             _algorirthmChildWindow.Show();
+        }
+
+        private void Search_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.SearchBorderMoveIn.Begin();
+        }
+
+        private void NodeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            this.SearchTextBox.Text = ((ListBoxItem)NodeList.SelectedItem).Content.ToString();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(SearchTextBox.Text))
+            {
+                EntityControl result = SearchEntity(SearchTextBox.Text);
+                if (result != null)
+                {
+                    result.HighLightAllConnected();
+                    DisplayDetail(result.Entity);
+                }
+            }
+        }
+
+        private EntityControl SearchEntity(string name)
+        {
+            EntityControl returned = new EntityControl(null, null);
+            bool result = false;
+
+            foreach (EntityControl ec in _entityControlCollection)
+            {
+                if (ec.Entity.Name == SearchTextBox.Text)
+                {
+                    result = true;
+                    returned = ec;
+                }
+                else
+                {
+                    ec.UnHightListAllConnected();
+                }
+            }
+
+            if (result)
+            {
+                return returned;
+            }
+            else
+            {
+                return null;
+            }
+
         }
 
         #endregion
@@ -421,6 +489,11 @@ namespace NCRVisual.RelationDiagram
 
         void ctrl_MouseDoubleClick(object sender, EventArgs e)
         {
+            DisplayDetail(sender);
+        }
+
+        private void DisplayDetail(object sender)
+        {
             this.DetailBorderMoveIn.Begin();
             MailListEntity me = (MailListEntity)sender;
             PersonalStatisticsControl statisticsControl = (PersonalStatisticsControl)this.DetailBorder.Child;
@@ -436,7 +509,7 @@ namespace NCRVisual.RelationDiagram
             {
                 if (con.Source.Equals(con.Destination))
                 {
-                    statisticsControl.MessagesSent = con.value;
+                    statisticsControl.MessagesSent = con.Value;
 
 
                     foreach (DateTime time in con.SendDate)
@@ -446,7 +519,7 @@ namespace NCRVisual.RelationDiagram
                 }
                 else
                 {
-                    statisticsControl.MessagesReceived += con.value;
+                    statisticsControl.MessagesReceived += con.Value;
                     foreach (DateTime time in con.SendDate)
                     {
                         receivedTime.Add(time);
@@ -457,16 +530,19 @@ namespace NCRVisual.RelationDiagram
             statisticsControl.AllMessagesReceivedTime = receivedTime;
         }
 
+        
         /// <summary>
         /// Draw connection between 2 entity control
         /// </summary>
         /// <param name="startingPoint">Source entity</param>
         /// <param name="endPoint">Final entity</param>
-        public void drawConnection(EntityControl startingPoint, EntityControl endPoint)
+        public void drawConnection(EntityControl startingPoint, EntityControl endPoint, int value)
         {
-            Random r = new Random();
+            double lambda = 255 / (_myDiagramController.MaxSingleConnection - _myDiagramController.MinSingleConnection);                        
 
-            EdgeControl edge = new EdgeControl(startingPoint, endPoint, Color.FromArgb(255, (byte)r.Next(0, 255), (byte)r.Next(0, 255), (byte)r.Next(0, 255)));
+            EdgeControl edge = new EdgeControl(null, null, Colors.White);
+            edge = new EdgeControl(startingPoint, endPoint, Color.FromArgb(255, byte.Parse(Math.Round((0 + lambda) * value).ToString()), 255, byte.Parse(Math.Round((0 + lambda) * value).ToString())));
+
             startingPoint.ConnectedEdges.Add(edge);
             endPoint.ConnectedEdges.Add(edge);
             edge.drawEdge();

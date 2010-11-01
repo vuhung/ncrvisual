@@ -18,6 +18,18 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+
+        <Storyboard x:Name="SearchBorderMoveIn">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="SearchBorder" Storyboard.TargetProperty="(FrameworkElement.Height)">
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="200"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+        <Storyboard x:Name="SearchBorderMoveOut">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="SearchBorder" Storyboard.TargetProperty="(FrameworkElement.Height)">
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </UserControl.Resources>
 
     <Grid>
@@ -57,23 +69,46 @@
               To="1" Duration="0:0:0.700" />
                     </Storyboard>
                 </Canvas.Resources>
-            </Canvas>            
+            </Canvas>
         </Canvas>
 
         <Image Source="Image/home.png" x:Name='Home' Grid.Row="1" Grid.Column="1" Margin="5" MouseLeftButtonDown="Home_MouseLeftButtonDown"></Image>
         <Image Source="Image/zoomin.png"  x:Name='ZoomIn' Grid.Row="2" Grid.Column="1" Margin="5" MouseLeftButtonDown="ZoomIn_MouseLeftButtonDown"></Image>
         <Image Source="Image/zoomout.png"  x:Name='ZoomOut' Grid.Row="3" Grid.Column="1" Margin="5" MouseLeftButtonDown="ZoomOut_MouseLeftButtonDown"></Image>
-        
+        <Image Source="Image/home.png" x:Name='Search' Grid.Row="4" Grid.Column="1" Margin="5" MouseLeftButtonDown="Search_MouseLeftButtonDown"></Image>
+
         <Border Grid.Row="6" Background="Black" Opacity="0.5" Grid.ColumnSpan="6" CornerRadius="20,20,0,0">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                 <TextBlock Foreground="White" FontSize="20">Networked community relation Visualization</TextBlock>
             </StackPanel>
-        </Border>        
+        </Border>
 
         <StackPanel Grid.Column="5" Grid.RowSpan="3" HorizontalAlignment="Right" Orientation="Vertical">
             <Ctrl:ImageButton x:Name="AlgoButton"  Width="150" Height="120"></Ctrl:ImageButton>
             <TextBlock Foreground="White" HorizontalAlignment="Center">Select Algorithm</TextBlock>
-        </StackPanel>        
+        </StackPanel>
+
+        <Border x:Name="SearchBorder" Grid.Row="5" Grid.ColumnSpan="3" Height="0" Width="300" HorizontalAlignment="Left" Margin="8,0,0,0" VerticalAlignment="Bottom" CornerRadius="10,10,0,0">
+            <Border.Background>
+                <SolidColorBrush Color="Black" Opacity="0.5"></SolidColorBrush>
+            </Border.Background>
+            <Grid Opacity="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <ListBox Name="NodeList" ScrollViewer.VerticalScrollBarVisibility="Auto" Grid.Row="1" Margin="0,0,5,0" SelectionChanged="NodeList_SelectionChanged" >
+                </ListBox>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Margin="0,5,5,5" Name="SearchTextBox"/>
+                    <Button Width="50" Margin="5" Grid.Column="1" Click="Button_Click_1">Search</Button>
+                </Grid>
+            </Grid>
+        </Border>
 
         <Border Grid.Column="3" Grid.Row="3" Grid.RowSpan="3" Grid.ColumnSpan="2" HorizontalAlignment="Right" Background="White" CornerRadius="20,0,0,20">
             <StackPanel Orientation="Horizontal" Name="DetailPanel" Width="0">
@@ -82,8 +117,9 @@
             </StackPanel>
         </Border>
 
-        <ProgressBar Grid.ColumnSpan="5" Grid.RowSpan="6" Height="20" Name="progressBar" Width="200" IsIndeterminate="True" Visibility="Collapsed"/>                
+        <ProgressBar Grid.ColumnSpan="5" Grid.RowSpan="6" Height="20" Name="progressBar" Width="200" IsIndeterminate="True" Visibility="Collapsed"/>
+
     </Grid>
-    
-    
+
+
 </UserControl>

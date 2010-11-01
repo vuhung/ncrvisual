@@ -73,14 +73,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DataProvider\DefaultDataProvider.cs" />
-    <Compile Include="DataProvider\IDataProvider.cs" />
-    <Compile Include="Entities\Message.cs" />
-    <Compile Include="Entities\User.cs" />
     <Compile Include="Helper\LoadSilverlightModuleHelper.cs" />
-    <Compile Include="LogicProcessor\DefaultLogicProcessor.cs" />
-    <Compile Include="LogicProcessor\GenericLogicProcessor.cs" />
-    <Compile Include="LogicProcessor\ILogicProcessor.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
