@@ -5,12 +5,14 @@ namespace NCRVisual.RelationDiagram
     /// <summary>
     /// The connection between 2 entities
     /// </summary>
-    public class Connection: IConnection
-    {            
+    public class Connection : IConnection
+    {
         #region IConnection Members
         public IEntity Source { get; set; }
 
-        public IEntity Destination { get; set; }       
+        public IEntity Destination { get; set; }
+
+        public int Value { get; set; }
         #endregion
 
         /// <summary>
@@ -23,10 +25,7 @@ namespace NCRVisual.RelationDiagram
         /// </summary>
         public List<DateTime> SendDate { get; set; }
 
-        /// <summary>
-        /// Number of email of this connection
-        /// </summary>
-        public int value { get; set; }
+
 
         /// <summary>
         /// Constructor
@@ -37,7 +36,7 @@ namespace NCRVisual.RelationDiagram
         {
             this.Source = e1;
             this.Destination = e2;
-            this.value = val;
+            this.Value = val;
             this.MessageSubject = new List<string>();
             this.SendDate = new List<DateTime>();
         }

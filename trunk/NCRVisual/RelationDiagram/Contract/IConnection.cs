@@ -12,6 +12,11 @@ namespace NCRVisual.RelationDiagram
         /// <summary>
         /// Get or set the destination entity
         /// </summary>
-        IEntity Destination { get; set; }        
+        IEntity Destination { get; set; }
+
+        /// <summary>
+        /// The value of the edge
+        /// </summary>
+        int Value { get; set; }
     }
 }

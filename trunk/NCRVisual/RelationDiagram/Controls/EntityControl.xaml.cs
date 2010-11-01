@@ -120,8 +120,11 @@ namespace NCRVisual.RelationDiagram
 
         private void Canvas_MouseEnter(object sender, MouseEventArgs e)
         {
-            this.Highlight();
+            HighLightAllConnected();
+        }
 
+        public void HighLightAllConnected()
+        {           
             foreach (IConnection con in this.Entity.Connections)
             {
                 EntityControl ec = (EntityControl)_entityRegistry[con.Destination];
@@ -132,9 +135,15 @@ namespace NCRVisual.RelationDiagram
             {
                 edc.HighLight();
             }
+            this.Highlight();
         }
 
-        private void Canvas_MouseLeave(object sender, MouseEventArgs e)
+        public void Canvas_MouseLeave(object sender, MouseEventArgs e)
+        {
+            UnHightListAllConnected();
+        }
+
+        public void UnHightListAllConnected()
         {
             this.UnHighlight();
             foreach (IConnection con in this.Entity.Connections)
