@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System;
 namespace NCRVisual.RelationDiagram
 {
     /// <summary>
@@ -20,17 +21,25 @@ namespace NCRVisual.RelationDiagram
         /// <summary>
         /// Get or set the SendDate collection
         /// </summary>
-        public List<string> SendDate { get; set; }
+        public List<DateTime> SendDate { get; set; }
+
+        /// <summary>
+        /// Number of email of this connection
+        /// </summary>
+        public int value { get; set; }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="e1">The source entity</param>
         /// <param name="e2">The destination entity</param>
-        public Connection(IEntity e1, IEntity e2)
+        public Connection(IEntity e1, IEntity e2, int val)
         {
             this.Source = e1;
             this.Destination = e2;
+            this.value = val;
+            this.MessageSubject = new List<string>();
+            this.SendDate = new List<DateTime>();
         }
     }
 }

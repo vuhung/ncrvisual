@@ -19,11 +19,11 @@ namespace NCRVisual.RelationDiagram
             get;
             set;
         }
-        //public int UserTo { get; set; }
+
+        public string Id { get; set; }
 
         #endregion
-
-        public string UserId { get; set; }
+        
         public string UserName { get; set; }
         public string Email { get; set; }
 
@@ -32,6 +32,6 @@ namespace NCRVisual.RelationDiagram
             Connections = new List<IConnection>();
             //MessageSubject = new List<string>();
             //SendDate = new List<string>();
-        }
+        }        
     }
 }
