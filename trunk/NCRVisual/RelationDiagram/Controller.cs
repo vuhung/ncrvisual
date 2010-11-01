@@ -29,6 +29,7 @@ namespace NCRVisual.RelationDiagram
         #region private
         private int[][] _input = new int[100][];
         private Collection<Email> EmailList = new Collection<Email>();
+        private Collection<Email> unreadEmailList = new Collection<Email>();
         #endregion
 
         #region properties
@@ -40,7 +41,7 @@ namespace NCRVisual.RelationDiagram
         /// <summary>
         /// Get or set the Entity Collection
         /// </summary>
-        public Collection<MailListEntity> entityCollection { get; set; }
+        public Collection<MailListEntity> entityCollection { get; set; }        
 
         /// <summary>
         /// Number of vertex
@@ -67,7 +68,7 @@ namespace NCRVisual.RelationDiagram
         /// </summary>
         public DiagramController()
         {
-            entityCollection = new Collection<MailListEntity>();
+            entityCollection = new Collection<MailListEntity>();            
             MaxSingleConnection = 0;
 
             //getfile from output.txt
@@ -155,42 +156,79 @@ namespace NCRVisual.RelationDiagram
                     entity.Email = email;
                     entity.Name = email;
 
-                    //Build matrix for connection
-                    _input[count] = new int[100];
-
-                    while (reader.ReadToNextSibling(EDGE_TAG))
+                    if (id.Equals("0"))
                     {
-                        reader.ReadToFollowing(START_EDGE_TAG);
-                        int start = reader.ReadElementContentAsInt();
-                        reader.ReadToFollowing(END_EDGE_TAG);
-                        int end = reader.ReadElementContentAsInt();
-                        reader.ReadToFollowing(EDGE_VALUE_TAG);
-                        int value = reader.ReadElementContentAsInt();
-                        _input[start - 1][end - 1] = value;
-
-                        while (reader.ReadToNextSibling(EDGE_CONTENT_TAG))
+                        while (reader.ReadToNextSibling(EDGE_TAG))
                         {
-                            reader.ReadToFollowing(EDGE_DATE_TAG);
-                            string time = reader.ReadElementContentAsString();
-                            reader.ReadToFollowing(EDGE_SUBJECT_TAG);
-                            string subject = reader.ReadElementContentAsString();
-                            this.EmailList.Add(
-                                new Email
-                                {
-                                    MessageSubject = subject,
-                                    UserId = start.ToString(),
-                                    sendDate = toDateTime(time),
-                                    SendTo = end.ToString()
-                                }
-                                );
+                            reader.ReadToFollowing(START_EDGE_TAG);
+                            int start = reader.ReadElementContentAsInt();
+                            reader.ReadToFollowing(END_EDGE_TAG);
+                            int end = reader.ReadElementContentAsInt();
+                            reader.ReadToFollowing(EDGE_VALUE_TAG);
+                            int value = reader.ReadElementContentAsInt();
+                            //_input[start - 1][end - 1] = value;
 
+                            while (reader.ReadToNextSibling(EDGE_CONTENT_TAG))
+                            {
+                                reader.ReadToFollowing(EDGE_DATE_TAG);
+                                string time = reader.ReadElementContentAsString();
+                                reader.ReadToFollowing(EDGE_SUBJECT_TAG);
+                                string subject = reader.ReadElementContentAsString();
+                                this.unreadEmailList.Add(
+                                    new Email
+                                    {
+                                        MessageSubject = subject,
+                                        UserId = start.ToString(),
+                                        sendDate = toDateTime(time),
+                                        SendTo = end.ToString()
+                                    }
+                                    );
+
+                                reader.Read();
+                            }
+                            reader.Read();
+                        }                        
+                        //count++;
+                    }
+                    else
+                    {
+                        //Build matrix for connection
+                        _input[count] = new int[100];
+
+                        while (reader.ReadToNextSibling(EDGE_TAG))
+                        {
+                            reader.ReadToFollowing(START_EDGE_TAG);
+                            int start = reader.ReadElementContentAsInt();
+                            reader.ReadToFollowing(END_EDGE_TAG);
+                            int end = reader.ReadElementContentAsInt();
+                            reader.ReadToFollowing(EDGE_VALUE_TAG);
+                            int value = reader.ReadElementContentAsInt();
+                            _input[start - 1][end - 1] = value;
+
+                            while (reader.ReadToNextSibling(EDGE_CONTENT_TAG))
+                            {
+                                reader.ReadToFollowing(EDGE_DATE_TAG);
+                                string time = reader.ReadElementContentAsString();
+                                reader.ReadToFollowing(EDGE_SUBJECT_TAG);
+                                string subject = reader.ReadElementContentAsString();
+                                this.EmailList.Add(
+                                    new Email
+                                    {
+                                        MessageSubject = subject,
+                                        UserId = start.ToString(),
+                                        sendDate = toDateTime(time),
+                                        SendTo = end.ToString()
+                                    }
+                                    );
+
+                                reader.Read();
+                            }
                             reader.Read();
                         }
-                        reader.Read();
-                    }
 
-                    this.entityCollection.Add(entity);
-                    count++;
+                        this.entityCollection.Add(entity);
+                        count++;
+                    }
                 }
             }
 
