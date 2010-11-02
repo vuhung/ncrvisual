@@ -127,8 +127,11 @@ namespace NCRVisual.RelationDiagram
         {           
             foreach (IConnection con in this.Entity.Connections)
             {
-                EntityControl ec = (EntityControl)_entityRegistry[con.Destination];
-                ec.HighlightSecondary();
+                if (con.Destination != null)
+                {
+                    EntityControl ec = (EntityControl)_entityRegistry[con.Destination];
+                    ec.HighlightSecondary();
+                }
             }
 
             foreach (EdgeControl edc in this.ConnectedEdges)
@@ -148,8 +151,11 @@ namespace NCRVisual.RelationDiagram
             this.UnHighlight();
             foreach (IConnection con in this.Entity.Connections)
             {
-                EntityControl ec = (EntityControl)_entityRegistry[con.Destination];
-                ec.UnHighlight();
+                if (con.Destination != null)
+                {
+                    EntityControl ec = (EntityControl)_entityRegistry[con.Destination];
+                    ec.UnHighlight();
+                }
             }
 
             foreach (EdgeControl edc in this.ConnectedEdges)
