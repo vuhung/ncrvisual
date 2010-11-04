@@ -8,7 +8,6 @@ using System.Text;
 
 namespace DBWebService
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
     public interface IPHPBBForumService
     {
@@ -16,30 +15,55 @@ namespace DBWebService
         List<ForumPost> GetPostsInPHPBBForum(string dbServerAddr, string dbName, string username, string password);
     }
 
-    // Use a data contract as illustrated in the sample below to add composite types to service operations.
     [DataContract]
     public class ForumPost
     {
+
+        #region private variables
         private int posterId;
-
-        //private int postId;
-
+        private string posterEmailAddr;
+        private string posterName;
+        private int postId;
         private int topicId;
-
+        private string postSubject;
         private int postTime;
+        #endregion
 
-        //[DataMember]
-        //public int PostId
-        //{
-        //    get { return postId; }
-        //    set { postId = value; }
-        //}
+        #region Data members exposed to client
+
+        [DataMember]
+        public string PostSubject
+        {
+            get { return postSubject; }
+            set { postSubject = value; }
+        }
+
+        [DataMember]
+        public string PosterEmailAddr
+        {
+            get { return posterEmailAddr; }
+            set { posterEmailAddr = value; }
+        }
+
+        [DataMember]
+        public string PosterName
+        {
+            get { return posterName; }
+            set { posterName = value; }
+        }
 
         [DataMember]
         public int PosterId
         {
             get { return posterId; }
             set { posterId = value; }
+        }
+
+        [DataMember]
+        public int PostId
+        {
+            get { return postId; }
+            set { postId = value; }
         }
 
         [DataMember]
@@ -55,5 +79,7 @@ namespace DBWebService
             get { return postTime; }
             set { postTime = value; }
         }
+
+        #endregion
     }
 }
