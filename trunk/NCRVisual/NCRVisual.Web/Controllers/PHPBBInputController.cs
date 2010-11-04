@@ -14,6 +14,8 @@ namespace NCRVisual.Web.Controllers
         public PHPBBInputController()
         {
             leadPosts = new List<PostInfoMin>();
+            UserList = new List<User>();
+            MailList = new Collection<Email>();
         }
 
         public Collection<Email> MailList { get; set; }
@@ -41,7 +43,7 @@ namespace NCRVisual.Web.Controllers
                 tmpEmail = new Email();
                 tmpEmail.MessageId = tmpPost.PostId.ToString();
                 tmpEmail.MessageSubject = tmpPost.PostSubject;
-                tmpEmail.SendDate = new DateTime(tmpPost.PostTime).ToString();
+                tmpEmail.SendDate = (new DateTime(1970,1,1,0,0,0).AddSeconds(tmpPost.PostTime)).ToString();
                 tmpEmail.UserId = tmpUser.UserId;
                 PostInfoMin postInfoMin = new PostInfoMin(tmpPost.TopicId, tmpPost.PosterId);
                 bool found = false;
@@ -81,9 +83,11 @@ namespace NCRVisual.Web.Controllers
             // init the relation matrix
             Relation = new int[UserList.Count + 1][];
 
-            for (int i = 1; i < UserList.Count; i++)
+            Relation[0] = new int[UserList.Count + 1]; // init the first, empty row
+
+            for (int i = 0; i < UserList.Count; i++)
             {
-                Relation[i] = new int[UserList.Count + 1];
+                Relation[i+1] = new int[UserList.Count + 1];
                 int count = 0;
                 foreach (Email tmpE in MailList)
                 {
@@ -91,11 +95,11 @@ namespace NCRVisual.Web.Controllers
                     {
                         User tmpU = new User();
                         tmpU.UserId = tmpE.UserTo;
-                        Relation[i][UserList.IndexOf(tmpU) + 1]++;
+                        Relation[i+1][UserList.IndexOf(tmpU) + 1]++;
                         count++;
                     }
                 }
-                Relation[i][i] = count;
+                Relation[i+1][i+1] = count;
             }
 
             WriteDataToXml((clientBinPath + "\\phpbb_test.xml").Replace("\\\\","\\"));
