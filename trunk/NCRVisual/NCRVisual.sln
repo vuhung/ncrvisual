@@ -3,6 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCRVisual", "NCRVisual\NCRVisual.csproj", "{9FE80925-D432-4CCF-BB66-F92C60497AD7}"
 	ProjectSection(ProjectDependencies) = postProject
+		{61ED9805-FEE5-4CF8-8032-88873C26F753} = {61ED9805-FEE5-4CF8-8032-88873C26F753}
 		{59006AA4-0F00-42D4-B51B-2B1581CA1F5A} = {59006AA4-0F00-42D4-B51B-2B1581CA1F5A}
 	EndProjectSection
 EndProject
@@ -16,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCRVisual.Web", "NCRVisual.
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataInputAnalysis", "DataInputAnalysis\DataInputAnalysis.csproj", "{AE289E17-1EA2-4730-8327-F7A181579B8B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{61ED9805-FEE5-4CF8-8032-88873C26F753} = {61ED9805-FEE5-4CF8-8032-88873C26F753}
+		{61ED9805-FEE5-4CF8-8032-88873C26F753} = {61ED9805-FEE5-4CF8-8032-88873C26F753}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopTen", "TopTen\TopTen.csproj", "{19B13D98-687F-466E-910A-2828F3243D64}"
 EndProject

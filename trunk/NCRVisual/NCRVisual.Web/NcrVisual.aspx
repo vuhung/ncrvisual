@@ -57,6 +57,19 @@
     </script>
 </head>
 <body>
+
+    <script runat="server">
+        private string InitParam = string.Empty;
+        
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (Request.QueryString != null)
+            {
+                InitParam = "Type =" + Request.QueryString["Param"] + ", FileName=" + Request.QueryString["FileName"];
+            }
+        }
+    </script>
+
     <form id="form1" runat="server" style="height:100%">
     <div id="silverlightControlHost">
         <object data="data:application/x-silverlight-2," type="application/x-silverlight-2" width="100%" height="100%">
@@ -65,6 +78,7 @@
 		  <param name="background" value="white" />
 		  <param name="minRuntimeVersion" value="4.0.50401.0" />
 		  <param name="autoUpgrade" value="true" />
+          <param name="InitParams" value = "<%=InitParam %>" />
 		  <a href="http://go.microsoft.com/fwlink/?LinkID=149156&v=4.0.50401.0" style="text-decoration:none">
  			  <img src="http://go.microsoft.com/fwlink/?LinkId=161376" alt="Get Microsoft Silverlight" style="border-style:none"/>
 		  </a>

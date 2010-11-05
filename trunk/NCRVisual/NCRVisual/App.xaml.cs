@@ -1,14 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
 
 namespace NCRVisual
 {
@@ -20,13 +11,33 @@ namespace NCRVisual
             this.Startup += this.Application_Startup;
             this.Exit += this.Application_Exit;
             this.UnhandledException += this.Application_UnhandledException;
-
             InitializeComponent();
         }
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            this.RootVisual = new MainPage();
+            var paramValues = e.InitParams;
+            string announce = "Welcome to NCRVisual, Please select your input type";
+            string fileName = string.Empty;
+
+            foreach (var param in paramValues)
+            {
+                if (param.Key == "Type" && param.Value == "php")
+                {
+                    announce = "You have selected your input as PHPBB forum database, press visualization to process your input";                    
+                }
+
+                if (param.Key == "Type" && param.Value == "arc")
+                {
+                    announce="You have selected your input as Mailing List archive, press visualization to process your input";
+                }
+                if (param.Key == "FileName")
+                {
+                    fileName = param.Value;
+                }
+            }
+
+            this.RootVisual = new MainPage(announce, fileName);
         }
 
         private void Application_Exit(object sender, EventArgs e)

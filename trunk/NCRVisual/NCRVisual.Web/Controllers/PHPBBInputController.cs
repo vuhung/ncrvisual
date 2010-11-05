@@ -28,7 +28,7 @@ namespace NCRVisual.Web.Controllers
 
         public int[][] Relation { get; set; }
 
-        public bool processAndOutputToXML(string clientBinPath)
+        public string processAndOutputToXML(string clientBinPath)
         {
             // iterate through the posts to know which post reply to which
             // create the data needed for xml output
@@ -122,7 +122,7 @@ namespace NCRVisual.Web.Controllers
 
             for (int i = 0; i < UserList.Count; i++)
             {
-                Relation[i+1] = new int[UserList.Count + 1];
+                Relation[i + 1] = new int[UserList.Count + 1];
                 int count = 0;
                 foreach (Email tmpE in MailList)
                 {
@@ -130,18 +130,17 @@ namespace NCRVisual.Web.Controllers
                     {
                         User tmpU = new User();
                         tmpU.UserId = tmpE.UserTo;
-                        Relation[i+1][UserList.IndexOf(tmpU) + 1]++;
+                        Relation[i + 1][UserList.IndexOf(tmpU) + 1]++;
                         count++;
                     }
                 }
                 //Relation[i+1][i+1] = count;
             }
 
+            string resultFile = Guid.NewGuid() .ToString();
+            WriteDataToXml((clientBinPath + "\\" + resultFile + ".xml").Replace("\\\\", "\\"));
 
-
-            WriteDataToXml((clientBinPath + "\\phpbb_output.xml").Replace("\\\\","\\"));
-
-            return true;
+            return resultFile;
         }
 
         /// <summary>

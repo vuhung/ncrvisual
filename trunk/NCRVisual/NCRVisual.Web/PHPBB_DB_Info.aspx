@@ -32,8 +32,14 @@
         <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
         <br />
         <br />
+
         <asp:Button ID="Button1" runat="server" Text="Submit" 
             onclick="Button1_Click" />
+        <br />
+        
+        <br />
+        <asp:HyperLink ID="HyperLink1" runat="server">Return to Visualize</asp:HyperLink>        
+
         <br />
         <asp:GridView ID="GridView1" runat="server">
         </asp:GridView>

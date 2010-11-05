@@ -18,7 +18,7 @@ namespace RelationDiagram
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            this.RootVisual = new RelationDiagramControl();
+            this.RootVisual = new RelationDiagramControl("Output.xml");
         }
 
         private void Application_Exit(object sender, EventArgs e)

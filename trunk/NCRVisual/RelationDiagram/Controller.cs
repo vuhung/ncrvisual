@@ -11,7 +11,7 @@ namespace NCRVisual.RelationDiagram
     public class DiagramController
     {
         #region constant
-        string INPUT_FILE_NAME = "..\\Output\\output.xml";
+        string INPUT_FILE_NAME = "..\\Output\\";
         string ID_TAG = "UserId";
         string NAME_TAG = "Name";
         string EMAIL_TAG = "Email";
@@ -66,10 +66,12 @@ namespace NCRVisual.RelationDiagram
         /// <summary>
         /// Create new instance of Diagram controller
         /// </summary>
-        public DiagramController()
+        public DiagramController(string inputFileName)
         {
             entityCollection = new Collection<MailListEntity>();
             MaxSingleConnection = 0;
+
+            this.INPUT_FILE_NAME += inputFileName;
 
             //getfile from output.txt
             WebClient client = new WebClient();
@@ -206,9 +208,8 @@ namespace NCRVisual.RelationDiagram
                     }
                     else
                     {
-                        //Build matrix for connection
                         _input[count] = new int[100];
-
+                        //Build matrix for connection                        
                         while (reader.ReadToNextSibling(EDGE_TAG))
                         {
                             reader.ReadToFollowing(START_EDGE_TAG);
@@ -217,6 +218,7 @@ namespace NCRVisual.RelationDiagram
                             int end = reader.ReadElementContentAsInt();
                             reader.ReadToFollowing(EDGE_VALUE_TAG);
                             int value = reader.ReadElementContentAsInt();
+                            _input[start - 1] = new int[100];
                             _input[start - 1][end - 1] = value;
 
                             while (reader.ReadToNextSibling(EDGE_CONTENT_TAG))
@@ -230,8 +232,9 @@ namespace NCRVisual.RelationDiagram
                                     {
                                         MessageSubject = subject,
                                         UserId = start.ToString(),
-                                        sendDate = toDateTime(time),
-                                        SendTo = end.ToString()
+                                        //sendDate = toDateTime(time),                                        
+                                        sendDate = DateTime.Today,
+                                        SendTo = end.ToString(),
                                     }
                                     );
 
@@ -247,7 +250,7 @@ namespace NCRVisual.RelationDiagram
             }
 
             VertexNumber = count;
-            populateConnection(_input);
+            populateConnection(_input);            
         }
 
         public Collection<Point> RunAlgo(IAlgorithm algorithm)
