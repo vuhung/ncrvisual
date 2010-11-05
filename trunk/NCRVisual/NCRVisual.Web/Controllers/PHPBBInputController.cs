@@ -83,6 +83,38 @@ namespace NCRVisual.Web.Controllers
                 MailList.Add(tmpEmail);
             }
 
+            // BEGIN: this is to fix the error in internal xml format
+            bool[] fixedUserId = new bool[MailList.Count];
+            bool[] fixedUserTo = new bool[MailList.Count];
+
+            //for (int i = 0; i < MailList.Count; i++)
+            //{
+            //    fixedUserId[i] = false;
+            //    fixedUserTo[i] = false;
+            //}
+
+            int tmpDummyUserId = 1;
+            for (int i = 0; i < UserList.Count; i++)
+            {
+                for (int j = 0; j < MailList.Count; j++)
+                {
+                    Email tmpE = MailList[j];
+                    if (tmpE.UserId == UserList[i].UserId && !fixedUserId[j])
+                    {
+                        tmpE.UserId = tmpDummyUserId;
+                        fixedUserId[j] = true;
+                    }
+                    if (tmpE.UserTo == UserList[i].UserId && !fixedUserTo[j])
+                    {
+                        tmpE.UserTo = tmpDummyUserId;
+                        fixedUserTo[j] = true;
+                    }
+                }
+                UserList[i].UserId = tmpDummyUserId;
+                tmpDummyUserId++;
+            }
+            // END: this is to fix the error in internal xml format
+
             // init the relation matrix
             Relation = new int[UserList.Count + 1][];
 
@@ -104,6 +136,8 @@ namespace NCRVisual.Web.Controllers
                 }
                 Relation[i+1][i+1] = count;
             }
+
+
 
             WriteDataToXml((clientBinPath + "\\phpbb_test.xml").Replace("\\\\","\\"));
 
@@ -167,7 +201,7 @@ namespace NCRVisual.Web.Controllers
                         writer.WriteElementString("Value", Relation[i + 1][j].ToString());
 
                         //email date and email subject of the email which user has sent
-                        List<Email> emailCollection = (from oneemail in MailList where (oneemail.UserId == UserList[i].UserId && oneemail.UserTo == UserList[j - 1].UserId) select oneemail).ToList<Email>();//get email that has the messageid = s[i]
+                        List<Email> emailCollection = (from oneemail in MailList where (oneemail.UserId == UserList[i].UserId) select oneemail).ToList<Email>();//get email that has the messageid = s[i]
                         try
                         {
                             //Collection<Email> emailCollection = (Collection<Email>)emails;
