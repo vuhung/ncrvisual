@@ -51,7 +51,12 @@ namespace TopTen
                 }
                 // get the top ten of users to show on data grid
                 ObservableCollection<UserInfo> tmpColl = new ObservableCollection<UserInfo>();
-                for (int i = 0; i < 10; i++)
+                int smallerNum = 10;
+                if (smallerNum > userList.Count)
+                {
+                    smallerNum = userList.Count;
+                }
+                for (int i = 0; i < smallerNum; i++)
                 {
                     tmpColl.Add(userList[i]);
                 }
@@ -65,7 +70,12 @@ namespace TopTen
         {
             //In this special case, bubble sort will have the best speed and complexity will always be 10*n = n
             int userListSize = userList.Count;
-            for (int i = 0; i < 10; i++)
+            int outerSize = 10;
+            if (outerSize > userListSize)
+            {
+                outerSize = userListSize;
+            }
+            for (int i = 0; i < outerSize; i++)
             {
                 for (int j = userListSize - 1; j > i; j--)
                 {
@@ -104,7 +114,12 @@ namespace TopTen
         {
             //In this special case, bubble sort will have the best speed and complexity will always be 10*n = n
             int userListSize = userList.Count;
-            for (int i = 0; i < 10; i++)
+            int outerSize = 10;
+            if (outerSize > userListSize)
+            {
+                outerSize = userListSize;
+            }
+            for (int i = 0; i < outerSize; i++)
             {
                 for (int j = userListSize - 1; j > i; j--)
                 {
@@ -143,7 +158,12 @@ namespace TopTen
         {
             //In this special case, bubble sort will have the best speed and complexity will always be 10*n = n
             int userListSize = userList.Count;
-            for (int i = 0; i < 10; i++)
+            int outerSize = 10;
+            if (outerSize > userListSize)
+            {
+                outerSize = userListSize;
+            }
+            for (int i = 0; i < outerSize; i++)
             {
                 for (int j = userListSize - 1; j > i; j--)
                 {
@@ -192,7 +212,7 @@ namespace TopTen
             
             #region debug code
             ObservableCollection<UserInfo> tmp = new ObservableCollection<UserInfo>();
-            for (int i = 0; i < 15; i++)
+            for (int i = 0; i < 6; i++)
             {
                 UserInfo tmpUI = new UserInfo(i + "@gmail.com", i % 5, i);
                 tmp.Add(tmpUI);
