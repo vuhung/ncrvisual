@@ -14,6 +14,7 @@
       <xs:element minOccurs="0" name="PosterEmailAddr" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="PosterId" type="xs:int" />
       <xs:element minOccurs="0" name="PosterName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TimeZone" type="xs:double" />
       <xs:element minOccurs="0" name="TopicId" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
