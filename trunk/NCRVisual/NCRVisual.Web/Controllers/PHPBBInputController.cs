@@ -44,7 +44,7 @@ namespace NCRVisual.Web.Controllers
                 tmpEmail.MessageId = tmpPost.PostId.ToString();
                 tmpEmail.MessageSubject = tmpPost.PostSubject;
                 // BEG: processing the timezone of user sending this email
-                string tmpTimeZone = (tmpPost.TimeZone < 0 ? "-" : "+") + String.Format("{0:00}", tmpPost.TimeZone) + String.Format("{0:0.00}", tmpPost.TimeZone).Substring(String.Format("{0:0.00}", tmpPost.TimeZone).Length - 2, 2);
+                string tmpTimeZone = (tmpPost.TimeZone < 0 ? "" : "+") + String.Format("{0:00}", tmpPost.TimeZone) + String.Format("{0:0.00}", tmpPost.TimeZone).Substring(String.Format("{0:0.00}", tmpPost.TimeZone).Length - 2, 2);
                 // END: processing the timezone of user sending this email
                 tmpEmail.SendDate = String.Format("{0:ddd, d MMM yyyy HH:mm:ss }", new DateTime(1970, 1, 1, 0, 0, 0).AddSeconds(tmpPost.PostTime)) + tmpTimeZone;
                 tmpEmail.UserId = tmpUser.UserId;
@@ -52,14 +52,14 @@ namespace NCRVisual.Web.Controllers
                 bool found = false;
                 foreach (PostInfoMin tmpPIM in leadPosts)
                 {
-                    if (tmpPIM.TopicId == postInfoMin.TopicId)
+                    if (tmpPIM.TopicId == postInfoMin.TopicId) // found that this post is not the frist in the thread
                     {
                         tmpEmail.UserTo = tmpPIM.PosterId;
                         found = true;
                         break;
                     }
                 }
-                if (!found)
+                if (!found) // this post is the first one in the thread
                 {
                     leadPosts.Add(postInfoMin);
                     tmpEmail.UserTo = tmpPost.PosterId;
@@ -134,12 +134,12 @@ namespace NCRVisual.Web.Controllers
                         count++;
                     }
                 }
-                Relation[i+1][i+1] = count;
+                //Relation[i+1][i+1] = count;
             }
 
 
 
-            WriteDataToXml((clientBinPath + "\\phpbb_test.xml").Replace("\\\\","\\"));
+            WriteDataToXml((clientBinPath + "\\phpbb_output.xml").Replace("\\\\","\\"));
 
             return true;
         }
@@ -201,7 +201,7 @@ namespace NCRVisual.Web.Controllers
                         writer.WriteElementString("Value", Relation[i + 1][j].ToString());
 
                         //email date and email subject of the email which user has sent
-                        List<Email> emailCollection = (from oneemail in MailList where (oneemail.UserId == UserList[i].UserId) select oneemail).ToList<Email>();//get email that has the messageid = s[i]
+                        List<Email> emailCollection = (from oneemail in MailList where (oneemail.UserId == UserList[i].UserId && oneemail.UserTo == UserList[j - 1].UserId) select oneemail).ToList<Email>();//get email that has the messageid = s[i]
                         try
                         {
                             //Collection<Email> emailCollection = (Collection<Email>)emails;

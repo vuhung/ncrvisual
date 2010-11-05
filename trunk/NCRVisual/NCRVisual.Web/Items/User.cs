@@ -5,7 +5,7 @@ using System.Web;
 
 namespace NCRVisual.Web.Items
 {
-    public class User : IEqualityComparer<User>
+    public class User : IEquatable<User>
     {
         public int UserId { get; set; }
 
@@ -13,9 +13,9 @@ namespace NCRVisual.Web.Items
 
         public string Name { get; set; }
 
-        public bool Equals(User x, User y)
+        public bool Equals(User other)
         {
-            if (x.UserId == y.UserId)
+            if (this.UserId == other.UserId)
             {
                 return true;
             }
@@ -23,11 +23,6 @@ namespace NCRVisual.Web.Items
             {
                 return false;
             }
-        }
-
-        public int GetHashCode(User obj)
-        {
-            throw new NotImplementedException();
         }
     }
 }
