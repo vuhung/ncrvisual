@@ -41,6 +41,9 @@ namespace NCRVisual.Web.PHPBBForumService {
         private string PosterNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double TimeZoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int TopicIdField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -127,6 +130,19 @@ namespace NCRVisual.Web.PHPBBForumService {
                 if ((object.ReferenceEquals(this.PosterNameField, value) != true)) {
                     this.PosterNameField = value;
                     this.RaisePropertyChanged("PosterName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double TimeZone {
+            get {
+                return this.TimeZoneField;
+            }
+            set {
+                if ((this.TimeZoneField.Equals(value) != true)) {
+                    this.TimeZoneField = value;
+                    this.RaisePropertyChanged("TimeZone");
                 }
             }
         }

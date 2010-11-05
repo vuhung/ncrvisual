@@ -15,7 +15,7 @@ namespace DBWebService
     public class PHPBBForumService : IPHPBBForumService
     {
         private const string queryCommandShowTables = "SHOW Tables"; // Show all table in a database
-        private const string queryCommandGetPosts = "SELECT poster_id, username, user_email, topic_id, post_subject, post_time, post_id FROM ";
+        private const string queryCommandGetPosts = "SELECT poster_id, username, user_email, topic_id, post_subject, post_time, post_id, user_timezone FROM ";
         private const string queryCommandGetPostsJoinCmd = " LEFT JOIN ";
         private const string postTableNamePart = "posts";
         private const string usersTableNamePart = "users";
@@ -36,6 +36,7 @@ namespace DBWebService
         private const int POST_SUBJECT_POS = 4;
         private const int POST_TIME_POS = 5;
         private const int POST_ID_POS = 6;
+        private const int USER_TIMEZONE_POS = 7;
 
         #region IPHPBBForumService Members
         
@@ -115,6 +116,7 @@ namespace DBWebService
                     tmpFP.PosterEmailAddr = reader.GetValue(USER_EMAIL_POS).ToString();
                     tmpFP.PostSubject = reader.GetValue(POST_SUBJECT_POS).ToString();
                     tmpFP.PostId = Convert.ToInt32(reader.GetValue(POST_ID_POS).ToString());
+                    tmpFP.TimeZone = Convert.ToDouble(reader.GetValue(USER_TIMEZONE_POS).ToString());
                     postList.Add(tmpFP);
                 }
                 connection.Close();

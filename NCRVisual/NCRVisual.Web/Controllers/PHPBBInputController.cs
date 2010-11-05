@@ -43,7 +43,10 @@ namespace NCRVisual.Web.Controllers
                 tmpEmail = new Email();
                 tmpEmail.MessageId = tmpPost.PostId.ToString();
                 tmpEmail.MessageSubject = tmpPost.PostSubject;
-                tmpEmail.SendDate = (new DateTime(1970,1,1,0,0,0).AddSeconds(tmpPost.PostTime)).ToString();
+                // BEG: processing the timezone of user sending this email
+                string tmpTimeZone = (tmpPost.TimeZone < 0 ? "-" : "+") + String.Format("{0:00}", tmpPost.TimeZone) + String.Format("{0:0.00}", tmpPost.TimeZone).Substring(String.Format("{0:0.00}", tmpPost.TimeZone).Length - 2, 2);
+                // END: processing the timezone of user sending this email
+                tmpEmail.SendDate = String.Format("{0:ddd, d MMM yyyy HH:mm:ss }", new DateTime(1970, 1, 1, 0, 0, 0).AddSeconds(tmpPost.PostTime)) + tmpTimeZone;
                 tmpEmail.UserId = tmpUser.UserId;
                 PostInfoMin postInfoMin = new PostInfoMin(tmpPost.TopicId, tmpPost.PosterId);
                 bool found = false;

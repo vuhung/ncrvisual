@@ -27,6 +27,8 @@ namespace DBWebService
         private int topicId;
         private string postSubject;
         private int postTime;
+        private double timeZone;
+
         #endregion
 
         #region Data members exposed to client
@@ -36,6 +38,13 @@ namespace DBWebService
         {
             get { return postSubject; }
             set { postSubject = value; }
+        }
+
+        [DataMember]
+        public double TimeZone
+        {
+            get { return timeZone; }
+            set { timeZone = value; }
         }
 
         [DataMember]
