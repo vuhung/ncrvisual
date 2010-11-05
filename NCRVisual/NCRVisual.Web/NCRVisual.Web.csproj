@@ -100,6 +100,7 @@
     <Content Include="Output\output.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Output\phpbb_output.xml" />
     <Content Include="PHPBB_DB_Info.aspx" />
     <None Include="Service References\PHPBBForumService\NCRVisual.Web.PHPBBForumService.ForumPost.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -112,7 +113,9 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="Silverlight.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

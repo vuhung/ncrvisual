@@ -62,14 +62,14 @@ namespace NCRVisual.RelationDiagram
         /// <summary>
         /// Default constructor
         /// </summary>
-        public RelationDiagramControl()
+        public RelationDiagramControl(string _inputFileName)
         {
             InitializeComponent();
 
             _entityControlCollection = new Collection<EntityControl>();
             EntityRegistry = new Dictionary<IEntity, EntityControl>();
             _scale = new ScaleTransform();
-            _myDiagramController = new DiagramController();
+            _myDiagramController = new DiagramController(_inputFileName);
 
             //Event handler
             _myDiagramController.InputReadingComplete += new EventHandler(_myDiagramController_InputReadingComplete);

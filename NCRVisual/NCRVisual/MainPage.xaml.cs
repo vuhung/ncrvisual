@@ -3,6 +3,7 @@ using NCRVisual.Helper;
 using System;
 using System.Reflection;
 using NCRVisual.API;
+using System.Windows.Browser;
 
 namespace NCRVisual
 {
@@ -14,12 +15,14 @@ namespace NCRVisual
         string dataModuleToLoad = "DataInputAnalysis";
         string graphModuleToLoad = "RelationDiagram";
 
-        ChildWindow Upload;
+        ChildWindow ChildWindow;
 
-        public MainPage()
+        string InputFileName = string.Empty;
+
+        public MainPage(string announce, string xmlFile)
         {
             InitializeComponent();
-            Upload = new ChildWindow();
+            ChildWindow = new ChildWindow();
 
             // Init the load module helper and assign a listener for it
             loadDataModuleHelper = new LoadSilverlightModuleHelper();
@@ -32,12 +35,20 @@ namespace NCRVisual
             loadGraphModuleHelper.loadXapFile(graphModuleToLoad);
 
             AboutUsButton.MouseClick += new EventHandler(AboutUsButton_MouseClick);
+
+            this.Result_TextBox.Text = announce;
+            InputFileName = xmlFile;
+
+            if (!string.IsNullOrEmpty(xmlFile))
+            {
+                this.VisualizeButton.Visibility = System.Windows.Visibility.Visible;
+                this.VisualizeLabel.Visibility = System.Windows.Visibility.Visible;
+            }
         }
 
         void loadGraphModuleHelper_SilverlightModuleLoaded(object sender, EventArgs e)
         {
             VisualizeButton.MouseClick += new EventHandler(VisualizeButton_MouseClick);
-
         }
 
         void AboutUsButton_MouseClick(object sender, EventArgs e)
@@ -48,7 +59,7 @@ namespace NCRVisual
         void VisualizeButton_MouseClick(object sender, EventArgs e)
         {
             Assembly asm = loadGraphModuleHelper.LoadedModules[graphModuleToLoad];
-            UserControl uc = asm.CreateInstance(LoadSilverlightModuleHelper.MAIN_NAMESPACE + graphModuleToLoad + LoadSilverlightModuleHelper.MODULE_EXT) as UserControl;
+            UserControl uc = Activator.CreateInstance(asm.GetType(LoadSilverlightModuleHelper.MAIN_NAMESPACE + graphModuleToLoad + LoadSilverlightModuleHelper.MODULE_EXT), InputFileName + ".xml") as UserControl;
             this.Content = uc;
         }
 
@@ -60,24 +71,32 @@ namespace NCRVisual
 
             // Init the user control
 
-            UserControl uc = asm.CreateInstance("DataInputAnalysis.MainPage") as UserControl;
+            UserControl uc = asm.CreateInstance("DataInputAnalysis.ArchiveUpload") as UserControl;
             BaseDataAnalysisControl ctrl = (BaseDataAnalysisControl)uc;
             ctrl.UploadComplete += new EventHandler(ctrl_UploadComplete);
 
             // add it to the main page
-            Upload.Content = ctrl;
-            Upload.Show();
+            ChildWindow.Content = ctrl;
+            ChildWindow.Show();
         }
 
         void ctrl_UploadComplete(object sender, EventArgs e)
         {
-            Upload.Close();
+            ChildWindow.Close();
+            //this.Result_TextBox.Text = "You have uploaded an Archive file, press Visualize button for View it";
+            HtmlPage.Window.Navigate(new Uri("\\NcrVisual.aspx?Param=arc&FileName=output", UriKind.Relative));
+        }
+
+        void PhpBBButton_MouseClick(object sender, EventArgs e)
+        {
+            HtmlPage.Window.Navigate(new Uri("\\PHPBB_DB_Info.aspx", UriKind.Relative));
         }
 
         #region listeners
         public void loadModuleHelper_SilverlightModuleLoaded(object source, EventArgs e)
         {
             UploadButton.MouseClick += new EventHandler(UploadButton_MouseClick);
+            PhpBBButton.MouseClick += new EventHandler(PhpBBButton_MouseClick);
         }
         #endregion
     }

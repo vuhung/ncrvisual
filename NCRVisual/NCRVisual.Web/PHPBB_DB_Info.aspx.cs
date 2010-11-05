@@ -13,6 +13,7 @@ namespace NCRVisual.Web
     {
         private string ClientBinPath = ""; //path to store input and output data data
         private bool buttonDeactivated = false;
+        private string OutputFileName;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -32,17 +33,21 @@ namespace NCRVisual.Web
                 phpInputController.ForumPosts = forumPostList;
 
                 buttonDeactivated = true;
-                bool result = phpInputController.processAndOutputToXML(ClientBinPath);
-                if (result)
+
+                string result = phpInputController.processAndOutputToXML(ClientBinPath);
+
+                if (result != string.Empty)
                 {
                     LabelStatus.Text = "Data retrieved successfully";
+                    this.OutputFileName = result;
                 }
                 else
                 {
                     LabelStatus.Text = "There was an error while trying to retrieve data, please check your input";
                 }
                 buttonDeactivated = false;
+                HyperLink1.NavigateUrl = "NcrVisual.aspx?Param=php&FileName=" + this.OutputFileName;
             }
-        }
+        }      
     }
 }

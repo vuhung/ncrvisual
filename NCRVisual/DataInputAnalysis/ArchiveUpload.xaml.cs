@@ -4,11 +4,11 @@ using NCRVisual.API;
 
 namespace DataInputAnalysis
 {
-    public partial class MainPage : BaseDataAnalysisControl
+    public partial class ArchiveUpload : BaseDataAnalysisControl
     {
         //public event EventHandler UploadComplete;
 
-        public MainPage()
+        public ArchiveUpload()
         {
             InitializeComponent();
 
