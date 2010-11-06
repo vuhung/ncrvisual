@@ -18,6 +18,7 @@ namespace TopTen
         private string emailAddress;
         private int numMessagesSent;
         private int numMessagesRecv;
+        private int numMessagesRepl;
         #endregion
         #region getters & setters
         public string EmailAddress
@@ -35,17 +36,23 @@ namespace TopTen
             get { return numMessagesSent; }
             set { numMessagesSent = value; }
         }
+        public int NumMessagesRepl
+        {
+            get { return numMessagesRepl; }
+            set { numMessagesRepl = value; }
+        }
         public int NumMessagesSentAndReceived
         {
-            get { return numMessagesRecv + numMessagesSent; }
+            get { return numMessagesRecv + numMessagesSent + numMessagesRepl; }
         }
         #endregion
 
-        public UserInfo(string emailAddr, int messagesSentNum, int messagesRecvNum)
+        public UserInfo(string emailAddr, int messagesSentNum, int messagesRecvNum, int messagesReplNum)
         {
             this.emailAddress = emailAddr;
             this.numMessagesSent = messagesSentNum;
             this.numMessagesRecv = messagesRecvNum;
+            this.numMessagesRepl = messagesReplNum;
         }
     }
 }
