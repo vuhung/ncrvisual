@@ -20,6 +20,8 @@ namespace NCRVisual.Web.Controllers
 
         public int[][] Relation = new int[1000][];//contain the relationship of vertexes
 
+        public string OutputFileName { get; set; }
+
         StreamReader reader;
 
         /// <summary>
@@ -36,10 +38,10 @@ namespace NCRVisual.Web.Controllers
             {
                 Relation[i] = new int[1000];
             }
-
+            
             GetDataFromFile(filePath + fileName);//read and solve data , then assign it into relation array
-            //WriteDataToFile(filePath + "output.txt");//write data to the ouput file
-            WriteDataToXml(filePath + "output.xml");//write data to the  XML file
+            //WriteDataToFile(filePath + "output.txt");//write data to the ouput file            
+            WriteDataToXml(filePath + this.OutputFileName+".xml");//write data to the  XML file
         }
 
         /// <summary>
@@ -458,6 +460,7 @@ namespace NCRVisual.Web.Controllers
 
             }
 
+            reader.Close();
             return Relation;
         }
 

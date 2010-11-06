@@ -4,6 +4,7 @@ using System;
 using System.Reflection;
 using NCRVisual.API;
 using System.Windows.Browser;
+using System.Threading;
 
 namespace NCRVisual
 {
@@ -74,6 +75,7 @@ namespace NCRVisual
             UserControl uc = asm.CreateInstance("DataInputAnalysis.ArchiveUpload") as UserControl;
             BaseDataAnalysisControl ctrl = (BaseDataAnalysisControl)uc;
             ctrl.UploadComplete += new EventHandler(ctrl_UploadComplete);
+            InputFileName = ctrl.OutputFileName;
 
             // add it to the main page
             ChildWindow.Content = ctrl;
@@ -83,8 +85,10 @@ namespace NCRVisual
         void ctrl_UploadComplete(object sender, EventArgs e)
         {
             ChildWindow.Close();
-            //this.Result_TextBox.Text = "You have uploaded an Archive file, press Visualize button for View it";
-            HtmlPage.Window.Navigate(new Uri("\\NcrVisual.aspx?Param=arc&FileName=output", UriKind.Relative));
+            this.Result_TextBox.Text = "You have uploaded an Archive file, press Visualize button for View it";
+            this.VisualizeButton.Visibility = System.Windows.Visibility.Visible;
+            this.VisualizeLabel.Visibility = System.Windows.Visibility.Visible;            
+            //HtmlPage.Window.Navigate(new Uri("\\NcrVisual.aspx?Param=arc&FileName="+this.InputFileName, UriKind.Relative));
         }
 
         void PhpBBButton_MouseClick(object sender, EventArgs e)

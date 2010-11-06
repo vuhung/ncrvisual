@@ -11,10 +11,10 @@ namespace DataInputAnalysis
         public ArchiveUpload()
         {
             InitializeComponent();
-
-            Control.FileUploader Uploader = new Control.FileUploader("http://localhost:50491/Upload.ashx");
+            string outputFilename = Guid.NewGuid().ToString();
+            this.OutputFileName = outputFilename;
+            Control.FileUploader Uploader = new Control.FileUploader("http://localhost:50491/Upload.ashx",OutputFileName);
             this.rootPanel.Children.Add(Uploader);
-
             Uploader.UploadCompleted += new System.EventHandler(Uploader_UploadCompleted);
         }
 

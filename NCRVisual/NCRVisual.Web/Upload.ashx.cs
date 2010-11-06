@@ -20,6 +20,9 @@ namespace NCRVisual.Web
             ClientBinPath = context.Server.MapPath("~/Output/");
 
             string filename = context.Request.QueryString["filename"].ToString();
+            string outputFileName=context.Request.QueryString["output"];
+            if (outputFileName==null||outputFileName=="")
+                outputFileName="output";
 
             using (FileStream fs = File.Create(context.Server.MapPath("~/Output/" + filename)))
             {
@@ -27,6 +30,7 @@ namespace NCRVisual.Web
             }
 
             DataInputController controller = new DataInputController();
+            controller.OutputFileName = outputFileName;
             controller.SolveData(ClientBinPath, filename);
 
             context.Response.ContentType = "text/plain";

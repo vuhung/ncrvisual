@@ -30,6 +30,8 @@ namespace DataInputAnalysis.Control
 
         public event EventHandler UploadCompleted;
 
+        public string OutputFileName { get; set; }
+
         /// <summary>
         /// Initialize new file uploader
         /// </summary>
@@ -41,6 +43,16 @@ namespace DataInputAnalysis.Control
             HasSelectedAFile = false;
             BrowseButton.Click += new System.Windows.RoutedEventHandler(BrowseButton_Click);
             UploadButton.Click += new System.Windows.RoutedEventHandler(UploadButton_Click);
+        }
+
+        public FileUploader(string uri, string outputFileName)
+        {
+            InitializeComponent();
+            this.URI = uri;
+            HasSelectedAFile = false;
+            BrowseButton.Click += new System.Windows.RoutedEventHandler(BrowseButton_Click);
+            UploadButton.Click += new System.Windows.RoutedEventHandler(UploadButton_Click);
+            OutputFileName = outputFileName;
         }
 
         void UploadButton_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -75,8 +87,10 @@ namespace DataInputAnalysis.Control
         private void UploadFile(string fileName, Stream data, string uri)
         {
             UriBuilder ub = new UriBuilder(uri);
-            ub.Query = string.Format("filename={0}", fileName);
-
+            if (OutputFileName == null || OutputFileName == "")
+                OutputFileName = "output";
+            ub.Query = string.Format("filename={0}&output={1}", OutputFileName + ".txt", OutputFileName);            
+            
             WebClient c = new WebClient();
 
             c.OpenWriteCompleted += (sender, e) =>
@@ -92,7 +106,7 @@ namespace DataInputAnalysis.Control
 
             c.OpenWriteAsync(ub.Uri);
             //URL = HtmlPage.Document.DocumentUri.ToString() + "/~/Resources/" + fileName;
-            URL = "http://localhost:8081/Resources/" + fileName;
+            //URL = "http://localhost:8081/Resources/" + fileName;
         }
 
         private void PushData(Stream input, Stream output)
