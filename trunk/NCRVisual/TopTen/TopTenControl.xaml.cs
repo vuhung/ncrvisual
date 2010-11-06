@@ -16,10 +16,10 @@ namespace TopTen
     public partial class TopTenControl : UserControl
     {
         #region consts & pseudo consts
-        private const string FILTER_BY_MES_SENT_RECV = "Total messages sent & received";
+        private const string FILTER_BY_MES_REPL = "Total messages replied";
         private const string FILTER_BY_MES_SENT = "Total messages sent";
         private const string FILTER_BY_MES_RECV = "Total messages received";
-        private static string[] comboBoxSelections = new string[] { FILTER_BY_MES_SENT_RECV, FILTER_BY_MES_SENT, FILTER_BY_MES_RECV };
+        private static string[] comboBoxSelections = new string[] { FILTER_BY_MES_SENT, FILTER_BY_MES_RECV, FILTER_BY_MES_REPL };
         #endregion
 
         #region private vars
@@ -36,9 +36,9 @@ namespace TopTen
                 this.userList = value;
                 if (comboBox1.SelectedIndex > -1 && userList != null)
                 {
-                    if (comboBox1.SelectedItem.Equals(FILTER_BY_MES_SENT_RECV))
+                    if (comboBox1.SelectedItem.Equals(FILTER_BY_MES_REPL))
                     {
-                        sortTopTenBySentAndRecv();
+                        sortTopTenByRepl();
                     }
                     else if (comboBox1.SelectedItem.Equals(FILTER_BY_MES_SENT))
                     {
@@ -66,7 +66,7 @@ namespace TopTen
         #endregion
 
         #region private functions
-        private void sortTopTenBySentAndRecv()
+        private void sortTopTenByRepl()
         {
             //In this special case, bubble sort will have the best speed and complexity will always be 10*n = n
             int userListSize = userList.Count;
@@ -79,7 +79,7 @@ namespace TopTen
             {
                 for (int j = userListSize - 1; j > i; j--)
                 {
-                    if (userList[j].NumMessagesSentAndReceived > userList[j - 1].NumMessagesSentAndReceived)
+                    if (userList[j].NumMessagesRepl > userList[j - 1].NumMessagesRepl)
                     {
                         UserInfo tmp = userList[j];
                         userList[j] = userList[j - 1];
@@ -87,28 +87,6 @@ namespace TopTen
                     }
                 }
             }
-            /*
-            // sort the user list based on total num of messages sent & received (shell sort)
-            int h = 1; // separation between items being compared
-            while (h < userList.Count)
-            {
-                h = 3 * h + 1;
-            }
-
-            while (h > 0)
-            {
-                h = (h - 1) / 3;
-                for (int i = h; i < userList.Count; ++i)
-                {
-                    UserInfo item = userList[i];
-                    int j = 0;
-                    for (j = i - h; j >= 0 && item.NumMessagesSentAndReceived > userList[j].NumMessagesSentAndReceived; j -= h)
-                    {
-                        userList[j + h] = userList[j];
-                    }// end inner for
-                    userList[j + h] = item;
-                }// end outer for
-            }// end while */
         }
         private void sortTopTenBySent()
         {
@@ -131,28 +109,6 @@ namespace TopTen
                     }
                 }
             }
-            /*
-            // sort the user list based on total num of messages sent (shell sort)
-            int h = 1; // separation between items being compared
-            while (h < userList.Count)
-            {
-                h = 3 * h + 1;
-            }
-
-            while (h > 0)
-            {
-                h = (h - 1) / 3;
-                for (int i = h; i < userList.Count; ++i)
-                {
-                    UserInfo item = userList[i];
-                    int j = 0;
-                    for (j = i - h; j >= 0 && item.NumMessagesSent > userList[j].NumMessagesSent; j -= h)
-                    {
-                        userList[j + h] = userList[j];
-                    }// end inner for
-                    userList[j + h] = item;
-                }// end outer for
-            }// end while */
         }
         private void sortTopTenByRecv()
         {
@@ -175,28 +131,6 @@ namespace TopTen
                     }
                 }
             }
-            /*
-            // sort the user list based on total num of messages received (shell sort)
-            int h = 1; // separation between items being compared
-            while (h < userList.Count)
-            {
-                h = 3 * h + 1;
-            }
-
-            while (h > 0)
-            {
-                h = (h - 1) / 3;
-                for (int i = h; i < userList.Count; ++i)
-                {
-                    UserInfo item = userList[i];
-                    int j = 0;
-                    for (j = i - h; j >= 0 && item.NumMessagesRecv > userList[j].NumMessagesRecv; j -= h)
-                    {
-                        userList[j + h] = userList[j];
-                    }// end inner for
-                    userList[j + h] = item;
-                }// end outer for
-            }// end while */
         }
         #endregion
 
@@ -214,7 +148,7 @@ namespace TopTen
             ObservableCollection<UserInfo> tmp = new ObservableCollection<UserInfo>();
             for (int i = 0; i < 6; i++)
             {
-                UserInfo tmpUI = new UserInfo(i + "@gmail.com", i % 5, i);
+                UserInfo tmpUI = new UserInfo(i + "@gmail.com", i % 5, i, i*2);
                 tmp.Add(tmpUI);
             }
             this.UserList = tmp;
