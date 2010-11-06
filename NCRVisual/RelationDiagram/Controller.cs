@@ -98,8 +98,15 @@ namespace NCRVisual.RelationDiagram
             MinSingleConnection = 10000;
             for (int i = 0; i < VertexNumber; i++)
             {
+                int reply=0;
+                int receive=0;
                 for (int j = 0; j < VertexNumber; j++)
                 {
+                    if (i!=j)
+                    {
+                        reply=reply+matrixInput[i][j];
+                        receive=receive+matrixInput[j][i];
+                    }
                     if (matrixInput[i][j] > 0)
                     {
                         entityCollection[i].Connections.Add(new Connection(entityCollection[i], entityCollection[j], matrixInput[i][j]));
@@ -115,6 +122,10 @@ namespace NCRVisual.RelationDiagram
                         MinSingleConnection = matrixInput[i][j] + matrixInput[j][i];
                     }
                 }
+                entityCollection[i].NumMessagesSent = matrixInput[i][i];
+                entityCollection[i].NumMessagesRecv = receive;
+                entityCollection[i].NumMessagesRepl = reply;
+
             }
 
             foreach (Email mail in this.EmailList)
