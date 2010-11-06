@@ -114,7 +114,6 @@ namespace NCRVisual.RelationDiagram
                     {
                         MinSingleConnection = matrixInput[i][j] + matrixInput[j][i];
                     }
-
                 }
             }
 
@@ -217,8 +216,7 @@ namespace NCRVisual.RelationDiagram
                             reader.ReadToFollowing(END_EDGE_TAG);
                             int end = reader.ReadElementContentAsInt();
                             reader.ReadToFollowing(EDGE_VALUE_TAG);
-                            int value = reader.ReadElementContentAsInt();
-                            //_input[start - 1] = new int[100];
+                            int value = reader.ReadElementContentAsInt();                            
                             _input[start - 1][end - 1] = value;
 
                             while (reader.ReadToNextSibling(EDGE_CONTENT_TAG))
@@ -232,8 +230,7 @@ namespace NCRVisual.RelationDiagram
                                     {
                                         MessageSubject = subject,
                                         UserId = start.ToString(),
-                                        sendDate = toDateTime(time),                                        
-                                        //sendDate = DateTime.Today,
+                                        sendDate = toDateTime(time),                                                                                
                                         SendTo = end.ToString(),
                                     }
                                     );

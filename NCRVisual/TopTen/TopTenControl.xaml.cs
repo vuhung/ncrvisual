@@ -145,13 +145,13 @@ namespace TopTen
             this.triggerFlag = true;
             
             #region debug code
-            ObservableCollection<UserInfo> tmp = new ObservableCollection<UserInfo>();
-            for (int i = 0; i < 6; i++)
-            {
-                UserInfo tmpUI = new UserInfo(i + "@gmail.com", i % 5, i, i*2);
-                tmp.Add(tmpUI);
-            }
-            this.UserList = tmp;
+            //ObservableCollection<UserInfo> tmp = new ObservableCollection<UserInfo>();
+            //for (int i = 0; i < 6; i++)
+            //{
+            //    UserInfo tmpUI = new UserInfo(i + "@gmail.com", i % 5, i, i*2);
+            //    tmp.Add(tmpUI);
+            //}
+            //this.UserList = tmp;
             #endregion
         }
 
