@@ -35,6 +35,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.3.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\MySQL\MySQL Connector Net 6.3.4\Assemblies\v2.0\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -71,6 +75,7 @@
     <Compile Include="Controllers\DataInputController.cs" />
     <Compile Include="Controllers\PHPBBInputController.cs" />
     <Compile Include="Items\Email.cs" />
+    <Compile Include="Items\ForumPost.cs" />
     <Compile Include="Items\Point.cs" />
     <Compile Include="Items\PostInfoMin.cs" />
     <Compile Include="Items\User.cs" />
@@ -82,11 +87,6 @@
       <DependentUpon>PHPBB_DB_Info.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\PHPBBForumService\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Upload.ashx.cs">
       <DependentUpon>Upload.ashx</DependentUpon>
     </Compile>
@@ -102,16 +102,6 @@
     </Content>
     <Content Include="Output\phpbb_output.xml" />
     <Content Include="PHPBB_DB_Info.aspx" />
-    <None Include="Service References\PHPBBForumService\NCRVisual.Web.PHPBBForumService.ForumPost.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\PHPBBForumService\PHPBBForumService.disco" />
-    <None Include="Service References\PHPBBForumService\configuration91.svcinfo" />
-    <None Include="Service References\PHPBBForumService\configuration.svcinfo" />
-    <None Include="Service References\PHPBBForumService\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
     <Content Include="Silverlight.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -122,13 +112,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <None Include="Service References\PHPBBForumService\PHPBBForumService.wsdl" />
-    <None Include="Service References\PHPBBForumService\PHPBBForumService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\PHPBBForumService\PHPBBForumService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -138,14 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\PHPBBForumService\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\PHPBBForumService\PHPBBForumService.xsd">
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
