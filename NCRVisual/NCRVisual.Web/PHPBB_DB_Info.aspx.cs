@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using NCRVisual.Web.Controllers;
-using NCRVisual.Web.PHPBBForumService;
+using NCRVisual.Web.Items;
 
 namespace NCRVisual.Web
 {
@@ -24,13 +24,12 @@ namespace NCRVisual.Web
         {
             if (!buttonDeactivated)
             {
-                PHPBBForumServiceClient serviceClient = new PHPBBForumServiceClient("BasicHttpBinding_IPHPBBForumService");
-                ForumPost[] posts = serviceClient.GetPostsInPHPBBForum(TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text);
-                List<ForumPost> forumPostList = new List<ForumPost>(posts);
-                GridView1.DataSource = forumPostList;
+                PHPBBInputController phpbb = new PHPBBInputController();
+                List<ForumPost> posts = phpbb.GetPostsInPHPBBForum(TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text);
+                GridView1.DataSource = posts;
                 GridView1.DataBind();
                 PHPBBInputController phpInputController = new PHPBBInputController();
-                phpInputController.ForumPosts = forumPostList;
+                phpInputController.ForumPosts = posts;
 
                 buttonDeactivated = true;
 
