@@ -7,8 +7,8 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using NCRVisual.RelationDiagram.Algo;
-using RelationDiagram;
 using PersonalInfoAndStatistics;
+using RelationDiagram;
 
 namespace NCRVisual.RelationDiagram
 {
@@ -211,10 +211,28 @@ namespace NCRVisual.RelationDiagram
         void _myDiagramController_InputReadingComplete(object sender, EventArgs e)
         {
             this.AlgoButton.IsEnabled = true;
+            this.TopTenBlock.IsHitTestVisible = true;
             PopulateSearchingNodeList();
+            PopulateTopTen();
+
             _algorirthmChildWindow = new CustomChildWindow();
             _algorirthmChildWindow.SelectAlgorithmCompleted += new EventHandler(_algorirthmChildWindow_SelectAlgorithmCompleted);
             _algorirthmChildWindow.InitAlgo();
+        }
+
+        private void PopulateTopTen()
+        {
+            ObservableCollection<TopTen.UserInfo> col = new ObservableCollection<TopTen.UserInfo>();
+
+            foreach (MailListEntity ent in _myDiagramController.entityCollection)
+            {
+                col.Add(new TopTen.UserInfo(ent.Email,
+                    ent.NumMessagesSent,
+                    ent.NumMessagesRecv,
+                    ent.NumMessagesRepl));
+            }
+
+            this.Top10Control.UserList = col;
         }
 
         private void Centerize()
@@ -574,6 +592,6 @@ namespace NCRVisual.RelationDiagram
             LayoutRoot.Children.Insert(LayoutRoot.Children.IndexOf(_entityControlCollection[0]), edge);
         }
 
-        #endregion render        
+        #endregion render
     }
 }

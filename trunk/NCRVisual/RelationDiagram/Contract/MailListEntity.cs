@@ -27,12 +27,17 @@ namespace NCRVisual.RelationDiagram
         public string UserName { get; set; }
         public string Email { get; set; }
 
+        public int NumMessagesRecv { get; set; }
+        public int NumMessagesSent { get; set; }
+        public int NumMessagesRepl { get; set; }
+
         public MailListEntity()
         {
             Connections = new List<IConnection>();
             Connections.Add(new Connection(this, null, 0));
-            //MessageSubject = new List<string>();
-            //SendDate = new List<string>();
+            NumMessagesRecv = 0;
+            NumMessagesRepl = 0;
+            NumMessagesSent = 0;
         }
     }
 }

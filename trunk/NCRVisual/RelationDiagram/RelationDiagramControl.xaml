@@ -142,8 +142,8 @@
                     <RowDefinition Height="40"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <TextBlock Foreground="Aqua" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown">View Top 10 users</TextBlock>
-                <topten:TopTenControl Grid.Row="1"></topten:TopTenControl>
+                <TextBlock Name="TopTenBlock" Foreground="Aqua" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" IsHitTestVisible="False">View Top 10 users</TextBlock>
+                <topten:TopTenControl x:Name="Top10Control" Grid.Row="1"></topten:TopTenControl>
             </Grid>
         </Border>
 
@@ -153,6 +153,7 @@
                 <Border Name="DetailBorder"></Border>
             </StackPanel>
         </Border>
-        <ProgressBar Grid.ColumnSpan="5" Grid.RowSpan="6" Height="20" Name="progressBar" Width="200" IsIndeterminate="True" Visibility="Collapsed"/>
+        
+        <ProgressBar Grid.ColumnSpan="5" Grid.RowSpan="6" Height="20" Name="progressBar" Width="200" IsIndeterminate="True" Visibility="Collapsed"/>        
     </Grid>
 </UserControl>
