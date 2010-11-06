@@ -218,7 +218,7 @@ namespace NCRVisual.RelationDiagram
                             int end = reader.ReadElementContentAsInt();
                             reader.ReadToFollowing(EDGE_VALUE_TAG);
                             int value = reader.ReadElementContentAsInt();
-                            _input[start - 1] = new int[100];
+                            //_input[start - 1] = new int[100];
                             _input[start - 1][end - 1] = value;
 
                             while (reader.ReadToNextSibling(EDGE_CONTENT_TAG))
@@ -232,8 +232,8 @@ namespace NCRVisual.RelationDiagram
                                     {
                                         MessageSubject = subject,
                                         UserId = start.ToString(),
-                                        //sendDate = toDateTime(time),                                        
-                                        sendDate = DateTime.Today,
+                                        sendDate = toDateTime(time),                                        
+                                        //sendDate = DateTime.Today,
                                         SendTo = end.ToString(),
                                     }
                                     );

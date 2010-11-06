@@ -7,6 +7,9 @@ namespace NCRVisual.API
     {
         public event EventHandler UploadComplete;
 
+        public string OutputFileName { get; set; }
+
+
         protected void OnComplete(EventArgs e)
         {
             EventHandler handler = UploadComplete;
